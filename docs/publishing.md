@@ -14,12 +14,12 @@ The landing page in `site/` deploys through `.github/workflows/pages.yml`. In th
 
 After the first deploy, submit `https://choy0x.github.io/VeyUI/sitemap.xml` in Google Search Console and Bing Webmaster Tools. A `robots.txt` inside a project Pages site is not read by crawlers (only the one at the domain root is), so the sitemap submission is what counts.
 
-## Distribution status (as of 2026-11-11)
+## Distribution status (as of 2026-11-12)
 
 | Channel | What was done | Status |
 |---|---|---|
 | skills.sh | One real `npx skills add Choy0X/VeyUI` install on 2026-11-11 (telemetry on). There is no submission form. | Listed: https://skills.sh/choy0x/veyui/veyui (2 installs, first seen 2026-11-11; the page still says no SKILL.md snapshot yet). README, site footer and `llms.txt` link to it. |
-| Anthropic plugin directory | Developer portal at https://claude.ai/directory/manage ("Plugin bundle", repo `Choy0X/VeyUI`). Validation timed out on every attempt (about 30 s, "the directory service didn't answer in time"). The repo is within the documented limits (under 50 MiB, under 10,000 files, no file over 5 MiB) but the plugin folder has 1,773 files and many files over 256 KiB, which the checklist says are held for a reviewer. | Not submitted. Retry later; a leaner plugin folder (without the vendored foundation) may be needed. |
+| Anthropic plugin directory | Submitted on 2026-11-12 through https://claude.ai/directory/manage (plugin bundle, repo `Choy0X/VeyUI`, tracking `main`, commit 8505620). Validation passed with 2 warnings and 12 policy holds (image and font files, a minified vendor script that trips the credential check, and one data file over 256 KiB). Auto-publish is off and new versions are picked up by the scheduled check only. | Submitted, waiting for the security scan and human review. The organization is not Verified, so the review may refuse it. Check https://claude.ai/directory/manage for the result. Do not push to `main` expecting it to be reviewed as is: later commits are picked up as new versions. |
 | Cursor marketplace | Publisher application submitted on 2026-11-11 at https://cursor.com/marketplace/publish (organization veyUI, individual account). | Submitted. Cursor reviews manually and takes weeks; do not resubmit (it creates duplicates). Follow-ups come from marketplace-publishing@cursor.com. |
 | Gemini CLI extensions gallery | Public repo, `gemini-extension.json` and the `gemini-cli-extension` topic are in place. | Indexed automatically; check https://geminicli.com/extensions in a few days. |
 | BehiSecc/awesome-claude-skills | PR https://github.com/BehiSecc/awesome-claude-skills/pull/1286 | Open. |
