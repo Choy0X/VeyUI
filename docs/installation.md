@@ -36,9 +36,15 @@ gemini extensions install https://github.com/Choy0X/VeyUI
 
 ## 4. Offline installer (Python 3.10+, no dependencies)
 
+Clone the repository first, and read `install.py` before you run it (it is a short, dependency-free script):
+
 ```sh
 git clone https://github.com/Choy0X/VeyUI.git
-cd VeyUI
+```
+
+Then, from inside the cloned folder:
+
+```sh
 python install.py              # universal folder plus every agent it detects
 python install.py --all        # every supported agent location
 python install.py --agent claude-code --agent cursor
@@ -48,7 +54,7 @@ python install.py --dry-run --all
 python install.py --list
 ```
 
-Windows: `py -3 install.py` or `.\install.ps1`. macOS and Linux: `./install.sh`.
+Windows: `py -3 install.py`. macOS and Linux: `python3 install.py` or `./install.sh`.
 
 The installer stages a clean copy, moves any existing `veyui` folder aside, places the new one and removes the old one. If placing the new copy fails it restores the original.
 

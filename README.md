@@ -47,7 +47,7 @@ Other ways to install:
 | One agent only | `npx skills add Choy0X/VeyUI -a claude-code` |
 | Claude Code plugin | `/plugin marketplace add Choy0X/VeyUI` then `/plugin install veyui@veyui` |
 | Gemini CLI extension | `gemini extensions install https://github.com/Choy0X/VeyUI` |
-| Offline, any platform | `git clone https://github.com/Choy0X/VeyUI && cd VeyUI && python install.py --all` |
+| Offline, any platform | clone the repository, then run `python install.py --all` (see [installation](docs/installation.md)) |
 | Manual | Copy `skills/veyui/` into your agent's skills folder (see [platforms](docs/platforms.md)) |
 
 ## What it does

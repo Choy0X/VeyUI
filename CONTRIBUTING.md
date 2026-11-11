@@ -4,8 +4,15 @@ Thanks for helping. Small, focused pull requests are easiest to review.
 
 ## Setup
 
+Clone the repository:
+
 ```sh
 git clone https://github.com/Choy0X/VeyUI.git
+```
+
+Then work from the skill folder:
+
+```sh
 cd VeyUI/skills/veyui
 ```
 

@@ -1,6 +1,6 @@
 // Regenerates the raster icons from site/assets/logo.svg (the logo source) with headless Chrome.
 // Usage: PUPPETEER_CORE=<path to puppeteer-core> node tools/brand/generate-icons.cjs
-// Writes: site/favicon.ico (16, 32, 48), site/assets/apple-touch-icon.png (180),
+// Writes: site/assets/apple-touch-icon.png (180),
 // .claude-plugin/icon.png (512). Also copies the logo to site/assets/favicon.svg and
 // skills/veyui/assets/icon.svg so the three SVGs never drift apart.
 const fs = require('fs');
@@ -33,26 +33,12 @@ async function render(browser, size, pad, bg) {
   return buf;
 }
 
-function ico(images) { // PNG-in-ICO container
-  const head = Buffer.alloc(6); head.writeUInt16LE(1, 2); head.writeUInt16LE(images.length, 4);
-  let offset = 6 + 16 * images.length;
-  const dirs = images.map(([size, buf]) => {
-    const d = Buffer.alloc(16);
-    d[0] = size >= 256 ? 0 : size; d[1] = size >= 256 ? 0 : size; d.writeUInt16LE(1, 4); d.writeUInt16LE(32, 6);
-    d.writeUInt32LE(buf.length, 8); d.writeUInt32LE(offset, 12); offset += buf.length; return d;
-  });
-  return Buffer.concat([head, ...dirs, ...images.map(([, b]) => b)]);
-}
-
 (async () => {
   const browser = await puppeteer.launch({ executablePath: chrome, headless: 'new', args: ['--no-sandbox'] });
   try {
-    const icons = [];
-    for (const s of [16, 32, 48]) icons.push([s, await render(browser, s, 0, null)]);
-    fs.writeFileSync(path.join(root, 'site', 'favicon.ico'), ico(icons));
     fs.writeFileSync(path.join(root, 'site', 'assets', 'apple-touch-icon.png'), await render(browser, 180, 0.1, '#F7F1E3'));
     fs.writeFileSync(path.join(root, '.claude-plugin', 'icon.png'), await render(browser, 512, 0, null));
-    console.log('wrote favicon.ico, apple-touch-icon.png, .claude-plugin/icon.png, favicon.svg, icon.svg');
+    console.log('wrote apple-touch-icon.png, .claude-plugin/icon.png, favicon.svg, icon.svg');
   } finally {
     await browser.close();
   }
