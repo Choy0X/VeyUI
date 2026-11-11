@@ -14,6 +14,24 @@ The landing page in `site/` deploys through `.github/workflows/pages.yml`. In th
 
 After the first deploy, submit `https://choy0x.github.io/VeyUI/sitemap.xml` in Google Search Console and Bing Webmaster Tools. A `robots.txt` inside a project Pages site is not read by crawlers (only the one at the domain root is), so the sitemap submission is what counts.
 
+## Distribution status (as of 2026-11-11)
+
+| Channel | What was done | Status |
+|---|---|---|
+| skills.sh | One real `npx skills add Choy0X/VeyUI` install on 2026-11-11 (telemetry on). There is no submission form. | Not listed yet. Check https://skills.sh/Choy0X/VeyUI again; add the link and badge to README, the site and `llms.txt` only after it exists. |
+| Anthropic plugin directory | Form at https://claude.ai/directory/manage/new/plugin, repo URL entered. The validation step timed out three times ("the directory service didn't answer in time"). | Blocked on the service. Retry later. |
+| Cursor marketplace | https://cursor.com/marketplace/publish needs a signed-in Cursor account. | Waiting for a Cursor sign-in. Reviews take weeks; do not resubmit, it creates duplicates. |
+| Gemini CLI extensions gallery | Public repo, `gemini-extension.json` and the `gemini-cli-extension` topic are in place. | Indexed automatically; check https://geminicli.com/extensions in a few days. |
+| BehiSecc/awesome-claude-skills | PR https://github.com/BehiSecc/awesome-claude-skills/pull/1286 | Open. |
+| kodustech/awesome-agent-skills | PR https://github.com/kodustech/awesome-agent-skills/pull/196 | Open. |
+
+Lists not entered yet, with their stated rules (revisit when the repo qualifies):
+- hesreallyhim/awesome-claude-code: at least 14 days of history with active development, or 100 stars; recommendations go through the issue form, not a PR.
+- heilcheng/awesome-agent-skills: at least 20 stars and older than 14 days.
+- philipbankier/awesome-agent-skills: at least 10 stars.
+- VoltAgent/awesome-agent-skills: needs real community usage, brand new skills are not accepted.
+- ComposioHQ/awesome-claude-skills and the Codex skills list: they host skill folders, not links, so a copy of this skill would be needed; not a good fit for a skill this size.
+
 ## Repository metadata
 
 - Description and website URL: set in the repository header.
