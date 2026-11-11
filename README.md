@@ -100,6 +100,10 @@ Full paths per agent are in [docs/platforms.md](docs/platforms.md). Run `python 
 - Internet once, for about 30 MB: the pinned Taste Skill web engine is downloaded on first use and hash-checked (`skills/veyui/scripts/fetch_foundation.py`). Everything else, including the offline library, works without it.
 - A way to run and preview your project. veyUI does not provide hosting or a browser.
 
+## Privacy and data
+
+veyUI has no account, no server, no analytics and no telemetry of its own. It reads files in your project only when your agent runs it, and it writes nothing outside your project and its own skill folder. The offline reference library is local. The only network call veyUI itself makes is the one-time download of the pinned Taste Skill web engine from GitHub (`skills/veyui/scripts/fetch_foundation.py`), which sends no project data. Anything your coding agent sends to its own model is governed by that agent and its provider, not by veyUI. Installing with the `skills` CLI reports an anonymous install count to skills.sh unless you set `DISABLE_TELEMETRY=1`.
+
 ## Honest limits
 
 veyUI enforces an evidence-based workflow. It cannot guarantee that every model produces excellent design. Final output still needs real rendered inspection, working interactions and your choice. A passing check or a reference count is not visual approval. Reference images for 31 concept studies are not distributed, because their redistribution rights are unverified. Those studies are text only.
