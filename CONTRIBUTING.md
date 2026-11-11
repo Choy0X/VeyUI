@@ -25,9 +25,9 @@ python -I tests/test_concept_references.py
 python -I tests/test_design_library.py
 python -I tests/test_reference_library.py
 node tests/reference_gallery_dom_regression.cjs .
-python -I scripts/fetch_foundation.py
-python -I scripts/verify_foundation.py
 ```
+
+The web foundation is not stored in git. To check it, run the foundation script named `fetch_foundation.py` from `scripts/`, then `verify_foundation.py` from the same folder (both take no arguments).
 
 ## Rules
 
