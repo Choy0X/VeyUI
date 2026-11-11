@@ -19,8 +19,8 @@ After the first deploy, submit `https://choy0x.github.io/VeyUI/sitemap.xml` in G
 | Channel | What was done | Status |
 |---|---|---|
 | skills.sh | One real `npx skills add Choy0X/VeyUI` install on 2026-11-11 (telemetry on). There is no submission form. | Not listed yet. Check https://skills.sh/Choy0X/VeyUI again; add the link and badge to README, the site and `llms.txt` only after it exists. |
-| Anthropic plugin directory | Form at https://claude.ai/directory/manage/new/plugin, repo URL entered. The validation step timed out three times ("the directory service didn't answer in time"). | Blocked on the service. Retry later. |
-| Cursor marketplace | https://cursor.com/marketplace/publish needs a signed-in Cursor account. | Waiting for a Cursor sign-in. Reviews take weeks; do not resubmit, it creates duplicates. |
+| Anthropic plugin directory | Developer portal at https://claude.ai/directory/manage ("Plugin bundle", repo `Choy0X/VeyUI`). Validation timed out on every attempt (about 30 s, "the directory service didn't answer in time"). The repo is within the documented limits (under 50 MiB, under 10,000 files, no file over 5 MiB) but the plugin folder has 1,773 files and many files over 256 KiB, which the checklist says are held for a reviewer. | Not submitted. Retry later; a leaner plugin folder (without the vendored foundation) may be needed. |
+| Cursor marketplace | Publisher application submitted on 2026-11-11 at https://cursor.com/marketplace/publish (organization veyUI, individual account). | Submitted. Cursor reviews manually and takes weeks; do not resubmit (it creates duplicates). Follow-ups come from marketplace-publishing@cursor.com. |
 | Gemini CLI extensions gallery | Public repo, `gemini-extension.json` and the `gemini-cli-extension` topic are in place. | Indexed automatically; check https://geminicli.com/extensions in a few days. |
 | BehiSecc/awesome-claude-skills | PR https://github.com/BehiSecc/awesome-claude-skills/pull/1286 | Open. |
 | kodustech/awesome-agent-skills | PR https://github.com/kodustech/awesome-agent-skills/pull/196 | Open. |
