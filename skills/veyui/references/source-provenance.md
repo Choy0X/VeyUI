@@ -4,7 +4,7 @@ Reviewed on 2026-11-07. These sources informed the package; they are attribution
 
 ## Cloned implementation
 
-The complete `skills/taste-skill` directory was copied from the actual shallow clone of [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill), commit `f6b76575f949707b4e3c37cd86cb44b0b98643e8`. Its original entrypoint is retained as `foundation/upstream-guide.md` so only the veyUI entrypoint activates. Its assets, library, references and scripts remain byte-identical to the cloned source. `foundation/LICENSE` preserves the MIT notice, including Copyright (c) 2026 Leonxlnx. `data/foundation-manifest.json` pins every included file by SHA-256.
+The complete `skills/taste-skill` directory is fetched on first use by `scripts/fetch_foundation.py` from the archive of [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill), commit `f6b76575f949707b4e3c37cd86cb44b0b98643e8`. Its original entrypoint is retained as `foundation/upstream-guide.md` so only the veyUI entrypoint activates. Its assets, library, references and scripts remain byte-identical to the upstream source and are verified against the manifest before use. `foundation/LICENSE` preserves the MIT notice, including Copyright (c) 2026 Leonxlnx. `data/foundation-manifest.json` pins every included file by SHA-256.
 
 The upstream repository's installer, plugin manifests, global hooks, repository examples and Git history are not installed into veyUI. The complete actual skill directory is bundled. The preserved guide contains the original hook example as source documentation; reading it does not register or execute it.
 
@@ -27,7 +27,7 @@ The original wording/code of the non-foundation skills is not bundled. This pack
 
 ## Inspected file revisions
 
-Git blob identifiers below record the files fetched through GitHub. The cloned foundation commit above is the authoritative pin for the bundled implementation.
+Git blob identifiers below record the files fetched through GitHub. The pinned foundation commit above is the authoritative pin for the web foundation.
 
 | Source file | Inspected blob SHA |
 |---|---|

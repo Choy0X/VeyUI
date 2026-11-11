@@ -8,8 +8,8 @@ Please report security issues privately through GitHub: **Security > Report a vu
 
 veyUI is a set of instructions, data and local helper scripts that an AI agent reads and runs on your machine.
 
-- The Python scripts under `skills/veyui/scripts/` and the Node tools under `skills/veyui/foundation/scripts/` run locally and make no network calls on their own.
+- The Python scripts under `skills/veyui/scripts/` and the Node tools under `skills/veyui/foundation/scripts/` run locally. The only network call veyUI itself makes is `scripts/fetch_foundation.py`, which downloads one pinned archive from codeload.github.com and writes nothing that does not match the SHA-256 manifest.
 - The installer (`install.py`) only copies files into skills directories.
 - Skills are executable guidance for your agent. Review any skill before installing it, including this one, and prefer pinning a release tag.
 
-Issues in the vendored Taste Skill code should also be reported upstream: https://github.com/Leonxlnx/taste-skill.
+Issues in the Taste Skill code should also be reported upstream: https://github.com/Leonxlnx/taste-skill.

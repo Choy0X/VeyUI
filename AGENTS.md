@@ -18,7 +18,7 @@ Agents without native skill support can be pointed at `skills/veyui/SKILL.md` di
 ## Working on this repository
 
 - The skill lives in `skills/veyui/`. The skill name must stay `veyui` and match its folder name.
-- Do not edit `skills/veyui/foundation/`. It is a pinned, hash-verified copy of Taste Skill by Leonxlnx (MIT). Run `python skills/veyui/scripts/verify_foundation.py` after any change nearby. To update the pin, see `docs/how-it-works.md`.
+- Do not edit or commit `skills/veyui/foundation/`. It is fetched by `python skills/veyui/scripts/fetch_foundation.py` (pinned Taste Skill by Leonxlnx, MIT, hash-verified, git-ignored). Run `python skills/veyui/scripts/verify_foundation.py` after fetching. To update the pin, see `docs/how-it-works.md`.
 - Do not add private screenshots or third-party images. The 31 concept studies in `skills/veyui/data/reference-library.json` are text only (`asset_withheld: true`).
 - Keep `SKILL.md` under 500 lines and its frontmatter `description` under 1024 characters.
 - Landing page: `site/`. Docs: `docs/`. Manifests: `.claude-plugin/`, `.cursor-plugin/`, `gemini-extension.json`.
@@ -32,6 +32,7 @@ python -I tests/test_concept_references.py
 python -I tests/test_design_library.py
 python -I tests/test_reference_library.py
 node tests/reference_gallery_dom_regression.cjs .
+python -I scripts/fetch_foundation.py
 python -I scripts/verify_foundation.py
 ```
 

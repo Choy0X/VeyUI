@@ -32,7 +32,9 @@ jobs:
         run: node tests/reference_gallery_dom_regression.cjs .
       - name: Foundation integrity
         working-directory: skills/veyui
-        run: python -I scripts/verify_foundation.py
+        run: |
+          python -I scripts/fetch_foundation.py
+          python -I scripts/verify_foundation.py
       - name: Catalog validation
         working-directory: skills/veyui
         run: python -I scripts/reference_library.py validate

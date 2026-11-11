@@ -2,7 +2,7 @@
 name: veyui
 description: "Design, redesign, polish or audit user interfaces for web, mobile and desktop with reference-led art direction instead of generic AI-looking output. Use for landing pages, marketing sites, product apps, dashboards, native screens, design systems, motion and UX review. Researches precedents from an offline library of 580+ reviewed screens, builds three distinct hosted concepts for you to choose from, then implements the winner and verifies it in a real renderer. Includes product-specific copywriting, independent design critique and accessibility checks."
 license: MIT
-compatibility: "Any Agent Skills client (Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, Windsurf, OpenCode and more). Python 3.10+ for the offline library. Node 22+ and Chrome, Edge or Chromium for the bundled web checks."
+compatibility: "Any Agent Skills client (Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, Windsurf, OpenCode and more). Python 3.10+ for the offline library. Node 22+ and Chrome, Edge or Chromium for the web checks. Internet once to fetch the pinned web foundation."
 metadata:
   author: Choy0X
   version: "1.0.0"
@@ -12,7 +12,7 @@ metadata:
 
 # veyUI
 
-**One skill, one design owner, one coherent result.** All design instruction modules, reference retrieval, concept scaffolding and evidence checks are bundled here, together with the complete cloned Taste Skill web foundation. Do not install, invoke or fetch another design skill to complete a stage. Read only the applicable local modules. Project runtimes, a real renderer and a preview delivery route are still needed to build and inspect UI; this skill does not supply an IDE, browser or hosting account.
+**One skill, one design owner, one coherent result.** All design instruction modules, reference retrieval, concept scaffolding and evidence checks are bundled here, together with the pinned Taste Skill web foundation, which is fetched and hash-verified once on first use (`scripts/fetch_foundation.py`) so the installed skill stays small. Do not install, invoke or fetch another design skill to complete a stage. Read only the applicable local modules. Project runtimes, a real renderer and a preview delivery route are still needed to build and inspect UI; this skill does not supply an IDE, browser or hosting account.
 
 Own the result from product understanding through rendered visual review. Treat art direction, UX behavior, implementation and verification as distinct responsibilities that must agree. A long plan, famous reference, working build or list of skills does not establish design quality.
 
@@ -98,9 +98,9 @@ Read [Experience design](references/experience-design.md) for meaningful product
 
 **Choose the visual medium before the component.** For image-led work or weak product illustrations, read [Visual medium and scene direction](references/visual-medium.md) before page construction. Plan the subject, settled outcome, image/render/code/hybrid choice and composition for each important section, not only the hero. Ask for important missing imagery during planning; do not quietly replace it with generic UI fragments. Use [Visual direction](templates/visual-direction.md) inside the main brief. Working application controls stay semantic/native.
 
-For material web marketing work, read [Web foundation](references/foundation.md) and apply the locally bundled foundation, including its actual layout, asset, motion and inspection tools. Follow the adapter before reading its preserved original guide. This is the primary web construction engine, not an optional inspiration link. Use it inside each isolated candidate; do not integrate a candidate before selection.
+For material web marketing work, read [Web foundation](references/foundation.md) and run `python3 scripts/fetch_foundation.py` once if `foundation/` is not present, then apply the foundation, including its actual layout, asset, motion and inspection tools. Follow the adapter before reading its preserved original guide. This is the primary web construction engine, not an optional inspiration link. Use it inside each isolated candidate; do not integrate a candidate before selection.
 
-Attribution: the web foundation is the vendored [Taste Skill](https://github.com/Leonxlnx/taste-skill) by Leonxlnx, used under the MIT license (license preserved in `foundation/LICENSE`). veyUI is an independent project and is not endorsed by the Taste Skill author. For application and native work, use the applicable craft and component techniques without importing a marketing page structure.
+Attribution: the web foundation is [Taste Skill](https://github.com/Leonxlnx/taste-skill) by Leonxlnx, downloaded at a pinned commit and used unmodified under the MIT license (the fetch script restores `foundation/LICENSE`). veyUI is an independent project and is not endorsed by the Taste Skill author. For application and native work, use the applicable craft and component techniques without importing a marketing page structure.
 
 Read [Craft and composition](references/craft.md), then [Reference calibration](references/reference-calibration.md), [Art direction](references/art-direction.md), [Visual system](references/visual-system.md) and the applicable [Design decisions](references/design-decisions.md). Interpret the project's chosen reference closely in visual character and craft, with original content and composition. The selected reference overrides default aesthetic recipes; do not merely borrow its color or decorative object.
 
@@ -146,7 +146,7 @@ Review the integrated result with the same visual and UX/engineering perspective
 
 ## Local resources and validation
 
-- `foundation/`, `data/foundation-manifest.json` — complete pinned web foundation and per-file integrity records; read its adapter before use.
+- `scripts/fetch_foundation.py`, `data/foundation-manifest.json` — download the complete pinned web foundation into `foundation/` and verify every file against the per-file integrity records; read its adapter before use. `foundation/` is not stored in the repository.
 - `data/ready-screens.json`, `data/screen-recipes.json`, `scripts/design_library.py` — default offline screen descriptions, original implementation guidance and bounded retrieval.
 - `data/documented-flows.json`, `data/decision-guides.json`, `references/design-coaching.md` — documented transitions and original decision/tradeoff/failure/check coaching.
 - `data/flow-provenance.json` — first-party documentation evidence, excluded from default retrieval.
@@ -160,7 +160,7 @@ Review the integrated result with the same visual and UX/engineering perspective
 - `scripts/check_evidence.py` — declared review coverage check, not an aesthetic evaluator.
 - `templates/design-brief.md`, `templates/reference-record.json`, `templates/review-evidence.json` — optional project-owned working records.
 
-Run `python3 scripts/verify_foundation.py` after importing or updating the foundation; it checks snapshot integrity, not UI quality. Run `python3 scripts/design_library.py validate` after changing compiled screens. Run `python3 scripts/design_atlas.py validate` after changing the atlas and `python3 scripts/reference_library.py validate` after changing the reference collection. Grow project reference records only from actual inspection. No tool or volume of reference data guarantees excellent taste; the reviewed artifact is the evidence of the result.
+Run `python3 scripts/fetch_foundation.py` to get or repair the foundation and `python3 scripts/verify_foundation.py` to re-check it; it checks snapshot integrity, not UI quality. Run `python3 scripts/design_library.py validate` after changing compiled screens. Run `python3 scripts/design_atlas.py validate` after changing the atlas and `python3 scripts/reference_library.py validate` after changing the reference collection. Grow project reference records only from actual inspection. No tool or volume of reference data guarantees excellent taste; the reviewed artifact is the evidence of the result.
 
 ## Built-in module map
 
@@ -172,7 +172,7 @@ These are parts of veyUI, not separate skills. Read at the named stage; do not l
 | Recommend inspectable directions | [Recommended directions](references/recommended-directions.md), [Shortlist template](templates/direction-shortlist.md) | Three tailored directions with verified existing live links and recorded choice/delegation |
 | Discover and communicate product value | [Product story](references/product-story.md), [Working brief](templates/product-story.md), [Researched precedents](references/landing-page-precedents.md) | Feature evidence, prioritized benefits, distinct narrative angles and complete persuasive copy |
 | Learn from shipped interfaces | [Precedent selection](references/precedent-selection.md), [Offline library](references/offline-design-library.md), [Coaching](references/design-coaching.md) | Small evidence packet and decisions with tradeoffs |
-| Construct a marketing website | [Web foundation](references/foundation.md) | Real bundled recipes, assets, motion, copy lint and browser checkers |
+| Construct a marketing website | [Web foundation](references/foundation.md) | Real recipes, assets, motion, copy lint and browser checkers from the fetched foundation |
 | Create an original direction | [Craft](references/craft.md), [Art direction](references/art-direction.md), [Calibration](references/reference-calibration.md) | Distinct compositions and resolved visual values |
 | Design a complete experience | [Experience design](references/experience-design.md), [Adaptation](references/adaptation.md) | Task, states, recovery, navigation and preserve contract |
 | Construct a coherent system | [Visual system](references/visual-system.md), [Design decisions](references/design-decisions.md) | Tokens, component anatomy and adaptive behavior |

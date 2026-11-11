@@ -1,10 +1,10 @@
 # Third-party notices
 
-veyUI is released under the MIT License (see `LICENSE`). It bundles and builds on the work below. The MIT license of this repository does not replace the licenses of third-party material.
+veyUI is released under the MIT License (see `LICENSE`). It uses and builds on the work below. The MIT license of this repository does not replace the licenses of third-party material.
 
 ## Taste Skill by Leonxlnx (the web construction foundation)
 
-veyUI's marketing-site construction engine is a pinned, unmodified copy of Taste Skill by **Leonxlnx**. veyUI would not exist in its current form without that work, and we are grateful to its author.
+veyUI's marketing-site construction engine is Taste Skill by **Leonxlnx**, used unmodified at a pinned commit. This repository does not contain its files: a script downloads the exact commit on first use and checks every file's SHA-256 before use. veyUI would not exist in its current form without that work, and we are grateful to its author.
 
 | | |
 |---|---|
@@ -13,12 +13,12 @@ veyUI's marketing-site construction engine is a pinned, unmodified copy of Taste
 | Repository | https://github.com/Leonxlnx/taste-skill |
 | License | MIT, Copyright (c) 2026 Leonxlnx |
 | Pinned commit | `f6b76575f949707b4e3c37cd86cb44b0b98643e8` (directory `skills/taste-skill`) |
-| Location here | `skills/veyui/foundation/` |
-| Integrity | `skills/veyui/data/foundation-manifest.json` (SHA-256 of every file), checked by `skills/veyui/scripts/verify_foundation.py` |
+| Location | fetched into `skills/veyui/foundation/` on first use by `skills/veyui/scripts/fetch_foundation.py` (not stored in this repository) |
+| Integrity | `skills/veyui/data/foundation-manifest.json` (SHA-256 of every file), checked by `fetch_foundation.py` and `skills/veyui/scripts/verify_foundation.py` |
 
-What is bundled: layout recipes, typography and palette tools, effects, scenes, product fragments, copy linting, consistency and layout checks, and screenshot and performance tools.
+What it provides: layout recipes, typography and palette tools, effects, scenes, product fragments, copy linting, consistency and layout checks, and screenshot and performance tools.
 
-What veyUI changed: nothing inside `foundation/`. The upstream `SKILL.md` was renamed `foundation/upstream-guide.md` so that only the veyUI skill activates in an agent. The upstream installer, plugin manifests and global hooks are not included. veyUI's adapter rules live in `skills/veyui/references/foundation.md`.
+What veyUI changed: nothing inside `foundation/` (the fetch script rebuilds it byte for byte). The upstream `SKILL.md` was renamed `foundation/upstream-guide.md` so that only the veyUI skill activates in an agent. The upstream installer, plugin manifests and global hooks are not included. veyUI's adapter rules live in `skills/veyui/references/foundation.md`.
 
 veyUI is an independent project. It is not affiliated with or endorsed by the author of Taste Skill. To update the pin, replace `foundation/` from the upstream commit you choose and regenerate the manifest.
 

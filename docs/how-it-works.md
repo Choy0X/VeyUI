@@ -9,7 +9,7 @@ skills/veyui/
   templates/            brief, review and evidence templates
   data/                 offline library: screens, patterns, flows, decision guides, catalog
   scripts/              Python tools: retrieval, atlas, concept studio, evidence checks
-  foundation/           pinned copy of Taste Skill (web construction engine)
+  foundation/           pinned Taste Skill, fetched on first use (not stored in git)
   agents/openai.yaml    optional Codex display metadata
   assets/               icon and gallery template
   tests/                regression tests
@@ -31,15 +31,15 @@ python skills/veyui/scripts/reference_library.py --catalog my.json --asset-root 
 
 ## The web foundation and credits
 
-For marketing sites, veyUI drives a pinned, unmodified copy of **Taste Skill by Leonxlnx** (https://github.com/Leonxlnx/taste-skill, MIT) in `skills/veyui/foundation/`. It provides layout recipes, effects, scenes, copy linting, and the screenshot and consistency checks. The upstream `SKILL.md` is kept as `foundation/upstream-guide.md` so that only veyUI activates in an agent. `skills/veyui/references/foundation.md` is the adapter that resolves conflicts between the two.
+For marketing sites, veyUI drives **Taste Skill by Leonxlnx** (https://github.com/Leonxlnx/taste-skill, MIT) at a pinned commit, unmodified. It is not stored in this repository: `skills/veyui/scripts/fetch_foundation.py` downloads that exact commit once, on first use, into `skills/veyui/foundation/` (about 30 MB, internet needed once). It provides layout recipes, effects, scenes, copy linting, and the screenshot and consistency checks. The upstream `SKILL.md` is kept as `foundation/upstream-guide.md` so that only veyUI activates in an agent. `skills/veyui/references/foundation.md` is the adapter that resolves conflicts between the two.
 
-Every foundation file is hashed in `data/foundation-manifest.json`. `scripts/verify_foundation.py` checks them. veyUI is independent and not endorsed by the Taste Skill author. Full notices: [THIRD-PARTY-NOTICES.md](../THIRD-PARTY-NOTICES.md).
+Every foundation file is hashed in `data/foundation-manifest.json`. The fetch script refuses to keep anything that does not match, and `scripts/verify_foundation.py` re-checks it at any time. The offline library, concept studio and design modules work without it; only the web construction tools need it. veyUI is independent and not endorsed by the Taste Skill author. Full notices: [THIRD-PARTY-NOTICES.md](../THIRD-PARTY-NOTICES.md).
 
 ### Updating the pin
 
-1. Check out the upstream commit you want, and copy its `skills/taste-skill` directory over `foundation/`, renaming `SKILL.md` to `upstream-guide.md`.
-2. Regenerate the file hashes in `data/foundation-manifest.json` and update the commit id there, in `THIRD-PARTY-NOTICES.md`, `README.md` and `references/source-provenance.md`.
-3. Run the checks in [CONTRIBUTING.md](../CONTRIBUTING.md).
+1. Pick the upstream commit. Download its archive, take `skills/taste-skill` (renaming `SKILL.md` to `upstream-guide.md`) plus the root `LICENSE` as `foundation/LICENSE`.
+2. Regenerate the file hashes in `data/foundation-manifest.json` and update the commit id there, in `THIRD-PARTY-NOTICES.md`, `README.md`, `site/` and `references/source-provenance.md`.
+3. Run `python skills/veyui/scripts/fetch_foundation.py --force` and the checks in [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## The concept studio
 

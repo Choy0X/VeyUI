@@ -96,7 +96,8 @@ Full paths per agent are in [docs/platforms.md](docs/platforms.md). Run `python 
 ## Requirements
 
 - Python 3.10+ for the offline library and concept scaffolding.
-- Node 22+ and Chrome, Edge or Chromium for the bundled web checks.
+- Node 22+ and Chrome, Edge or Chromium for the web checks.
+- Internet once, for about 30 MB: the pinned Taste Skill web engine is downloaded on first use and hash-checked (`skills/veyui/scripts/fetch_foundation.py`). Everything else, including the offline library, works without it.
 - A way to run and preview your project. veyUI does not provide hosting or a browser.
 
 ## Honest limits
@@ -105,7 +106,7 @@ veyUI enforces an evidence-based workflow. It cannot guarantee that every model 
 
 ## Credits
 
-veyUI's web construction engine is a pinned, unmodified copy of **[Taste Skill](https://github.com/Leonxlnx/taste-skill) by [Leonxlnx](https://github.com/Leonxlnx)** (MIT), commit `f6b76575f949707b4e3c37cd86cb44b0b98643e8`. It supplies the layout recipes, effects, scenes, copy linting and browser checks that veyUI drives. Thank you to Leonxlnx for building and open-sourcing it.
+veyUI's web construction engine is **[Taste Skill](https://github.com/Leonxlnx/taste-skill) by [Leonxlnx](https://github.com/Leonxlnx)** (MIT) at commit `f6b76575f949707b4e3c37cd86cb44b0b98643e8`, downloaded on first use and used unmodified. It supplies the layout recipes, effects, scenes, copy linting and browser checks that veyUI drives. Thank you to Leonxlnx for building and open-sourcing it.
 
 veyUI adds the offline reference library, the discovery and recommendation workflow, the three-concept studio with independent review, the evidence checks, and the multi-platform packaging. veyUI is an independent project and is not endorsed by the Taste Skill author.
 
@@ -117,4 +118,4 @@ Issues and pull requests are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.
 
 ## License
 
-[MIT](LICENSE) for veyUI. Vendored third-party material keeps its own license, listed in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+[MIT](LICENSE) for veyUI. Third-party material keeps its own license, listed in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).

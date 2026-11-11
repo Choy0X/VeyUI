@@ -16,7 +16,7 @@ No. The reference library is offline and local. Your agent's own model is the on
 veyUI itself makes no network calls to a service of its own. Your agent works as it normally does. The `skills` CLI sends anonymous install telemetry when you install (opt out with `DISABLE_TELEMETRY=1`).
 
 **How is it different from Taste Skill?**
-veyUI is built on Taste Skill's web engine, which it bundles unmodified, with credit to Leonxlnx. veyUI adds an offline reference library, product discovery and recommendation, the three-concept hosted review, evidence checks, native and app guidance, and packaging for many agents.
+veyUI is built on Taste Skill's web engine, which it downloads at a pinned commit and uses unmodified, with credit to Leonxlnx. veyUI adds an offline reference library, product discovery and recommendation, the three-concept hosted review, evidence checks, native and app guidance, and packaging for many agents.
 
 **Why are some references text only?**
 31 concept studies describe images whose redistribution rights are unverified, so the images are not in this repo. The studies remain as original notes. Third-party app-store and website images are linked, not copied.

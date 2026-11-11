@@ -1,8 +1,12 @@
 # The built-in web foundation
 
-veyUI includes the complete Taste Skill 2.5.1 skill directory cloned from Leonxlnx/taste-skill, pinned in `data/foundation-manifest.json`. This is runnable local code and assets, not a link to install later. `foundation/upstream-guide.md` preserves the original entrypoint as documentation; veyUI remains the only activatable SKILL.md. Preserve `foundation/LICENSE` and item-level asset credits. No upstream installer, account, MCP or global hook is necessary.
+veyUI uses the complete Taste Skill 2.5.1 skill directory from Leonxlnx/taste-skill, pinned to one commit in `data/foundation-manifest.json` together with the SHA-256 of every file. To keep the installed skill small, the foundation is not stored in this repository or in the installed skill folder. It is fetched once, on first use, with `scripts/fetch_foundation.py`, which downloads that exact commit from GitHub, rebuilds `foundation/` next to this SKILL.md and refuses to place anything that does not match the manifest byte for byte. After that it is runnable local code and assets. `foundation/upstream-guide.md` preserves the original entrypoint as documentation; veyUI remains the only activatable SKILL.md. Preserve `foundation/LICENSE` and item-level asset credits. No upstream installer, account, MCP or global hook is necessary.
 
-**Attribution:** the foundation is the [Taste Skill](https://github.com/Leonxlnx/taste-skill) by Leonxlnx, vendored under the MIT license (see `foundation/LICENSE`); its SKILL.md is kept as `foundation/upstream-guide.md` and all other files are unchanged. veyUI is an independent project and is not endorsed by the Taste Skill author.
+## Get the foundation first
+
+Before any web construction work, run `python scripts/fetch_foundation.py` from this skill's folder (use the host's Python launcher, see `agent-portability.md`). It is idempotent: when `foundation/` already verifies it does nothing. It needs internet once (about 30 MB from codeload.github.com) and only the Python standard library. If it cannot download, say so plainly, continue with the parts of veyUI that do not need the foundation (offline library, concept studio, design modules, copy and review), and report the web tools as unavailable and the rendering as unverified. Never fabricate a gate result and never write foundation files by hand. `python scripts/verify_foundation.py` re-checks integrity at any time. If the skill folder is read-only, pass `--root DIR` to place `foundation/` elsewhere and use the path the script prints.
+
+**Attribution:** the foundation is the [Taste Skill](https://github.com/Leonxlnx/taste-skill) by Leonxlnx, used under the MIT license (the fetch script restores `foundation/LICENSE`); its SKILL.md is kept as `foundation/upstream-guide.md` and all other files are unchanged and hash-checked. veyUI is an independent project and is not endorsed by the Taste Skill author.
 
 ## Read and apply it
 
@@ -39,7 +43,7 @@ Do not edit the pinned foundation to hide warnings. Run diagnostics when applica
 
 Python 3 runs veyUI retrieval and review scaffolding. Node 22+ and a supported Chrome/Edge/Chromium runtime run the copied web tools; ffmpeg is optional for applicable capture workflows. Verify installed executables and documented flags. These are tool requirements, not dependencies on other skills.
 
-Resolve `FOUNDATION` to this skill's `foundation` path. Run commands with the candidate directory as the working directory. For example:
+Resolve `FOUNDATION` to this skill's `foundation` path (the one `fetch_foundation.py` printed). Run commands with the candidate directory as the working directory. For example:
 
 ```sh
 node "$FOUNDATION/scripts/start.mjs" deal --page software --trade "the actual product category" --history .taste-skill/history.json

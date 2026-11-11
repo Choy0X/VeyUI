@@ -67,7 +67,8 @@ The agent should read `veyui/SKILL.md` and start with discovery. In Claude Code 
 ## Requirements
 
 - Python 3.10+ for the offline library and concept scaffolding.
-- Node 22+ and Chrome, Edge or Chromium for the bundled web checks (screenshots, consistency and layout checks).
+- Node 22+ and Chrome, Edge or Chromium for the web checks (screenshots, consistency and layout checks).
+- Internet once for the web construction engine: on first use the agent runs `python skills/veyui/scripts/fetch_foundation.py`, which downloads the pinned Taste Skill commit (about 30 MB) and verifies every file. You can run it yourself after installing.
 - A way to run and preview your project.
 
 Use WSL or a remote terminal? Install inside the environment where your agent runs.

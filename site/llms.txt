@@ -21,7 +21,7 @@ Install: `npx skills add Choy0X/VeyUI`. Works with Claude Code, Codex, Cursor, G
 
 ## Credits
 
-- [Taste Skill by Leonxlnx](https://github.com/Leonxlnx/taste-skill): veyUI's web engine is a pinned, unmodified copy of this project (MIT), commit f6b76575f949707b4e3c37cd86cb44b0b98643e8.
+- [Taste Skill by Leonxlnx](https://github.com/Leonxlnx/taste-skill): veyUI's web engine is this project at a pinned commit (MIT), commit f6b76575f949707b4e3c37cd86cb44b0b98643e8, downloaded on first use and hash-checked, unmodified.
 - [Third-party notices](https://github.com/Choy0X/VeyUI/blob/main/THIRD-PARTY-NOTICES.md)
 - [Leonxlnx on GitHub](https://github.com/Leonxlnx)
 

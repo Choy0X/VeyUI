@@ -18,3 +18,6 @@ Thumbs.db
 .scratch/
 .impeccable/
 tools/previews/.cache/
+
+# Fetched by skills/veyui/scripts/fetch_foundation.py (pinned Taste Skill, hash-verified). Never commit it.
+skills/veyui/foundation/
