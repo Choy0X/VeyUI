@@ -1,0 +1,36 @@
+# Concepts and prototypes
+
+Use this during brainstorming for open directions, prototype requests, or major design decisions. Use the bundled concept-gallery workflow with the host's actual preview capabilities. Treat code-based prototypes for a new UI or material redesign as automatically required exploratory work within an isolated review scope, without waiting for a separate prototype request. Follow Automatic concept delivery for hosting and the pre-integration selection boundary. Define that boundary and show the requested candidates before asking the user to select one. Production implementation follows the recorded selection and scope authorization. Preserve an already delegated selection and implementation instruction without adding another approval round.
+
+## Frame the comparison
+
+1. Write a testable question for the prototypes. Name the audience, primary task, meaningful design variable, constraints, and what evidence would favor one direction. Examples include whether list-detail or a canvas makes a high-frequency task easier, and whether a product-first or narrative-first hero explains the offer faster.
+2. Lock comparable evaluation inputs, not all visual outputs. Use the same task, truthful copy and claims, realistic sample data, actual brand constraints, supported sizes, and representative states. When public-brand divergence is authorized, typography, palette, shape, and imagery are open variables rather than fixed comparison inputs. Use equal time and fidelity where practical. If content or structure is the variable, vary it intentionally and record it. Use the incumbent as the comparison baseline for a redesign.
+3. Default to three directions for new UI and material redesign work. Produce the count the user asks for. Each direction must test an additional viable premise within the intended visual territory. Vary information architecture, composition, interaction model, or narrative. A color or type swap alone is a valid comparison when that is the specific question.
+4. Name each concept and give it one organizing principle, an opening frame, a task path or section sequence, and one tradeoff. Apply the required design and product skills to the decisions each variant tests.
+
+## Choose the right fidelity
+
+| Question | Minimum artifact |
+|---|---|
+| Does the information hierarchy, flow, or adaptive composition make sense? | Annotated wireframes or low-fidelity layouts at the relevant sizes, with the main flow and state changes visible. |
+| Does the visual language hold together? | Rendered frames with representative copy, component states, image treatment, and typography at the same sizes for every candidate. |
+| Can someone complete the task or judge the interaction? | A runnable or clickable prototype with the main path, a meaningful alternate or recovery state, and any motion relevant to the decision. |
+| Will a change work on a specific host platform? | A prototype in the actual runtime where feasible, or a clearly labeled surrogate and a plan to test host-dependent behavior. |
+
+Build runnable high-fidelity artifacts automatically for new UI and material redesigns, with the relevant interaction implemented when feasible. Wireframes are intermediate exploration and do not satisfy visual concept selection for a high-quality redesign request. Select an available preview surface appropriate to the project and requested handoff. Reuse known tokens and components when their behavior is part of the test. Use isolated preview routes, files or stories only inside the separate concept workspace; do not add them to application source before selection. Keep data synthetic or approved, with deliberate loading or failure fixtures where relevant. Label simulated actions, data, and shortcuts. Preserve production flows and environments while exploring. Use the same approved asset or equivalent treatment across concepts unless imagery is the variable. Follow the separate image authorization gate.
+
+For a prototype sequence, include entry, one important user action, and a clear next state or recovery. Show narrow and wide variants or their native equivalents when the layout can change. Implement real click, tap, keyboard, or navigation behavior for the interaction under evaluation. Leave peripheral flows visibly outside the review scope. Give each interactive candidate a reproducible start and reset. Run it yourself and capture representative frames or a short motion recording before presenting it. Personally inspect the captured frames and fix material visual defects using Visual review before presenting candidates for selection. If the environment only supports static rendered views, label interaction and platform checks unverified. If no rendering is possible, label the artifact an unreviewed draft and defer visual recommendation.
+
+## Compare and select
+
+Present a verified hosted gallery and direct candidate links, accompanied by personally inspected captures at the same entry point, state and viewport. Keep the previews accessible for selection; use the explicit blocked route if hosting is unavailable. Include a short review script that says what to try and what decision it informs. If there are multiple devices, compare equivalent views before showing the variants unique to each. Separate observed results from hypotheses. Without user testing, report your observations or expert review as such.
+
+| Criterion | Evidence to look for |
+|---|---|
+| Task completion and clarity | An obvious starting point, correct next action, understandable feedback, and a visible recovery path when the flow can fail. |
+| Visual craft and fit | Clear reading order, aligned geometry, consistent typography and rhythm, meaningful use of color and motion, and fit with the brand and surface. |
+| Adaptability and accessibility | Reflow and long text, relevant inputs, focus and semantics, readable contrast, usable reduced-motion experience, and native behavior where applicable. |
+| Feasibility | Real routes and data, available and licensed assets, existing primitives, platform or performance constraints, and the effort or risk of adopting the concept. |
+
+Set priorities from the brief before comparing. Mark each criterion as **meets**, **needs work**, or **unverified**, with one concrete observation or evidence gap. A critical unmet requirement cannot be offset by stronger visuals. Unverified critical behavior needs a targeted test or explicit scope decision. Recommend the strongest viable option and name the main tradeoff. If evidence is inconclusive, identify the smallest test or decision that breaks the tie. When the user delegates selection, make the best supported choice and record why. Delegation settles the choice of concept. Record the design contract and continue implementation when the existing authorization covers it. Do not ask for another approval of the same choice. Only genuinely new material decisions or higher-priority explicit requirements need a further decision. Otherwise ask for their choice when it is needed to proceed. Record the selected artifact, what will be kept, and what still needs adaptation. Combine ideas only when the resulting concept has a coherent task path and visual system. Render and review a materially different hybrid before recommending that combined design.

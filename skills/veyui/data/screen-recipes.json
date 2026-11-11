@@ -1,0 +1,169 @@
+{
+  "recipes": {
+    "list": {
+      "craft": "Give each row one dominant label, nearby supporting metadata and a predictable trailing action. Align shared fields across rows; separate groups more strongly than items.",
+      "adaptation_and_states": "Collapse secondary metadata before truncating primary labels. Implement selection, loading, empty and unavailable states; preserve stable row identity.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "grid": {
+      "craft": "Let preview size follow the recognition task. Keep captions aligned to the same edge and reserve one consistent location for selection or save controls.",
+      "adaptation_and_states": "Reduce column count rather than shrinking targets. Handle variable media ratios, missing imagery and long titles. A grid is inappropriate for exact cross-row numeric comparison.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "detail": {
+      "craft": "Establish object identity first, then essential facts, then secondary sections. Keep the primary action visually tied to the object rather than unrelated page chrome.",
+      "adaptation_and_states": "Use a single-column reading order on compact displays. Implement unavailable, archived and permission-limited variants where relevant.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "form": {
+      "craft": "Group fields by the decision being made. Keep labels persistent, supporting text close, and submit placement predictable. Visually separate optional or advanced configuration.",
+      "adaptation_and_states": "Implement field-level errors, summary errors when useful, pending submission, success and retry. These are target requirements, not behaviors established by a still screenshot.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "split": {
+      "craft": "Use a stable navigation or collection pane beside a larger working pane. Align the detail heading with the selected object's identity and keep contextual tools near their content.",
+      "adaptation_and_states": "On narrow displays, switch between collection and detail with preserved selection and a clear back path. Do not simply shrink both panes.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "calendar": {
+      "craft": "Differentiate date navigation, time structure and event content. Keep a small overview from competing with the active time range. Align event labels with the relevant time or day.",
+      "adaptation_and_states": "Choose agenda or day mode for narrow screens. Implement overlap, timezone, recurrence, keyboard traversal and empty periods as the task requires.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "timeline": {
+      "craft": "Use one consistent temporal axis. Place the most important event label closest to its time; subordinate metadata and actions follow a repeatable rhythm.",
+      "adaptation_and_states": "Stack without losing chronology on small screens. Distinguish completed, upcoming and exceptional events through more than hue alone.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "board": {
+      "craft": "Make column meaning explicit. Use consistent card anatomy with task identity first and compact status, person or date metadata. Preserve readable card width.",
+      "adaptation_and_states": "Provide a list alternative or deliberate column navigation on mobile. Do not require dragging as the only way to change state.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "chart": {
+      "craft": "Pair a clearly labeled headline metric with the trend or distribution that explains it. Keep period controls adjacent and use quiet, consistent axes and legends.",
+      "adaptation_and_states": "Provide values or an accessible data alternative. Handle sparse data and outliers. Avoid fabricated numbers, unnecessary chart decoration and color-only encodings.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "map": {
+      "craft": "Give geographic content a large uninterrupted area while preserving concise search and selected-result context. Keep map controls in predictable edge locations.",
+      "adaptation_and_states": "A bottom sheet or separate detail view may replace a side pane. Provide a list alternative and permission-denied, locating and unavailable-location states.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "reader": {
+      "craft": "Set a clear title-to-body hierarchy and a comfortable reading measure. Use paragraphs, subheads, lists and callouts according to content meaning rather than repeated cards.",
+      "adaptation_and_states": "Support text scaling and long content. Keep reading controls quiet and preserve reading position; navigation should not overwhelm the document.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "chat": {
+      "craft": "Maintain a legible chronological conversation, stable message alignment and a composer anchored to the active thread. Keep metadata lighter than message content.",
+      "adaptation_and_states": "Implement sending, sent, failed and retry states where applicable. Handle keyboard insets, long messages, attachments and safe-area spacing without obscuring history.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "player": {
+      "craft": "Give the current item clear identity, then progress and essential transport controls. Secondary options should not compete with the primary playback action.",
+      "adaptation_and_states": "Support long titles and dynamic text. Implement buffering, unavailable media and playback state feedback. Choose motion from actual playback semantics.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "search": {
+      "craft": "Keep the query, active constraints and results visibly related. Make scope and clear/reset actions understandable. Distinguish suggestions from committed results.",
+      "adaptation_and_states": "Implement no results, loading, query errors and keyboard navigation. Preserve the user's query while opening details and returning.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "settings": {
+      "craft": "Group settings by user intention and distinguish navigation rows from immediate controls. Keep labels and current values consistently aligned.",
+      "adaptation_and_states": "Support explanatory text and disabled reasons. Make destructive operations visibly separate; require confirmation only when the consequence warrants it.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "picker": {
+      "craft": "Present options in a consistent selection pattern with a clear selected state and confirm or immediate-apply behavior chosen deliberately.",
+      "adaptation_and_states": "Support keyboard and touch selection, long option labels and cancellation. Do not imply multi-selection with a single-choice control.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "onboarding": {
+      "craft": "Give each step one purpose, enough context to decide and a clear primary action. Show progress only when the total structure is meaningful.",
+      "adaptation_and_states": "Provide back, skip or later where the product permits it. Ask permissions at the relevant moment and explain denied-state recovery.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "editor": {
+      "craft": "Protect the working content's area. Organize editing tools by frequency and place context-dependent tools near selection or in a stable inspector.",
+      "adaptation_and_states": "Provide undo/redo, dirty-state feedback and appropriate save behavior. Adapt toolbars and panels deliberately instead of compressing the entire desktop editor.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "canvas": {
+      "craft": "Keep the canvas dominant, with a small number of stable navigation, creation and contextual controls. Give selection and hierarchy unambiguous visual treatment.",
+      "adaptation_and_states": "Offer zoom and pan mechanisms appropriate to the platform plus keyboard alternatives. Keep selection handles and essential controls usable at varying zoom.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "payment": {
+      "craft": "Make the amount, currency, fees, recipient or selected plan explicit before the commitment action. Keep terms near the decision they qualify.",
+      "adaptation_and_states": "Implement validation, pending, failure, retry and confirmation. Never copy source prices, endorsements or conversion claims into the target product.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "empty": {
+      "craft": "Explain the current state, what belongs here and the next useful action. Scale illustration to support the message without overwhelming frequent-use screens.",
+      "adaptation_and_states": "Distinguish first use, no search results, access denied and failed loading. An empty state must not hide an error or fabricate sample activity.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "command": {
+      "craft": "Keep the input visually dominant and organize results by understandable groups with stable icon, label and shortcut alignment.",
+      "adaptation_and_states": "Implement focus entry/return, arrow traversal, escape, no results and command errors. Display shortcuts only when they actually work.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "table": {
+      "craft": "Use stable column alignment and clear headings. Make row identity prominent, numeric comparisons easy and selection distinct from row actions.",
+      "adaptation_and_states": "Choose priority columns or a purposeful compact representation. Implement sorting, filtering, pagination or virtualization only when needed; preserve keyboard access.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "notification": {
+      "craft": "Differentiate event identity, actor, recency and read state. Keep the relevant object or next action understandable without opening every row.",
+      "adaptation_and_states": "Handle grouping, dismissal, delivery settings and empty states as needed. Avoid making everything equally urgent or relying only on color for unread status.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "permissions": {
+      "craft": "Explain what access enables and when it is used. Separate capability requests from unrelated benefits and provide a clear next step after refusal.",
+      "adaptation_and_states": "Implement the actual operating-system permission sequence. A branded preview does not establish native dialog wording or grant behavior.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "comparison": {
+      "craft": "Align equivalent attributes under clear option headings. Make differences scannable while preserving complete terms and a consistent action position.",
+      "adaptation_and_states": "Use a readable stacked or horizontally navigable compact view. Do not invent a recommended tier or hide material limitations for visual balance.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "overview": {
+      "craft": "Lead with the user's most useful summary, then actionable detail. Balance high-level metrics with recent activity or next steps instead of filling equal cards arbitrarily.",
+      "adaptation_and_states": "Prioritize content explicitly on compact screens. Implement stale, partial, loading and empty data states; label sample data honestly.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "utility": {
+      "craft": "Make the current value or object dominant, with a compact set of related controls and clear output feedback. Avoid decorative layers that compete with the operation.",
+      "adaptation_and_states": "Handle invalid input, unavailable resources, pending work and result actions. Preserve platform conventions for precision controls and keyboard entry.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "gallery": {
+      "craft": "Use visual previews to support recognition while keeping grouping, captions and selection consistent. Let meaningful content lead instead of uniform decorative tiles.",
+      "adaptation_and_states": "Adapt the number of columns and preserve aspect ratios. Support missing previews, collection empty states and accessible names.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "pricing": {
+      "craft": "Group each plan's audience, price cadence, limits and action. Align comparable attributes and keep important terms close to the selection.",
+      "adaptation_and_states": "Support long localized copy and compact comparison. Recommendations must reflect actual product positioning; pricing and billing behavior come from real data.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "file-permissions": {
+      "craft": "Arrange owner, group and other as aligned categories with read, write and execute controls. Keep symbolic and numeric representations adjacent to the same current selection. Distinguish an editable calculator from changes applied to an actual file.",
+      "adaptation_and_states": "Use the target filesystem permission model; POSIX mode bits do not describe all ACL or Windows permission behavior. Expose the selected file, effective scope, unsupported operations, save/apply result and recovery from denied writes. Do not silently broaden access. Test numeric/control synchronization and keyboard labels.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "sharing": {
+      "craft": "Keep resource identity, recipients, roles and public-link scope together. Distinguish direct grants from inherited access and show which authority can change each.",
+      "adaptation_and_states": "Implement invitation pending/expired states, role updates, denied changes, link expiration and revocation according to actual authorization. Do not confuse collaboration roles with operating-system capability prompts or POSIX mode bits.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    },
+    "confirmation": {
+      "craft": "Name the target and consequence of the decision. Distinguish cancel from commit and make relevant scope visible near the confirming action.",
+      "adaptation_and_states": "Verify cancellation, keyboard focus, pending submission, failure and recovery. Offer undo only when the underlying operation supports restoration.",
+      "status": "Original implementation guidance, not an observation of source behavior."
+    }
+  }
+}

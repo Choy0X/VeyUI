@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>veyUI preview templates</title>
+<!--
+  Templates for the preview images (og-image, social-preview, preview-concepts, preview-workflow).
+  Rendered by generate.cjs. Select a template with ?v=og|social|concepts|workflow.
+  Uses the site's own fonts and the three example posters. ASCII only.
+-->
+<style>
+@font-face{font-family:"Anybody";src:url("../../site/assets/fonts/anybody-latin-wdth.woff2") format("woff2");font-weight:100 900;font-stretch:50% 150%}
+@font-face{font-family:"Familjen Grotesk";src:url("../../site/assets/fonts/familjen-grotesk-latin-wght.woff2") format("woff2");font-weight:400 700}
+@font-face{font-family:"Spline Sans Mono";src:url("../../site/assets/fonts/spline-sans-mono-latin-wght.woff2") format("woff2");font-weight:300 700}
+:root{--ink:#16130F;--cream:#F7F1E3;--tomato:#FF5B3A;--cobalt:#2A44F0;--yellow:#E6FF3D;--mint:#7BE8B6}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--cream);color:var(--ink);font:400 20px/1.4 "Familjen Grotesk",system-ui,sans-serif}
+.stage{position:relative;width:100vw;height:100vh;overflow:hidden;background:var(--cream)}
+.dots{position:absolute;inset:0;background-image:radial-gradient(var(--ink) 1.4px,transparent 1.6px);background-size:26px 26px;opacity:.12}
+.brand{display:flex;align-items:center;gap:.6em;font:700 1em "Anybody",sans-serif;font-stretch:100%}
+.brand img{width:2.2em;height:2.2em;border-radius:22%}
+.mono{font-family:"Spline Sans Mono",ui-monospace,monospace}
+.cmd{display:inline-flex;align-items:center;gap:.6em;background:#fff;border:3px solid var(--ink);border-radius:14px;padding:.5em .9em;box-shadow:5px 5px 0 var(--ink);font:500 1em "Spline Sans Mono",monospace}
+.cmd b{background:var(--yellow);margin:-.5em -.9em -.5em .3em;padding:.5em .9em;border-left:3px solid var(--ink);border-radius:0 11px 11px 0;font-weight:600}
+h1,h2{font-family:"Anybody",sans-serif;font-weight:800;letter-spacing:-.025em;line-height:.95}
+.card{position:absolute;border:4px solid var(--ink);border-radius:18px;box-shadow:9px 9px 0 var(--ink);background:#fff}
+.card img{display:block;width:100%;height:100%;object-fit:cover;object-position:top left;border-radius:13px}
+.tag{position:absolute;display:flex;align-items:center;gap:.5em;font:700 .8em "Spline Sans Mono",monospace;text-transform:uppercase;letter-spacing:.04em;background:var(--ink);color:var(--yellow);padding:.35em .7em;border-radius:999px}
+.tag i{display:inline-grid;place-items:center;width:1.7em;height:1.7em;border-radius:50%;font-style:normal;color:var(--ink)}
+/* launch image: og and social share one composition scaled by --u */
+.v-og .stage,.v-social .stage{--u:1}
+.launch{position:absolute;inset:0}
+.launch .brand{position:absolute;left:calc(56px*var(--u));top:calc(46px*var(--u));font-size:calc(26px*var(--u))}
+.launch .copy{position:absolute;left:calc(56px*var(--u));top:calc(128px*var(--u));width:calc(600px*var(--u))}
+.launch h1{font-size:calc(78px*var(--u))}
+.launch h1 span{display:inline-block;background:var(--yellow);padding:0 .1em;white-space:nowrap}
+.launch p{margin-top:calc(26px*var(--u));width:calc(520px*var(--u));font-size:calc(22px*var(--u));color:#4a443b}
+.launch .cmd{position:absolute;left:calc(56px*var(--u));bottom:calc(50px*var(--u));font-size:calc(22px*var(--u))}
+.launch .c1{left:calc(700px*var(--u));top:calc(52px*var(--u));width:calc(430px*var(--u));height:calc(258px*var(--u));transform:rotate(-3deg)}
+.launch .c2{left:calc(676px*var(--u));top:calc(250px*var(--u));width:calc(540px*var(--u));height:calc(324px*var(--u));transform:rotate(2deg)}
+.launch .tag{font-size:calc(14px*var(--u));top:calc(-36px*var(--u));left:calc(8px*var(--u))}
+.launch .c1 .tag{background:#fff;color:var(--ink);border:2px solid var(--ink)}
+/* concepts (README header) */
+.concepts h2{position:absolute;left:64px;top:52px;font-size:80px;width:1100px;white-space:nowrap}
+.concepts .lede{position:absolute;left:64px;top:222px;width:760px;font-size:25px;color:#4a443b}
+.concepts .card{width:660px;height:436px;top:330px}
+.concepts .k1{left:70px;transform:rotate(-1.5deg);top:342px}
+.concepts .k2{left:864px;top:322px;transform:rotate(1deg)}
+.concepts .tag{top:-40px;left:6px}
+.concepts .foot{position:absolute;right:64px;top:64px;display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+.concepts .foot .note{font:500 16px "Spline Sans Mono",monospace;color:#4a443b;text-align:right;max-width:340px}
+/* workflow */
+.workflow h2{position:absolute;left:64px;top:46px;font-size:68px}
+.steps{position:absolute;left:64px;right:64px;top:230px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
+.step{border:4px solid var(--ink);border-radius:16px;padding:20px 18px 22px;box-shadow:7px 7px 0 var(--ink);height:280px;display:flex;flex-direction:column;justify-content:space-between}
+.step .n{font:700 20px "Spline Sans Mono",monospace}
+
+.step h3{font:800 27px/1 "Anybody",sans-serif;letter-spacing:-.02em}
+.step p{font-size:17px;line-height:1.3}
+.s1{background:var(--cobalt);color:#fff}.s2{background:var(--yellow)}.s3{background:var(--tomato)}.s4{background:var(--mint)}.s5{background:#fff}.s6{background:var(--ink);color:var(--cream)}
+.workflow .foot{position:absolute;left:64px;bottom:40px;font:500 18px "Spline Sans Mono",monospace;color:#4a443b}
+</style>
+</head>
+<body>
+<script>
+const v = new URLSearchParams(location.search).get('v') || 'og';
+document.body.className = 'v-' + v;
+const F = './.cache/';
+const logo = '../../site/assets/logo.svg';
+const launch = (u) => `
+<div class="stage" style="--u:${u}"><div class="dots"></div><div class="launch">
+  <div class="brand"><img src="${logo}" alt="">veyUI</div>
+  <div class="copy"><h1>Stop shipping <span>AI-looking</span> interfaces.</h1>
+  <p>A free, open-source skill that gives your coding agent a real design process. Three prototypes to choose from, then a verified build.</p></div>
+  <div class="cmd"><span>npx skills add Choy0X/VeyUI</span><b>Copy</b></div>
+  <div class="card c1"><span class="tag">Typical agent output</span><img src="${F}before.png" alt=""></div>
+  <div class="card c2"><span class="tag">Designed with veyUI</span><img src="${F}after.png" alt=""></div>
+</div></div>`;
+const tpl = {
+  og: launch(1200 / 1200),
+  social: launch(1280 / 1200),
+  concepts: `<div class="stage concepts"><div class="dots"></div>
+  <h2>Same product.<br>Better decisions.</h2>
+  <p class="lede">Left is what an agent ships when nothing makes it decide. Right is the same product after veyUI studied references and built three concepts.</p>
+  <div class="card k1"><span class="tag"><i style="background:#fff">1</i>Typical agent output</span><img src="${F}before.png" alt=""></div>
+  <div class="card k2"><span class="tag"><i style="background:var(--yellow)">2</i>Designed with veyUI</span><img src="${F}after.png" alt=""></div>
+  <div class="foot"><div class="brand"><img src="${logo}" alt="">veyUI</div><div class="note">Slackwater is a fictional product, designed with veyUI</div></div></div>`,
+  workflow: `<div class="stage workflow"><div class="dots"></div>
+  <h2>Six steps between your prompt<br>and your code.</h2>
+  <div class="steps">
+    <div class="step s1"><span class="n">01</span><h3>Discover</h3><p>Reads your project to find what the product really does.</p></div>
+    <div class="step s2"><span class="n">02</span><h3>Recommend</h3><p>Proposes three directions, each with a real public example.</p></div>
+    <div class="step s3"><span class="n">03</span><h3>Prototype</h3><p>Builds three complete concepts and has them reviewed.</p></div>
+    <div class="step s4"><span class="n">04</span><h3>Choose</h3><p>You pick one. Nothing is integrated before that.</p></div>
+    <div class="step s5"><span class="n">05</span><h3>Implement</h3><p>Builds the chosen design in your real stack.</p></div>
+    <div class="step s6"><span class="n">06</span><h3>Verify</h3><p>Inspects the rendered result and reports what was checked.</p></div>
+  </div>
+  <div class="foot">npx skills add Choy0X/VeyUI</div></div>`
+};
+document.body.innerHTML = tpl[v] || tpl.og;
+</script>
+</body>
+</html>

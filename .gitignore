@@ -1,0 +1,20 @@
+# Private / local-only material
+_private/
+.claude/
+skills/veyui/assets/reference-images/
+reference-library.html
+
+# Tooling
+.impeccable/
+tools/previews/.cache/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.zip
+.env
+.env.*
+.scratch/
+.impeccable/
+tools/previews/.cache/

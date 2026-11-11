@@ -1,0 +1,15 @@
+{
+  "name": "veyui",
+  "description": "veyUI: a design-led UI/UX skill for AI coding agents.",
+  "owner": { "name": "Choy0X", "url": "https://github.com/Choy0X" },
+  "plugins": [
+    {
+      "name": "veyui",
+      "source": "./",
+      "description": "Reference-led UI/UX design and delivery for web, mobile and desktop. Three hosted concepts, then build and verify.",
+      "version": "1.0.0",
+      "category": "design",
+      "tags": ["ui-design", "ux", "landing-page", "design-system", "frontend"]
+    }
+  ]
+}

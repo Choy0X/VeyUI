@@ -1,0 +1,11 @@
+{
+  "name": "veyui",
+  "version": "1.0.0",
+  "description": "Design-led UI/UX skill for AI coding agents. Researches references, builds three hosted concepts for you to choose from, then implements and verifies the winner.",
+  "author": { "name": "Choy0X", "url": "https://github.com/Choy0X" },
+  "homepage": "https://choy0x.github.io/VeyUI/",
+  "repository": "https://github.com/Choy0X/VeyUI",
+  "license": "MIT",
+  "icon": "./icon.png",
+  "keywords": ["ui-design", "ux", "landing-page", "design-system", "agent-skills", "frontend", "web-design", "mobile", "dashboard"]
+}

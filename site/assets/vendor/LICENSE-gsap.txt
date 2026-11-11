@@ -1,0 +1,5 @@
+GSAP (GreenSock Animation Platform), including ScrollTrigger, SplitText, Flip and CustomEase.
+Copyright Webflow, Inc. Licensed under the Standard "No Charge" GSAP License:
+https://gsap.com/standard-license
+Free for use on websites and apps where end users are not charged to access the product.
+Not for use in tools that let users build visual animations without code and compete with Webflow.

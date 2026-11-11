@@ -1,0 +1,47 @@
+{
+  "required_views": [
+    "candidate-a-wide-opening",
+    "candidate-a-compact-opening",
+    "candidate-a-wide-complete",
+    "candidate-a-compact-complete"
+  ],
+  "views": [],
+  "required_interactions": [
+    "primary-task"
+  ],
+  "interactions": [],
+  "findings": [],
+  "view_record_shape": {
+    "id": "candidate-a-wide-opening",
+    "artifact_version": "1",
+    "runtime": "actual browser, emulator or device",
+    "viewport": "actual dimensions or window class",
+    "state": "actual content, theme and interaction state",
+    "capture": "relative/path/to/actual-capture.png",
+    "visually_inspected": false,
+    "reviewer": "",
+    "observation": ""
+  },
+  "interaction_record_shape": {
+    "id": "primary-task",
+    "result": "unverified",
+    "evidence": "",
+    "artifact_version": "1"
+  },
+  "finding_record_shape": {
+    "description": "",
+    "severity": "major",
+    "status": "open",
+    "recheck_view": null,
+    "fixed_in_version": null
+  },
+  "expected_versions": {
+    "candidate-a-wide-opening": "1",
+    "candidate-a-compact-opening": "1",
+    "candidate-a-wide-complete": "1",
+    "candidate-a-compact-complete": "1"
+  },
+  "expected_interaction_versions": {
+    "primary-task": "1"
+  }
+}

@@ -1,0 +1,30 @@
+# veyUI
+
+> veyUI is a free, open-source, design-led UI/UX skill for AI coding agents (Agent Skills format, MIT license). It reads your project, recommends reference directions, builds three prototypes for you to choose from, implements the one you pick and verifies the result in a real browser or runtime. Its web engine is a pinned, unmodified copy of Taste Skill by Leonxlnx (MIT). veyUI is independent and not endorsed by that author.
+
+Install: `npx skills add Choy0X/VeyUI`. Works with Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, Windsurf, Cline, OpenCode, Amp, Kiro, Roo, Goose, Trae, Antigravity, Continue, Junie, Qwen Code, OpenHands, Augment and other agents that read the Agent Skills format. Requires Python 3.10+, Node 22+, and Chrome, Edge or Chromium for web checks.
+
+## Docs
+
+- [Installation](https://github.com/Choy0X/VeyUI/blob/main/docs/installation.md): every install method, update and removal.
+- [Platforms](https://github.com/Choy0X/VeyUI/blob/main/docs/platforms.md): supported agents and how to invoke veyUI in each.
+- [Usage](https://github.com/Choy0X/VeyUI/blob/main/docs/usage.md): the eight modes (design, redesign, prototype, polish, audit, motion, system, references) and example requests.
+- [How it works](https://github.com/Choy0X/VeyUI/blob/main/docs/how-it-works.md): the six-step workflow, the offline library and the foundation.
+- [FAQ](https://github.com/Choy0X/VeyUI/blob/main/docs/faq.md): accounts, images, privacy, limits and how veyUI differs from Taste Skill.
+
+## Project
+
+- [Repository](https://github.com/Choy0X/VeyUI): source, issues and releases.
+- [Landing page](https://choy0x.github.io/VeyUI/): what veyUI does, with a scroll-driven before and after example and the install commands.
+- [MIT license](https://github.com/Choy0X/VeyUI/blob/main/LICENSE)
+
+## Credits
+
+- [Taste Skill by Leonxlnx](https://github.com/Leonxlnx/taste-skill): veyUI's web engine is a pinned, unmodified copy of this project (MIT), commit f6b76575f949707b4e3c37cd86cb44b0b98643e8.
+- [Third-party notices](https://github.com/Choy0X/VeyUI/blob/main/THIRD-PARTY-NOTICES.md)
+- [Leonxlnx on GitHub](https://github.com/Leonxlnx)
+
+## Optional
+
+- [Contributing](https://github.com/Choy0X/VeyUI/blob/main/CONTRIBUTING.md)
+- [Security policy](https://github.com/Choy0X/VeyUI/blob/main/SECURITY.md)

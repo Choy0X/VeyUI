@@ -1,0 +1,4107 @@
+{
+  "schema_version": 1,
+  "kind": "original_design_playbook",
+  "notice": "200 original text pattern cards. Not model training, not 200 captured or visually audited product screens. Related sources are study leads, not evidence of implementation.",
+  "patterns": [
+    {
+      "id": "P001",
+      "category": "marketing-opening",
+      "platforms": [
+        "web"
+      ],
+      "title": "Outcome-led product hero",
+      "job": "Explain one valuable outcome",
+      "composition": "Pair a short outcome headline with a readable crop demonstrating that outcome; subordinate app chrome",
+      "avoid": "Shrinking a whole dashboard into illegible proof",
+      "review": "Can a visitor connect the headline to a visible product action?",
+      "related_sources": [
+        "linear",
+        "stripe",
+        "lapa",
+        "curated"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P002",
+      "category": "marketing-opening",
+      "platforms": [
+        "web"
+      ],
+      "title": "Editorial split hero",
+      "job": "Give a considered brand impression",
+      "composition": "Use an asymmetric text/visual balance, deliberate headline breaks and one primary action aligned to the copy",
+      "avoid": "An equal grid with no dominant element",
+      "review": "Does the compact version preserve the same reading order?",
+      "related_sources": [
+        "linear",
+        "stripe",
+        "lapa",
+        "curated"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P003",
+      "category": "marketing-opening",
+      "platforms": [
+        "web"
+      ],
+      "title": "Immersive landscape hero",
+      "job": "Connect a product to a contextual world",
+      "composition": "Place concise copy in genuine negative space; isolate a product excerpt against the scene",
+      "avoid": "Placing text across a busy image or decorative landscape without relevance",
+      "review": "Inspect crop, contrast and static fallback at both widths",
+      "related_sources": [
+        "linear",
+        "stripe",
+        "lapa",
+        "curated"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P004",
+      "category": "marketing-opening",
+      "platforms": [
+        "web"
+      ],
+      "title": "Object-led hero",
+      "job": "Explain a distinctive physical or digital object",
+      "composition": "Give one object dominant scale with controlled light and a restrained supporting interface",
+      "avoid": "Unrelated metallic ornaments competing with the offer",
+      "review": "Is the object meaningful without its caption?",
+      "related_sources": [
+        "linear",
+        "stripe",
+        "lapa",
+        "curated"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P005",
+      "category": "marketing-opening",
+      "platforms": [
+        "web"
+      ],
+      "title": "Typography-led hero",
+      "job": "Make a compelling proposition memorable",
+      "composition": "Use a strong type relationship, sparse supporting content and a deliberate baseline for the CTA",
+      "avoid": "Oversized words that hide what the product does",
+      "review": "Read with actual headline lengths and fallback fonts",
+      "related_sources": [
+        "linear",
+        "stripe",
+        "lapa",
+        "curated"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P006",
+      "category": "marketing-opening",
+      "platforms": [
+        "web"
+      ],
+      "title": "Interactive evidence hero",
+      "job": "Demonstrate a short valuable task",
+      "composition": "Show a prepopulated task, clear input and useful result; keep purchase navigation outside demo state",
+      "avoid": "A fake terminal or tabs with no meaningful outcome",
+      "review": "Can the demo reset and remain usable without animation?",
+      "related_sources": [
+        "linear",
+        "stripe",
+        "lapa",
+        "curated"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P007",
+      "category": "marketing-opening",
+      "platforms": [
+        "web"
+      ],
+      "title": "Two-sided service hero",
+      "job": "Explain a relationship between roles",
+      "composition": "Pair each role's view around one shared event; make the connection visually explicit",
+      "avoid": "Inventing permission or recipient behavior",
+      "review": "Verify both roles' facts and compact ordering",
+      "related_sources": [
+        "linear",
+        "stripe",
+        "lapa",
+        "curated"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P008",
+      "category": "marketing-opening",
+      "platforms": [
+        "web"
+      ],
+      "title": "App-download hero",
+      "job": "Connect a mobile product to a real task",
+      "composition": "Use one readable device view, task-focused copy and platform-specific download action",
+      "avoid": "A pile of tiny tilted phones and unsupported platform badges",
+      "review": "Does the main screen remain readable on mobile?",
+      "related_sources": [
+        "linear",
+        "stripe",
+        "lapa",
+        "curated"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P009",
+      "category": "marketing-opening",
+      "platforms": [
+        "web"
+      ],
+      "title": "Enterprise explanation hero",
+      "job": "Make a complex offer legible",
+      "composition": "Lead with the concrete problem, one system relationship and a useful next step",
+      "avoid": "Abstract nodes and exaggerated business claims",
+      "review": "Can the visitor identify who benefits and what changes?",
+      "related_sources": [
+        "linear",
+        "stripe",
+        "lapa",
+        "curated"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P010",
+      "category": "marketing-opening",
+      "platforms": [
+        "web"
+      ],
+      "title": "Editorial launch announcement",
+      "job": "Introduce a focused release",
+      "composition": "Separate release context, product name, capability demonstration and one exploration path",
+      "avoid": "Confusing a release campaign with the main product navigation",
+      "review": "Does the page remain understandable after the launch date?",
+      "related_sources": [
+        "linear",
+        "stripe",
+        "lapa",
+        "curated"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P011",
+      "category": "marketing-story",
+      "platforms": [
+        "web"
+      ],
+      "title": "Evidence-first feature section",
+      "job": "Support one product promise",
+      "composition": "Pair a precise claim with a targeted UI state and a caption explaining the evidence",
+      "avoid": "Repeating the entire dashboard",
+      "review": "Is each visible detail relevant to the claim?",
+      "related_sources": [
+        "lapa",
+        "curated",
+        "apple"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P012",
+      "category": "marketing-story",
+      "platforms": [
+        "web"
+      ],
+      "title": "Before-and-after workflow",
+      "job": "Explain reduced effort",
+      "composition": "Hold the task constant; compare the actual steps or artifacts in aligned columns",
+      "avoid": "Invented time savings and unfair comparisons",
+      "review": "Are assumptions and measured results distinguishable?",
+      "related_sources": [
+        "lapa",
+        "curated",
+        "apple"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P013",
+      "category": "marketing-story",
+      "platforms": [
+        "web"
+      ],
+      "title": "Alternating narrative scale",
+      "job": "Sustain attention on a long page",
+      "composition": "Alternate a dominant demonstration, concise explanation and quiet supporting proof",
+      "avoid": "Equal-height card bands for every idea",
+      "review": "Inspect the full-page silhouette for intentional rhythm",
+      "related_sources": [
+        "lapa",
+        "curated",
+        "apple"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P014",
+      "category": "marketing-story",
+      "platforms": [
+        "web"
+      ],
+      "title": "Trust with provenance",
+      "job": "Reduce a specific buyer uncertainty",
+      "composition": "Place a relevant quote, source or verified assurance adjacent to the claim it supports",
+      "avoid": "Fabricated logos, metrics or security badges",
+      "review": "Can every trust signal be traced to approved evidence?",
+      "related_sources": [
+        "lapa",
+        "curated",
+        "apple"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P015",
+      "category": "marketing-story",
+      "platforms": [
+        "web"
+      ],
+      "title": "Pricing decision surface",
+      "job": "Help choose a suitable plan",
+      "composition": "Align comparable features and billing units; distinguish recommendation from availability",
+      "avoid": "Making the highest price the only clear action",
+      "review": "Check monthly/annual totals and narrow comparison behavior",
+      "related_sources": [
+        "lapa",
+        "curated",
+        "apple"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P016",
+      "category": "marketing-story",
+      "platforms": [
+        "web"
+      ],
+      "title": "Integration landscape",
+      "job": "Explain ecosystem fit",
+      "composition": "Group actual integrations by job and show one connected workflow",
+      "avoid": "Decorative logo clouds implying unsupported partners",
+      "review": "Can the visitor distinguish supported from planned integrations?",
+      "related_sources": [
+        "lapa",
+        "curated",
+        "apple"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P017",
+      "category": "marketing-story",
+      "platforms": [
+        "web"
+      ],
+      "title": "Setup narrative",
+      "job": "Explain effort to first value",
+      "composition": "Show actual milestones, required access and the first useful result",
+      "avoid": "A generic three-step sequence that hides prerequisites",
+      "review": "Can the visitor predict setup effort and dependencies?",
+      "related_sources": [
+        "lapa",
+        "curated",
+        "apple"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P018",
+      "category": "marketing-story",
+      "platforms": [
+        "web"
+      ],
+      "title": "Customer-story feature",
+      "job": "Make a use case concrete",
+      "composition": "Anchor a genuine story in its context, challenge, product action and supported outcome",
+      "avoid": "Unapproved portraits and synthetic testimonials",
+      "review": "Confirm attribution and avoid implying typical results",
+      "related_sources": [
+        "lapa",
+        "curated",
+        "apple"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P019",
+      "category": "marketing-story",
+      "platforms": [
+        "web"
+      ],
+      "title": "FAQ by uncertainty",
+      "job": "Resolve remaining objections",
+      "composition": "Order questions by real purchase or use uncertainty; put essential facts outside collapsed content",
+      "avoid": "Using FAQ as storage for core product explanation",
+      "review": "Can users find cancellation, compatibility and support details?",
+      "related_sources": [
+        "lapa",
+        "curated",
+        "apple"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P020",
+      "category": "marketing-story",
+      "platforms": [
+        "web"
+      ],
+      "title": "Closing decision",
+      "job": "Offer a natural next step",
+      "composition": "Restate the outcome briefly and present a primary action with any necessary commitment detail",
+      "avoid": "A second oversized hero with unrelated claims",
+      "review": "Does the CTA match earlier destinations and expectations?",
+      "related_sources": [
+        "lapa",
+        "curated",
+        "apple"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P021",
+      "category": "visual-composition",
+      "platforms": [
+        "all"
+      ],
+      "title": "Quiet canvas with concentrated accent",
+      "job": "Create confident focus",
+      "composition": "Use neutral large surfaces; reserve saturated color for one focal region and meaningful actions",
+      "avoid": "Accenting every badge, border and headline",
+      "review": "Can the eye identify the main action immediately?",
+      "related_sources": [
+        "curated",
+        "lapa",
+        "user-01",
+        "user-02",
+        "user-06"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P022",
+      "category": "visual-composition",
+      "platforms": [
+        "all"
+      ],
+      "title": "Dark luminous stage",
+      "job": "Present a dimensional visual",
+      "composition": "Keep a near-dark base, localized illumination and readable foreground hierarchy",
+      "avoid": "Bloom around all text and low-contrast secondary controls",
+      "review": "Check luminance separation without effects",
+      "related_sources": [
+        "curated",
+        "lapa",
+        "user-01",
+        "user-02",
+        "user-06"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P023",
+      "category": "visual-composition",
+      "platforms": [
+        "all"
+      ],
+      "title": "Soft environmental frame",
+      "job": "Give a product scene atmosphere",
+      "composition": "Separate a gentle contextual background from a crisp readable product surface",
+      "avoid": "Treating mockup presentation margins as application layout",
+      "review": "Does the actual app still work without the outer frame?",
+      "related_sources": [
+        "curated",
+        "lapa",
+        "user-01",
+        "user-02",
+        "user-06"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P024",
+      "category": "visual-composition",
+      "platforms": [
+        "all"
+      ],
+      "title": "Bold editorial accent panel",
+      "job": "Create an energetic opening",
+      "composition": "Use one large accent field, dark readable type and controlled image overlap",
+      "avoid": "Copying a neon palette without brand fit",
+      "review": "Test foreground contrast and compact image collisions",
+      "related_sources": [
+        "curated",
+        "lapa",
+        "user-01",
+        "user-02",
+        "user-06"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P025",
+      "category": "visual-composition",
+      "platforms": [
+        "all"
+      ],
+      "title": "Asymmetric feature mosaic",
+      "job": "Express varied capabilities",
+      "composition": "Make cell sizes reflect information priority and use a common internal alignment system",
+      "avoid": "A decorative bento grid of equally vague benefits",
+      "review": "Can each cell's hierarchy be read independently?",
+      "related_sources": [
+        "curated",
+        "lapa",
+        "user-01",
+        "user-02",
+        "user-06"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P026",
+      "category": "visual-composition",
+      "platforms": [
+        "all"
+      ],
+      "title": "Full-bleed evidence break",
+      "job": "Reset long-page rhythm",
+      "composition": "Let a relevant visual occupy the width between quieter content groups",
+      "avoid": "Full-bleed decoration that interrupts comprehension",
+      "review": "Does the transition preserve orientation and contrast?",
+      "related_sources": [
+        "curated",
+        "lapa",
+        "user-01",
+        "user-02",
+        "user-06"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P027",
+      "category": "visual-composition",
+      "platforms": [
+        "all"
+      ],
+      "title": "Layered product crop",
+      "job": "Suggest depth while retaining proof",
+      "composition": "Overlap a few meaningful product excerpts with a clear front-to-back hierarchy",
+      "avoid": "Tiny fake data and arbitrary perspective distortion",
+      "review": "Can key content be read at target display size?",
+      "related_sources": [
+        "curated",
+        "lapa",
+        "user-01",
+        "user-02",
+        "user-06"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P028",
+      "category": "visual-composition",
+      "platforms": [
+        "all"
+      ],
+      "title": "Monochrome with a signal color",
+      "job": "Support operational clarity",
+      "composition": "Use restrained surfaces and assign accent to selection or action; keep semantic alerts separate",
+      "avoid": "Using the same strong color for all states",
+      "review": "Can selection, warning and primary action be distinguished?",
+      "related_sources": [
+        "curated",
+        "lapa",
+        "user-01",
+        "user-02",
+        "user-06"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P029",
+      "category": "visual-composition",
+      "platforms": [
+        "all"
+      ],
+      "title": "Warm editorial typography",
+      "job": "Make a service approachable",
+      "composition": "Balance a characterful display face with a highly readable text face and calm measures",
+      "avoid": "Mixing font personalities with no hierarchy",
+      "review": "Check real body copy, numerals and localization",
+      "related_sources": [
+        "curated",
+        "lapa",
+        "user-01",
+        "user-02",
+        "user-06"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P030",
+      "category": "visual-composition",
+      "platforms": [
+        "all"
+      ],
+      "title": "Precision technical surface",
+      "job": "Communicate exactness",
+      "composition": "Use disciplined alignment, tabular numbers and restrained annotations around actual evidence",
+      "avoid": "Decorative pseudo-technical labels and fake telemetry",
+      "review": "Do details explain the system rather than merely decorate it?",
+      "related_sources": [
+        "curated",
+        "lapa",
+        "user-01",
+        "user-02",
+        "user-06"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P031",
+      "category": "visual-detail",
+      "platforms": [
+        "all"
+      ],
+      "title": "Optical icon alignment",
+      "job": "Make controls feel balanced",
+      "composition": "Align icon visual weight with text rather than blindly centering its bounding box",
+      "avoid": "Different icon families and stroke weights in one toolbar",
+      "review": "Compare adjacent controls at actual size",
+      "related_sources": [
+        "spectrum",
+        "fluent",
+        "carbon",
+        "user-05"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P032",
+      "category": "visual-detail",
+      "platforms": [
+        "all"
+      ],
+      "title": "Nested corner hierarchy",
+      "job": "Unify layered surfaces",
+      "composition": "Relate inner and outer radii to padding and surface role",
+      "avoid": "The same radius on every nested shape",
+      "review": "Inspect inset controls and compact cards together",
+      "related_sources": [
+        "spectrum",
+        "fluent",
+        "carbon",
+        "user-05"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P033",
+      "category": "visual-detail",
+      "platforms": [
+        "all"
+      ],
+      "title": "Spacing by relationship",
+      "job": "Communicate grouping",
+      "composition": "Keep label-to-value spacing tighter than item-to-item and group-to-group spacing",
+      "avoid": "A single gap token applied to every relationship",
+      "review": "Does grouping remain clear without dividers?",
+      "related_sources": [
+        "spectrum",
+        "fluent",
+        "carbon",
+        "user-05"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P034",
+      "category": "visual-detail",
+      "platforms": [
+        "all"
+      ],
+      "title": "Headline wrapping control",
+      "job": "Preserve meaning and balance",
+      "composition": "Choose measure and fluid scale around natural phrase boundaries",
+      "avoid": "Hard line breaks that fail on another viewport",
+      "review": "Test adjacent widths and longer localized headlines",
+      "related_sources": [
+        "spectrum",
+        "fluent",
+        "carbon",
+        "user-05"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P035",
+      "category": "visual-detail",
+      "platforms": [
+        "all"
+      ],
+      "title": "Subtle surface separation",
+      "job": "Reduce visual noise",
+      "composition": "Use the weakest effective combination of background, border and elevation",
+      "avoid": "Border plus heavy shadow plus gradient on every panel",
+      "review": "Does grouping remain clear in both supported themes?",
+      "related_sources": [
+        "spectrum",
+        "fluent",
+        "carbon",
+        "user-05"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P036",
+      "category": "visual-detail",
+      "platforms": [
+        "all"
+      ],
+      "title": "Numeric typography",
+      "job": "Make quantities comparable",
+      "composition": "Use consistent units, tabular figures when useful and aligned decimals",
+      "avoid": "Mixing precision and units within a comparison",
+      "review": "Can values be compared by scanning a column?",
+      "related_sources": [
+        "spectrum",
+        "fluent",
+        "carbon",
+        "user-05"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P037",
+      "category": "visual-detail",
+      "platforms": [
+        "all"
+      ],
+      "title": "Quiet metadata hierarchy",
+      "job": "Keep secondary detail available",
+      "composition": "Reduce emphasis through role and placement while preserving legibility",
+      "avoid": "Tiny low-contrast metadata used to look sophisticated",
+      "review": "Inspect actual viewing size and larger text",
+      "related_sources": [
+        "spectrum",
+        "fluent",
+        "carbon",
+        "user-05"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P038",
+      "category": "visual-detail",
+      "platforms": [
+        "all"
+      ],
+      "title": "Coherent illustration treatment",
+      "job": "Make assets feel native to the brand",
+      "composition": "Match palette, perspective, lighting and level of detail across assets",
+      "avoid": "Combining unrelated stock, 3D and line art without a concept",
+      "review": "Would the assets still look related without surrounding UI?",
+      "related_sources": [
+        "spectrum",
+        "fluent",
+        "carbon",
+        "user-05"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P039",
+      "category": "visual-detail",
+      "platforms": [
+        "all"
+      ],
+      "title": "Purposeful negative space",
+      "job": "Create a clear focal area",
+      "composition": "Allocate breathing room according to importance and content density",
+      "avoid": "Empty space that pushes useful content far below the fold",
+      "review": "Compare opening screen and full-page rhythm",
+      "related_sources": [
+        "spectrum",
+        "fluent",
+        "carbon",
+        "user-05"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P040",
+      "category": "visual-detail",
+      "platforms": [
+        "all"
+      ],
+      "title": "State-consistent controls",
+      "job": "Keep polish during interaction",
+      "composition": "Carry geometry and type through default, focus, hover, pending and disabled states",
+      "avoid": "Polishing only the default screenshot",
+      "review": "Compare the entire state strip at identical dimensions",
+      "related_sources": [
+        "spectrum",
+        "fluent",
+        "carbon",
+        "user-05"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P041",
+      "category": "navigation",
+      "platforms": [
+        "all"
+      ],
+      "title": "List-detail workspace",
+      "job": "Browse and inspect without losing place",
+      "composition": "Show list and detail together when space permits; preserve selection when collapsing",
+      "avoid": "Resetting list scroll on every return",
+      "review": "Select, resize, go back and verify context survives",
+      "related_sources": [
+        "aria",
+        "apple-hig",
+        "android-adaptive",
+        "raycast"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P042",
+      "category": "navigation",
+      "platforms": [
+        "all"
+      ],
+      "title": "Task-oriented sidebar",
+      "job": "Provide stable orientation",
+      "composition": "Group destinations by user job and keep active location distinct from hover",
+      "avoid": "A flat wall of equally weighted links",
+      "review": "Can users distinguish destination from action?",
+      "related_sources": [
+        "aria",
+        "apple-hig",
+        "android-adaptive",
+        "raycast"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P043",
+      "category": "navigation",
+      "platforms": [
+        "all"
+      ],
+      "title": "Bottom navigation",
+      "job": "Reach primary mobile destinations",
+      "composition": "Use a small stable set with meaningful labels and persistent selection",
+      "avoid": "Turning secondary commands into main destinations",
+      "review": "Check back behavior and large text labels",
+      "related_sources": [
+        "aria",
+        "apple-hig",
+        "android-adaptive",
+        "raycast"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P044",
+      "category": "navigation",
+      "platforms": [
+        "all"
+      ],
+      "title": "Command palette",
+      "job": "Accelerate frequent actions",
+      "composition": "Group commands and destinations, expose shortcuts and preserve a discoverable menu path",
+      "avoid": "Making keyboard shortcuts the only access",
+      "review": "Can a new user complete the same task without shortcuts?",
+      "related_sources": [
+        "aria",
+        "apple-hig",
+        "android-adaptive",
+        "raycast"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P045",
+      "category": "navigation",
+      "platforms": [
+        "all"
+      ],
+      "title": "Breadcrumb hierarchy",
+      "job": "Explain deep location",
+      "composition": "Show meaningful ancestors with current item as context",
+      "avoid": "Using breadcrumbs as a browsing-history trail",
+      "review": "Does each ancestor lead to the expected parent?",
+      "related_sources": [
+        "aria",
+        "apple-hig",
+        "android-adaptive",
+        "raycast"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P046",
+      "category": "navigation",
+      "platforms": [
+        "all"
+      ],
+      "title": "Local tabs",
+      "job": "Switch peer views",
+      "composition": "Keep labels short, active state clear and panel context stable",
+      "avoid": "Using tabs for unrelated navigation levels",
+      "review": "Test keyboard selection and deep-link expectations",
+      "related_sources": [
+        "aria",
+        "apple-hig",
+        "android-adaptive",
+        "raycast"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P047",
+      "category": "navigation",
+      "platforms": [
+        "all"
+      ],
+      "title": "Workspace switcher",
+      "job": "Change tenant or project safely",
+      "composition": "Separate account identity from active workspace and retain context where safe",
+      "avoid": "Ambiguous actions that cross organizational boundaries",
+      "review": "Can the user always identify which workspace receives an action?",
+      "related_sources": [
+        "aria",
+        "apple-hig",
+        "android-adaptive",
+        "raycast"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P048",
+      "category": "navigation",
+      "platforms": [
+        "all"
+      ],
+      "title": "Progressive disclosure menu",
+      "job": "Keep rare actions accessible",
+      "composition": "Expose frequent commands and group infrequent ones behind a labeled affordance",
+      "avoid": "Hiding critical recovery under an unlabeled icon",
+      "review": "Can the action be found with touch and keyboard?",
+      "related_sources": [
+        "aria",
+        "apple-hig",
+        "android-adaptive",
+        "raycast"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P049",
+      "category": "navigation",
+      "platforms": [
+        "all"
+      ],
+      "title": "Navigation rail adaptation",
+      "job": "Use intermediate width well",
+      "composition": "Translate compact navigation into a rail or sidebar based on available space",
+      "avoid": "Changing terminology as the window grows",
+      "review": "Does the same destination remain recognizable across sizes?",
+      "related_sources": [
+        "aria",
+        "apple-hig",
+        "android-adaptive",
+        "raycast"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P050",
+      "category": "navigation",
+      "platforms": [
+        "all"
+      ],
+      "title": "Deep-link recovery",
+      "job": "Handle direct entry gracefully",
+      "composition": "Reconstruct necessary context and show a useful fallback for missing items",
+      "avoid": "A blank detail page without navigation",
+      "review": "Open an expired or unauthorized link and inspect recovery",
+      "related_sources": [
+        "aria",
+        "apple-hig",
+        "android-adaptive",
+        "raycast"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P051",
+      "category": "search-discovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Search with scoped results",
+      "job": "Find a known object",
+      "composition": "Show query, scope, result count and recognizable result metadata together",
+      "avoid": "Unexplained mixed result types",
+      "review": "Can users tell why an item matched?",
+      "related_sources": [
+        "airbnb",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P052",
+      "category": "search-discovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Faceted filtering",
+      "job": "Narrow a large collection",
+      "composition": "Expose relevant facets, active filters and an obvious reset",
+      "avoid": "Filters that silently remove all results",
+      "review": "Check empty results and retained query state",
+      "related_sources": [
+        "airbnb",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P053",
+      "category": "search-discovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Search suggestions",
+      "job": "Reduce typing effort",
+      "composition": "Separate recent, suggested and exact results with clear labels",
+      "avoid": "Suggestions that unexpectedly submit a destructive action",
+      "review": "Test keyboard, composition input and cancellation",
+      "related_sources": [
+        "airbnb",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P054",
+      "category": "search-discovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Saved views",
+      "job": "Support repeated investigation",
+      "composition": "Let users name a meaningful filter/sort combination and show unsaved changes",
+      "avoid": "Saving hidden transient state without explanation",
+      "review": "Reload and verify the named view reconstructs its scope",
+      "related_sources": [
+        "airbnb",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P055",
+      "category": "search-discovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Map-list discovery",
+      "job": "Connect location and options",
+      "composition": "Synchronize selection between map and list while preserving independent exploration",
+      "avoid": "Moving the map whenever the user scrolls the list",
+      "review": "Check keyboard access to the same result information",
+      "related_sources": [
+        "airbnb",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P056",
+      "category": "search-discovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Date-range selection",
+      "job": "Set a meaningful time window",
+      "composition": "Pair calendar navigation with clear start/end feedback and direct input where appropriate",
+      "avoid": "Unclear inclusive endpoints and timezone assumptions",
+      "review": "Try same-day, reversed, unavailable and boundary dates",
+      "related_sources": [
+        "airbnb",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P057",
+      "category": "search-discovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Empty search assistance",
+      "job": "Recover from no matches",
+      "composition": "Repeat the query, expose active constraints and offer a specific relaxation",
+      "avoid": "Replacing no-results with promotional content",
+      "review": "Can the user recover without retyping everything?",
+      "related_sources": [
+        "airbnb",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P058",
+      "category": "search-discovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Sort controls",
+      "job": "Explain ordering",
+      "composition": "Name the ordering dimension and direction with a stable default",
+      "avoid": "Reordering results without visible reason",
+      "review": "Does selection remain understandable after sort changes?",
+      "related_sources": [
+        "airbnb",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P059",
+      "category": "search-discovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Recent activity entry",
+      "job": "Resume interrupted work",
+      "composition": "Show recognizable item names, context and time groupings",
+      "avoid": "Displaying inaccessible or irrelevant private activity",
+      "review": "Open an item after access changes and inspect the result",
+      "related_sources": [
+        "airbnb",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P060",
+      "category": "search-discovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Discovery categories",
+      "job": "Help unfamiliar users browse",
+      "composition": "Use understandable categories with representative examples and clear overlap",
+      "avoid": "Internal taxonomy that users cannot predict",
+      "review": "Can a first-time visitor choose a plausible path?",
+      "related_sources": [
+        "airbnb",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P061",
+      "category": "forms",
+      "platforms": [
+        "all"
+      ],
+      "title": "Single-column task form",
+      "job": "Reduce scanning ambiguity",
+      "composition": "Order fields by the user's mental sequence with visible labels and grouped related inputs",
+      "avoid": "Multi-column layouts that obscure input order",
+      "review": "Complete it using keyboard and narrow width",
+      "related_sources": [
+        "govuk",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P062",
+      "category": "forms",
+      "platforms": [
+        "all"
+      ],
+      "title": "Inline validation",
+      "job": "Help correction at the right time",
+      "composition": "Place specific errors next to fields and retain entered values",
+      "avoid": "Showing errors before users have reasonably answered",
+      "review": "Can users locate and correct all invalid fields?",
+      "related_sources": [
+        "govuk",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P063",
+      "category": "forms",
+      "platforms": [
+        "all"
+      ],
+      "title": "Error summary",
+      "job": "Recover from a long failed submission",
+      "composition": "Summarize actionable errors and link each to its field",
+      "avoid": "A generic toast as the only error indication",
+      "review": "Activate each summary link and verify focus placement",
+      "related_sources": [
+        "govuk",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P064",
+      "category": "forms",
+      "platforms": [
+        "all"
+      ],
+      "title": "Optional fields",
+      "job": "Reduce uncertainty about required effort",
+      "composition": "Clearly distinguish required and optional inputs using a consistent convention",
+      "avoid": "Asterisks with no explanation",
+      "review": "Can users predict the minimum valid submission?",
+      "related_sources": [
+        "govuk",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P065",
+      "category": "forms",
+      "platforms": [
+        "all"
+      ],
+      "title": "Password entry",
+      "job": "Support secure successful entry",
+      "composition": "Offer visible criteria, reveal control and password-manager compatibility",
+      "avoid": "Blocking paste or relying on hidden complexity rules",
+      "review": "Test autofill, reveal and error recovery",
+      "related_sources": [
+        "govuk",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P066",
+      "category": "forms",
+      "platforms": [
+        "all"
+      ],
+      "title": "File upload queue",
+      "job": "Explain transfer progress",
+      "composition": "Show file names, individual status, cancellation and actionable failures",
+      "avoid": "One spinner for many files",
+      "review": "Retry one failed file without duplicating completed uploads",
+      "related_sources": [
+        "govuk",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P067",
+      "category": "forms",
+      "platforms": [
+        "all"
+      ],
+      "title": "Multi-step application",
+      "job": "Break a long task coherently",
+      "composition": "Group steps by purpose and preserve completed answers with review navigation",
+      "avoid": "Progress percentages that misrepresent effort",
+      "review": "Go back, reload and resume without losing answers",
+      "related_sources": [
+        "govuk",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P068",
+      "category": "forms",
+      "platforms": [
+        "all"
+      ],
+      "title": "Autosave editor",
+      "job": "Protect ongoing work",
+      "composition": "Show pending/saved/error states near the editing context",
+      "avoid": "A permanent Saved label despite failed persistence",
+      "review": "Disconnect, edit and inspect recovery behavior",
+      "related_sources": [
+        "govuk",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P069",
+      "category": "forms",
+      "platforms": [
+        "all"
+      ],
+      "title": "Conditional fields",
+      "job": "Reveal only relevant input",
+      "composition": "Keep the trigger and revealed fields spatially connected and retain sensible focus",
+      "avoid": "Surprising layout jumps and stale hidden values",
+      "review": "Toggle the condition and verify submitted data",
+      "related_sources": [
+        "govuk",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P070",
+      "category": "forms",
+      "platforms": [
+        "all"
+      ],
+      "title": "Review before submit",
+      "job": "Prevent consequential mistakes",
+      "composition": "Summarize meaningful choices with focused edit paths and exact final action",
+      "avoid": "A generic confirmation with no reviewable details",
+      "review": "Edit one item and return without losing the rest",
+      "related_sources": [
+        "govuk",
+        "aria",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P071",
+      "category": "onboarding",
+      "platforms": [
+        "all"
+      ],
+      "title": "First-value setup",
+      "job": "Help users experience value quickly",
+      "composition": "Ask only what enables the first useful result and defer optional preferences",
+      "avoid": "A lengthy profile questionnaire before product value",
+      "review": "Can users reach a meaningful outcome with minimal inputs?",
+      "related_sources": [
+        "todoist",
+        "headspace",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P072",
+      "category": "onboarding",
+      "platforms": [
+        "all"
+      ],
+      "title": "Contextual permission request",
+      "job": "Explain a device capability",
+      "composition": "Connect the request to the action and explain the denial path before invoking the OS prompt",
+      "avoid": "A wall of permissions at first launch",
+      "review": "Deny once and confirm a usable alternative",
+      "related_sources": [
+        "todoist",
+        "headspace",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P073",
+      "category": "onboarding",
+      "platforms": [
+        "all"
+      ],
+      "title": "Import with preview",
+      "job": "Bring existing work safely",
+      "composition": "Show source, sample mapping, expected changes and error handling",
+      "avoid": "Importing unreviewed data into a live workspace",
+      "review": "Can users identify and correct a mapping error?",
+      "related_sources": [
+        "todoist",
+        "headspace",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P074",
+      "category": "onboarding",
+      "platforms": [
+        "all"
+      ],
+      "title": "Starter templates",
+      "job": "Reduce blank-page anxiety",
+      "composition": "Offer a few task-based starting points with realistic previews",
+      "avoid": "A giant gallery with no decision guidance",
+      "review": "Can a user preview before committing?",
+      "related_sources": [
+        "todoist",
+        "headspace",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P075",
+      "category": "onboarding",
+      "platforms": [
+        "all"
+      ],
+      "title": "Guided sample project",
+      "job": "Teach through a real task",
+      "composition": "Use clearly labeled sample data and an easy route to create real work",
+      "avoid": "Presenting samples as live user data",
+      "review": "Can the user distinguish and remove the sample?",
+      "related_sources": [
+        "todoist",
+        "headspace",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P076",
+      "category": "onboarding",
+      "platforms": [
+        "all"
+      ],
+      "title": "Progressive checklist",
+      "job": "Make setup resumable",
+      "composition": "List useful milestones with actual completion state and optional steps identified",
+      "avoid": "Artificial urgency and rewards for irrelevant actions",
+      "review": "Does completion reflect real persisted setup?",
+      "related_sources": [
+        "todoist",
+        "headspace",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P077",
+      "category": "onboarding",
+      "platforms": [
+        "all"
+      ],
+      "title": "Team invitation",
+      "job": "Bring collaborators into context",
+      "composition": "Explain role and access before sending; support pending and failed invitations",
+      "avoid": "Inviting people before the user understands permissions",
+      "review": "Can recipients and roles be reviewed before submission?",
+      "related_sources": [
+        "todoist",
+        "headspace",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P078",
+      "category": "onboarding",
+      "platforms": [
+        "all"
+      ],
+      "title": "Migration reassurance",
+      "job": "Explain what changes",
+      "composition": "Separate transferred, unsupported and unchanged items with recovery guidance",
+      "avoid": "Promising a complete migration without inspecting data",
+      "review": "Can users understand missing or partial imports?",
+      "related_sources": [
+        "todoist",
+        "headspace",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P079",
+      "category": "onboarding",
+      "platforms": [
+        "all"
+      ],
+      "title": "Feature discovery",
+      "job": "Teach when relevant",
+      "composition": "Offer short contextual help after an appropriate trigger with dismissal",
+      "avoid": "Tours that block the task on every visit",
+      "review": "Does dismissed help stay dismissed appropriately?",
+      "related_sources": [
+        "todoist",
+        "headspace",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P080",
+      "category": "onboarding",
+      "platforms": [
+        "all"
+      ],
+      "title": "Welcome-back orientation",
+      "job": "Resume after time away",
+      "composition": "Show meaningful recent work and actionable changes with a clear main task",
+      "avoid": "Repeating the entire onboarding experience",
+      "review": "Can returning users continue where they stopped?",
+      "related_sources": [
+        "todoist",
+        "headspace",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P081",
+      "category": "tables-collections",
+      "platforms": [
+        "web",
+        "desktop"
+      ],
+      "title": "Dense operational table",
+      "job": "Compare many records",
+      "composition": "Align columns by data type and prioritize the fields used for decisions",
+      "avoid": "Cards that prevent row comparison",
+      "review": "Can users compare values without opening every item?",
+      "related_sources": [
+        "carbon",
+        "boardui",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P082",
+      "category": "tables-collections",
+      "platforms": [
+        "web",
+        "desktop"
+      ],
+      "title": "Bulk selection",
+      "job": "Act on multiple records",
+      "composition": "Show selection count, scope and contextual actions; distinguish page from all results",
+      "avoid": "Hidden selection across filters",
+      "review": "Verify exactly which records an action affects",
+      "related_sources": [
+        "carbon",
+        "boardui",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P083",
+      "category": "tables-collections",
+      "platforms": [
+        "web",
+        "desktop"
+      ],
+      "title": "Inline table editing",
+      "job": "Make small corrections efficiently",
+      "composition": "Keep editing localized with clear commit/cancel and validation feedback",
+      "avoid": "Silent saves with no failure path",
+      "review": "Fail a save and verify the original value remains recoverable",
+      "related_sources": [
+        "carbon",
+        "boardui",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P084",
+      "category": "tables-collections",
+      "platforms": [
+        "web",
+        "desktop"
+      ],
+      "title": "Column customization",
+      "job": "Adapt a workspace to repeated tasks",
+      "composition": "Allow useful visibility/order changes with sensible defaults and reset",
+      "avoid": "An empty table after hiding all identifying columns",
+      "review": "Restore defaults and verify preferences persist",
+      "related_sources": [
+        "carbon",
+        "boardui",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P085",
+      "category": "tables-collections",
+      "platforms": [
+        "web",
+        "desktop"
+      ],
+      "title": "Grouped collection",
+      "job": "Expose meaningful hierarchy",
+      "composition": "Use group labels and counts with predictable collapse behavior",
+      "avoid": "Grouping that conceals selected items",
+      "review": "Does sorting preserve understandable grouping?",
+      "related_sources": [
+        "carbon",
+        "boardui",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P086",
+      "category": "tables-collections",
+      "platforms": [
+        "web",
+        "desktop"
+      ],
+      "title": "Virtualized collection",
+      "job": "Keep large data responsive",
+      "composition": "Preserve stable row identity, focus and accessible navigation while rendering selectively",
+      "avoid": "Jumping scroll positions after data updates",
+      "review": "Navigate and select near unloaded boundaries",
+      "related_sources": [
+        "carbon",
+        "boardui",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P087",
+      "category": "tables-collections",
+      "platforms": [
+        "web",
+        "desktop"
+      ],
+      "title": "Row detail expansion",
+      "job": "Inspect without leaving context",
+      "composition": "Reveal a focused detail region aligned with its parent row",
+      "avoid": "Nested interactive regions with ambiguous focus",
+      "review": "Expand several rows and inspect scan clarity",
+      "related_sources": [
+        "carbon",
+        "boardui",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P088",
+      "category": "tables-collections",
+      "platforms": [
+        "web",
+        "desktop"
+      ],
+      "title": "Pagination and load more",
+      "job": "Bound a large result set",
+      "composition": "State range or loaded count and preserve filters and selection rules",
+      "avoid": "An endless feed that prevents reaching useful controls",
+      "review": "Return from detail to the same result location",
+      "related_sources": [
+        "carbon",
+        "boardui",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P089",
+      "category": "tables-collections",
+      "platforms": [
+        "web",
+        "desktop"
+      ],
+      "title": "Collection empty state",
+      "job": "Start useful work",
+      "composition": "Explain whether there is no data, no access or no matching filter; offer the correct next action",
+      "avoid": "The same illustration and CTA for every empty state",
+      "review": "Can users identify why the collection is empty?",
+      "related_sources": [
+        "carbon",
+        "boardui",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P090",
+      "category": "tables-collections",
+      "platforms": [
+        "web",
+        "desktop"
+      ],
+      "title": "Kanban task board",
+      "job": "Track stage-based work",
+      "composition": "Use meaningful stages, compact card hierarchy and accessible move actions",
+      "avoid": "Drag-only operations and unsupported workflow states",
+      "review": "Move a card without dragging and handle failed persistence",
+      "related_sources": [
+        "carbon",
+        "boardui",
+        "react-aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P091",
+      "category": "data-visualization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Trend with context",
+      "job": "Understand change over time",
+      "composition": "Pair a readable trend with units, time scope and a relevant comparison",
+      "avoid": "A decorative sparkline with no scale or period",
+      "review": "Can users explain what increased and over what interval?",
+      "related_sources": [
+        "carbon",
+        "spectrum",
+        "boardui"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P092",
+      "category": "data-visualization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Metric with denominator",
+      "job": "Interpret a headline number",
+      "composition": "Show definition, period and denominator or baseline near the value",
+      "avoid": "Percentages with unclear populations",
+      "review": "Can users distinguish count, rate and change?",
+      "related_sources": [
+        "carbon",
+        "spectrum",
+        "boardui"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P093",
+      "category": "data-visualization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Ranked comparison",
+      "job": "Compare categories",
+      "composition": "Use aligned bars or rows with readable labels and consistent units",
+      "avoid": "Unnecessary 3D and misleading baselines",
+      "review": "Can the largest and smallest values be identified accurately?",
+      "related_sources": [
+        "carbon",
+        "spectrum",
+        "boardui"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P094",
+      "category": "data-visualization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Distribution view",
+      "job": "Understand spread",
+      "composition": "Show bins or intervals with a clear population and scale",
+      "avoid": "Only showing an average for a highly variable set",
+      "review": "Can users detect concentration and outliers?",
+      "related_sources": [
+        "carbon",
+        "spectrum",
+        "boardui"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P095",
+      "category": "data-visualization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Time-range dashboard",
+      "job": "Explore a coherent period",
+      "composition": "Synchronize relevant charts and disclose differing refresh windows",
+      "avoid": "Charts that silently use different periods",
+      "review": "Change the range and confirm every affected panel updates",
+      "related_sources": [
+        "carbon",
+        "spectrum",
+        "boardui"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P096",
+      "category": "data-visualization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Accessible chart detail",
+      "job": "Read values without pointer precision",
+      "composition": "Provide focusable data access or a table alternative with units",
+      "avoid": "Tooltip-only essential information",
+      "review": "Can keyboard and screen-reader users access equivalent values?",
+      "related_sources": [
+        "carbon",
+        "spectrum",
+        "boardui"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P097",
+      "category": "data-visualization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Live-status display",
+      "job": "Understand freshness",
+      "composition": "Show update time, connection state and stale-data treatment",
+      "avoid": "Animating old values as though live",
+      "review": "Disconnect and verify stale information is identified",
+      "related_sources": [
+        "carbon",
+        "spectrum",
+        "boardui"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P098",
+      "category": "data-visualization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Goal progress",
+      "job": "Track a defined target",
+      "composition": "Show current value, target, period and remaining amount honestly",
+      "avoid": "A ring that implies precision the data lacks",
+      "review": "Can the user tell whether higher or lower is desirable?",
+      "related_sources": [
+        "carbon",
+        "spectrum",
+        "boardui"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P099",
+      "category": "data-visualization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Comparative small multiples",
+      "job": "Compare similar series",
+      "composition": "Use consistent scales and ordering where direct comparison matters",
+      "avoid": "Individually rescaling every chart without notice",
+      "review": "Can similar shapes be interpreted consistently?",
+      "related_sources": [
+        "carbon",
+        "spectrum",
+        "boardui"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P100",
+      "category": "data-visualization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Anomaly explanation",
+      "job": "Investigate a surprising value",
+      "composition": "Connect the flagged point to available evidence and an inspection path",
+      "avoid": "Presenting an inference as a proven cause",
+      "review": "Can users distinguish observed change from interpretation?",
+      "related_sources": [
+        "carbon",
+        "spectrum",
+        "boardui"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P101",
+      "category": "commerce",
+      "platforms": [
+        "all"
+      ],
+      "title": "Plan comparison",
+      "job": "Choose a subscription",
+      "composition": "Align billing periods, limits and inclusions; expose the total commitment before action",
+      "avoid": "Hidden fees and incomparable units",
+      "review": "Can the selected plan be explained without opening fine print?",
+      "related_sources": [
+        "stripe",
+        "airbnb",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P102",
+      "category": "commerce",
+      "platforms": [
+        "all"
+      ],
+      "title": "Checkout summary",
+      "job": "Confirm the purchase",
+      "composition": "Keep items, quantities, total and payment action in a clear reading order",
+      "avoid": "A dominant upsell obscuring the final cost",
+      "review": "Does changing quantity update the complete total?",
+      "related_sources": [
+        "stripe",
+        "airbnb",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P103",
+      "category": "commerce",
+      "platforms": [
+        "all"
+      ],
+      "title": "Address entry",
+      "job": "Provide a valid destination",
+      "composition": "Support locale-appropriate fields and editable suggestions",
+      "avoid": "Forcing every address into one country's format",
+      "review": "Try an address outside the default country",
+      "related_sources": [
+        "stripe",
+        "airbnb",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P104",
+      "category": "commerce",
+      "platforms": [
+        "all"
+      ],
+      "title": "Payment failure recovery",
+      "job": "Complete a failed payment",
+      "composition": "Explain the recoverable problem without exposing sensitive details and preserve safe input",
+      "avoid": "Retry loops with unclear charge status",
+      "review": "Can users tell whether an order was created?",
+      "related_sources": [
+        "stripe",
+        "airbnb",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P105",
+      "category": "commerce",
+      "platforms": [
+        "all"
+      ],
+      "title": "Order confirmation",
+      "job": "Establish what happened",
+      "composition": "Show a durable reference, purchased items and the next expected step",
+      "avoid": "Only a celebratory animation",
+      "review": "Can users revisit confirmation and find support?",
+      "related_sources": [
+        "stripe",
+        "airbnb",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P106",
+      "category": "commerce",
+      "platforms": [
+        "all"
+      ],
+      "title": "Subscription management",
+      "job": "Change an ongoing commitment",
+      "composition": "Show current plan, renewal date, change timing and resulting price",
+      "avoid": "Ambiguous immediate versus next-cycle changes",
+      "review": "Preview a change before confirming it",
+      "related_sources": [
+        "stripe",
+        "airbnb",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P107",
+      "category": "commerce",
+      "platforms": [
+        "all"
+      ],
+      "title": "Cancellation flow",
+      "job": "End a subscription clearly",
+      "composition": "Explain effective date and consequences with an obvious cancellation action",
+      "avoid": "Obstruction disguised as retention questions",
+      "review": "Can the user cancel without unrelated mandatory steps?",
+      "related_sources": [
+        "stripe",
+        "airbnb",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P108",
+      "category": "commerce",
+      "platforms": [
+        "all"
+      ],
+      "title": "Usage-based billing",
+      "job": "Explain variable costs",
+      "composition": "Connect usage units, rates, limits and current estimate",
+      "avoid": "A price number without the underlying calculation",
+      "review": "Can users understand how additional usage changes cost?",
+      "related_sources": [
+        "stripe",
+        "airbnb",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P109",
+      "category": "commerce",
+      "platforms": [
+        "all"
+      ],
+      "title": "Marketplace listing",
+      "job": "Evaluate an offering",
+      "composition": "Prioritize relevant imagery, price context, availability and reliable details",
+      "avoid": "Overloading cards with badges and truncated essentials",
+      "review": "Can users compare two listings on the same criteria?",
+      "related_sources": [
+        "stripe",
+        "airbnb",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P110",
+      "category": "commerce",
+      "platforms": [
+        "all"
+      ],
+      "title": "Availability selection",
+      "job": "Choose an eligible option",
+      "composition": "Show selectable and unavailable states with reasons where useful",
+      "avoid": "Letting users advance with impossible combinations",
+      "review": "Change dates or variants and verify availability remains coherent",
+      "related_sources": [
+        "stripe",
+        "airbnb",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P111",
+      "category": "collaboration",
+      "platforms": [
+        "all"
+      ],
+      "title": "Shared-document presence",
+      "job": "Understand concurrent work",
+      "composition": "Show lightweight presence near the affected content and distinguish viewing from editing",
+      "avoid": "Decorative cursors without real presence data",
+      "review": "Does presence disappear appropriately after disconnection?",
+      "related_sources": [
+        "figma",
+        "notion",
+        "linear"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P112",
+      "category": "collaboration",
+      "platforms": [
+        "all"
+      ],
+      "title": "Comment thread",
+      "job": "Discuss a precise item",
+      "composition": "Anchor a thread to recognizable context with author, time and resolved state",
+      "avoid": "Comments detached from the changed content",
+      "review": "Can users return to the exact referenced region?",
+      "related_sources": [
+        "figma",
+        "notion",
+        "linear"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P113",
+      "category": "collaboration",
+      "platforms": [
+        "all"
+      ],
+      "title": "Mention picker",
+      "job": "Notify the intended person",
+      "composition": "Show enough identity context and permission information to avoid ambiguity",
+      "avoid": "Selecting the wrong person with a common name",
+      "review": "Can a mention be removed before sending?",
+      "related_sources": [
+        "figma",
+        "notion",
+        "linear"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P114",
+      "category": "collaboration",
+      "platforms": [
+        "all"
+      ],
+      "title": "Activity history",
+      "job": "Understand meaningful changes",
+      "composition": "Group related events and make actor, action and target easy to scan",
+      "avoid": "Raw technical logs presented as user history",
+      "review": "Can users identify what changed and where?",
+      "related_sources": [
+        "figma",
+        "notion",
+        "linear"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P115",
+      "category": "collaboration",
+      "platforms": [
+        "all"
+      ],
+      "title": "Conflict resolution",
+      "job": "Recover concurrent edits",
+      "composition": "Preserve both versions and offer a clear comparison and resolution action",
+      "avoid": "Silently overwriting one person's work",
+      "review": "Can users recover content after a conflicting save?",
+      "related_sources": [
+        "figma",
+        "notion",
+        "linear"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P116",
+      "category": "collaboration",
+      "platforms": [
+        "all"
+      ],
+      "title": "Sharing dialog",
+      "job": "Grant understandable access",
+      "composition": "Separate link scope, invited people and roles; preview the resulting access",
+      "avoid": "Vague public/private toggles with hidden consequences",
+      "review": "Can the user state who will gain which access?",
+      "related_sources": [
+        "figma",
+        "notion",
+        "linear"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P117",
+      "category": "collaboration",
+      "platforms": [
+        "all"
+      ],
+      "title": "Review and approval",
+      "job": "Decide on a specific version",
+      "composition": "Present the artifact, requested decision and unresolved changes together",
+      "avoid": "Approving an unspecified or stale version",
+      "review": "Does approval remain tied to the reviewed version?",
+      "related_sources": [
+        "figma",
+        "notion",
+        "linear"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P118",
+      "category": "collaboration",
+      "platforms": [
+        "all"
+      ],
+      "title": "Team inbox",
+      "job": "Triage shared work",
+      "composition": "Show ownership, urgency and next action with clear assignment controls",
+      "avoid": "Multiple users unknowingly taking the same task",
+      "review": "Does assignment feedback reflect the shared state?",
+      "related_sources": [
+        "figma",
+        "notion",
+        "linear"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P119",
+      "category": "collaboration",
+      "platforms": [
+        "all"
+      ],
+      "title": "Version comparison",
+      "job": "Inspect changes",
+      "composition": "Align comparable content and distinguish additions, deletions and unchanged context",
+      "avoid": "Color-only differences and missing surrounding context",
+      "review": "Can a user explain a change without opening another view?",
+      "related_sources": [
+        "figma",
+        "notion",
+        "linear"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P120",
+      "category": "collaboration",
+      "platforms": [
+        "all"
+      ],
+      "title": "Collaborative handoff",
+      "job": "Transfer responsibility",
+      "composition": "Show current state, next owner, dependencies and expected next action",
+      "avoid": "A reassignment notification with no task context",
+      "review": "Can the recipient continue without reconstructing history?",
+      "related_sources": [
+        "figma",
+        "notion",
+        "linear"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P121",
+      "category": "ai-interfaces",
+      "platforms": [
+        "all"
+      ],
+      "title": "Grounded answer",
+      "job": "Evaluate generated content",
+      "composition": "Separate answer, supporting sources and uncertainty; keep citations tied to claims",
+      "avoid": "Decorative source chips that do not support the answer",
+      "review": "Can each cited passage be inspected?",
+      "related_sources": [
+        "affectui",
+        "kobra",
+        "notion"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P122",
+      "category": "ai-interfaces",
+      "platforms": [
+        "all"
+      ],
+      "title": "Streaming response",
+      "job": "Read an answer as it arrives",
+      "composition": "Keep reading position stable and provide stop plus a clear completion state",
+      "avoid": "Forced scrolling while the user reads earlier content",
+      "review": "Scroll away during generation and verify control is retained",
+      "related_sources": [
+        "affectui",
+        "kobra",
+        "notion"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P123",
+      "category": "ai-interfaces",
+      "platforms": [
+        "all"
+      ],
+      "title": "Action preview",
+      "job": "Review an agent's proposed change",
+      "composition": "Show target, exact change, consequences and approval boundary before execution",
+      "avoid": "A vague Proceed button for unspecified actions",
+      "review": "Can the user explain precisely what approval authorizes?",
+      "related_sources": [
+        "affectui",
+        "kobra",
+        "notion"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P124",
+      "category": "ai-interfaces",
+      "platforms": [
+        "all"
+      ],
+      "title": "Tool execution status",
+      "job": "Understand ongoing work",
+      "composition": "Show meaningful stages, available cancellation and actionable failures",
+      "avoid": "Invented progress percentages or simulated tool success",
+      "review": "Do statuses correspond to actual execution events?",
+      "related_sources": [
+        "affectui",
+        "kobra",
+        "notion"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P125",
+      "category": "ai-interfaces",
+      "platforms": [
+        "all"
+      ],
+      "title": "Generation composer",
+      "job": "Provide a clear request",
+      "composition": "Separate text input, attachments and mode with understandable defaults",
+      "avoid": "A crowded toolbar of unexplained icons",
+      "review": "Can users identify attached context before submitting?",
+      "related_sources": [
+        "affectui",
+        "kobra",
+        "notion"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P126",
+      "category": "ai-interfaces",
+      "platforms": [
+        "all"
+      ],
+      "title": "Editable generated draft",
+      "job": "Keep users in control",
+      "composition": "Present editable output with original context and explicit apply behavior",
+      "avoid": "Automatically replacing saved work with a draft",
+      "review": "Can users compare, revise and discard without loss?",
+      "related_sources": [
+        "affectui",
+        "kobra",
+        "notion"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P127",
+      "category": "ai-interfaces",
+      "platforms": [
+        "all"
+      ],
+      "title": "Agent task queue",
+      "job": "Manage concurrent work",
+      "composition": "Show per-task state, next action and ownership with progressive detail",
+      "avoid": "Every task represented by an endless spinner",
+      "review": "Can a failed task be retried independently?",
+      "related_sources": [
+        "affectui",
+        "kobra",
+        "notion"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P128",
+      "category": "ai-interfaces",
+      "platforms": [
+        "all"
+      ],
+      "title": "Model limitation feedback",
+      "job": "Explain an unavailable capability",
+      "composition": "State what is unavailable and offer a concrete supported next step",
+      "avoid": "Pretending an operation succeeded",
+      "review": "Can the user distinguish refusal, failure and missing access?",
+      "related_sources": [
+        "affectui",
+        "kobra",
+        "notion"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P129",
+      "category": "ai-interfaces",
+      "platforms": [
+        "all"
+      ],
+      "title": "Generation history",
+      "job": "Revisit alternatives",
+      "composition": "Keep versions with useful labels, inputs and explicit selection",
+      "avoid": "Overwriting alternatives before a decision",
+      "review": "Can users reopen the exact selected version?",
+      "related_sources": [
+        "affectui",
+        "kobra",
+        "notion"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P130",
+      "category": "ai-interfaces",
+      "platforms": [
+        "all"
+      ],
+      "title": "Human correction loop",
+      "job": "Improve a specific result",
+      "composition": "Let feedback target a region or behavior and preserve accepted parts",
+      "avoid": "Regenerating everything after a small correction",
+      "review": "Does the revision address the feedback without unrelated drift?",
+      "related_sources": [
+        "affectui",
+        "kobra",
+        "notion"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P131",
+      "category": "mobile-structure",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Reachable primary action",
+      "job": "Support comfortable mobile use",
+      "composition": "Place the main action near the task and safe area without hiding content",
+      "avoid": "A persistent button covering the last form field",
+      "review": "Test small height with keyboard open",
+      "related_sources": [
+        "apple-hig",
+        "android-adaptive",
+        "android-material"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P132",
+      "category": "mobile-structure",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Adaptive list-detail",
+      "job": "Use tablet space meaningfully",
+      "composition": "Keep a single task model while moving between one and two panes",
+      "avoid": "Stretching a phone column across the tablet",
+      "review": "Does selection survive rotation or resizing?",
+      "related_sources": [
+        "apple-hig",
+        "android-adaptive",
+        "android-material"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P133",
+      "category": "mobile-structure",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Bottom-sheet decision",
+      "job": "Resolve a focused choice",
+      "composition": "Use a clear title, limited task and visible dismissal with appropriate height",
+      "avoid": "A complex multi-page workflow trapped in a small sheet",
+      "review": "Check keyboard, back gesture and expanded content",
+      "related_sources": [
+        "apple-hig",
+        "android-adaptive",
+        "android-material"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P134",
+      "category": "mobile-structure",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Full-screen focused task",
+      "job": "Support concentration",
+      "composition": "Reduce unrelated navigation while retaining a clear exit and saved-state behavior",
+      "avoid": "Hiding progress or making exit destructive without warning",
+      "review": "Can users leave and safely resume?",
+      "related_sources": [
+        "apple-hig",
+        "android-adaptive",
+        "android-material"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P135",
+      "category": "mobile-structure",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Safe-area composition",
+      "job": "Respect device boundaries",
+      "composition": "Place backgrounds and controls intentionally around system insets",
+      "avoid": "Hard-coded offsets for one device screenshot",
+      "review": "Inspect cutouts, gesture bars and landscape",
+      "related_sources": [
+        "apple-hig",
+        "android-adaptive",
+        "android-material"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P136",
+      "category": "mobile-structure",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Keyboard-aware form",
+      "job": "Maintain input visibility",
+      "composition": "Keep focused field and relevant action visible as the input method changes space",
+      "avoid": "Scrolling the entire form unexpectedly on each field",
+      "review": "Move through all fields with the keyboard open",
+      "related_sources": [
+        "apple-hig",
+        "android-adaptive",
+        "android-material"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P137",
+      "category": "mobile-structure",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Mobile search surface",
+      "job": "Find items with limited space",
+      "composition": "Give query entry priority and use a clear route back to prior context",
+      "avoid": "Compressing desktop filters into tiny controls",
+      "review": "Dismiss search and verify previous position returns",
+      "related_sources": [
+        "apple-hig",
+        "android-adaptive",
+        "android-material"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P138",
+      "category": "mobile-structure",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Navigation-back continuity",
+      "job": "Preserve orientation",
+      "composition": "Make back return to the logical prior context with state retained",
+      "avoid": "Treating back as a generic home button",
+      "review": "Test nested routes, modal dismissal and direct entry",
+      "related_sources": [
+        "apple-hig",
+        "android-adaptive",
+        "android-material"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P139",
+      "category": "mobile-structure",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Foldable posture adaptation",
+      "job": "Handle changing usable space",
+      "composition": "Base panes on available regions and preserve active task state",
+      "avoid": "Assuming the fold is just a wider phone",
+      "review": "Inspect a mid-task posture or window change",
+      "related_sources": [
+        "apple-hig",
+        "android-adaptive",
+        "android-material"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P140",
+      "category": "mobile-structure",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Large-text layout",
+      "job": "Keep content usable at accessibility sizes",
+      "composition": "Allow labels and controls to grow and rearrange related content",
+      "avoid": "Clipping text inside fixed-height rows",
+      "review": "Test the platform's larger text settings on the main task",
+      "related_sources": [
+        "apple-hig",
+        "android-adaptive",
+        "android-material"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P141",
+      "category": "mobile-tasks",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Quick capture",
+      "job": "Record an idea with little effort",
+      "composition": "Open directly into useful input with sensible defaults and clear saved feedback",
+      "avoid": "Requiring classification before capture",
+      "review": "Can a user create and find an item with minimal steps?",
+      "related_sources": [
+        "apple-hig",
+        "android-material",
+        "headspace",
+        "todoist"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P142",
+      "category": "mobile-tasks",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Swipe action alternative",
+      "job": "Speed common item actions",
+      "composition": "Expose swipe as an enhancement and provide a visible or menu alternative",
+      "avoid": "Making deletion available only through a hidden gesture",
+      "review": "Complete the same action without swiping",
+      "related_sources": [
+        "apple-hig",
+        "android-material",
+        "headspace",
+        "todoist"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P143",
+      "category": "mobile-tasks",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Camera capture review",
+      "job": "Choose a useful image",
+      "composition": "Show framing, capture feedback, retake and explicit use of the image",
+      "avoid": "Uploading immediately without a clear review state",
+      "review": "Can users retake or cancel before commitment?",
+      "related_sources": [
+        "apple-hig",
+        "android-material",
+        "headspace",
+        "todoist"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P144",
+      "category": "mobile-tasks",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Offline task completion",
+      "job": "Support intermittent connection",
+      "composition": "Distinguish local pending work from server-confirmed state",
+      "avoid": "Pretending queued changes are synchronized",
+      "review": "Reconnect and inspect duplicate/conflict handling",
+      "related_sources": [
+        "apple-hig",
+        "android-material",
+        "headspace",
+        "todoist"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P145",
+      "category": "mobile-tasks",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Permission-denied recovery",
+      "job": "Keep a task understandable",
+      "composition": "Explain the missing capability and offer a relevant settings path or alternative",
+      "avoid": "Repeatedly reopening a denied system prompt",
+      "review": "Can users continue without granting unrelated permissions?",
+      "related_sources": [
+        "apple-hig",
+        "android-material",
+        "headspace",
+        "todoist"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P146",
+      "category": "mobile-tasks",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Location precision",
+      "job": "Explain an uncertain location",
+      "composition": "Show accuracy or age where relevant and distinguish selected from current position",
+      "avoid": "A precise pin for stale or approximate data",
+      "review": "Can users understand the data's practical uncertainty?",
+      "related_sources": [
+        "apple-hig",
+        "android-material",
+        "headspace",
+        "todoist"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P147",
+      "category": "mobile-tasks",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Media playback controls",
+      "job": "Keep playback predictable",
+      "composition": "Make play/pause, progress and current item clear with accessible controls",
+      "avoid": "Custom gestures replacing essential buttons",
+      "review": "Test interruption, resume and background behavior",
+      "related_sources": [
+        "apple-hig",
+        "android-material",
+        "headspace",
+        "todoist"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P148",
+      "category": "mobile-tasks",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Notification preferences",
+      "job": "Let users control interruption",
+      "composition": "Group notifications by purpose and explain channels and timing",
+      "avoid": "One all-or-nothing permission masquerading as preferences",
+      "review": "Can a user keep essential alerts while reducing noise?",
+      "related_sources": [
+        "apple-hig",
+        "android-material",
+        "headspace",
+        "todoist"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P149",
+      "category": "mobile-tasks",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Biometric fallback",
+      "job": "Recover access when biometrics fail",
+      "composition": "Use platform authentication with an understandable fallback",
+      "avoid": "Custom UI implying an OS security guarantee",
+      "review": "Cancel biometric authentication and verify recovery",
+      "related_sources": [
+        "apple-hig",
+        "android-material",
+        "headspace",
+        "todoist"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P150",
+      "category": "mobile-tasks",
+      "platforms": [
+        "mobile"
+      ],
+      "title": "Mobile purchase review",
+      "job": "Prevent accidental commitment",
+      "composition": "Keep total and exact action visible with enough room for review",
+      "avoid": "A tiny confirmation squeezed above the keyboard",
+      "review": "Can the user inspect all meaningful purchase details?",
+      "related_sources": [
+        "apple-hig",
+        "android-material",
+        "headspace",
+        "todoist"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P151",
+      "category": "desktop-workspaces",
+      "platforms": [
+        "desktop"
+      ],
+      "title": "Resizable inspector workspace",
+      "job": "Edit while retaining context",
+      "composition": "Separate navigation, main canvas and inspector with useful minimum widths",
+      "avoid": "Three rigid columns in a small window",
+      "review": "Resize to minimum width and verify every task remains reachable",
+      "related_sources": [
+        "apple-hig",
+        "fluent",
+        "raycast",
+        "figma"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P152",
+      "category": "desktop-workspaces",
+      "platforms": [
+        "desktop"
+      ],
+      "title": "Command-first utility",
+      "job": "Accelerate frequent operations",
+      "composition": "Provide fast search, predictable result actions and visible shortcuts",
+      "avoid": "Keyboard-only affordances with no discoverability",
+      "review": "Complete a task with both keyboard and pointer",
+      "related_sources": [
+        "apple-hig",
+        "fluent",
+        "raycast",
+        "figma"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P153",
+      "category": "desktop-workspaces",
+      "platforms": [
+        "desktop"
+      ],
+      "title": "Document tabs",
+      "job": "Manage parallel work",
+      "composition": "Distinguish active, modified and pinned documents with clear close behavior",
+      "avoid": "Truncating every tab to an indistinguishable label",
+      "review": "Close an unsaved document and verify recovery",
+      "related_sources": [
+        "apple-hig",
+        "fluent",
+        "raycast",
+        "figma"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P154",
+      "category": "desktop-workspaces",
+      "platforms": [
+        "desktop"
+      ],
+      "title": "Window restoration",
+      "job": "Resume a working arrangement",
+      "composition": "Restore sensible size, position and document context within current displays",
+      "avoid": "Restoring a window off-screen",
+      "review": "Reopen after display configuration changes",
+      "related_sources": [
+        "apple-hig",
+        "fluent",
+        "raycast",
+        "figma"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P155",
+      "category": "desktop-workspaces",
+      "platforms": [
+        "desktop"
+      ],
+      "title": "Menu and shortcut coherence",
+      "job": "Use familiar desktop behavior",
+      "composition": "Match menu actions and shortcuts and avoid conflicting global bindings",
+      "avoid": "Inventing shortcuts for established platform commands",
+      "review": "Verify menu and shortcut perform the same scoped action",
+      "related_sources": [
+        "apple-hig",
+        "fluent",
+        "raycast",
+        "figma"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P156",
+      "category": "desktop-workspaces",
+      "platforms": [
+        "desktop"
+      ],
+      "title": "Drag-and-drop import",
+      "job": "Bring files into a workspace",
+      "composition": "Provide a clear drop target, accepted types and progress/error feedback",
+      "avoid": "Changing the whole window unexpectedly on drag",
+      "review": "Try unsupported and multiple files plus a picker alternative",
+      "related_sources": [
+        "apple-hig",
+        "fluent",
+        "raycast",
+        "figma"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P157",
+      "category": "desktop-workspaces",
+      "platforms": [
+        "desktop"
+      ],
+      "title": "Multi-selection editing",
+      "job": "Apply a shared change",
+      "composition": "Show selection scope and mixed values without silently normalizing them",
+      "avoid": "Treating mixed state as a blank default",
+      "review": "Change one field and verify untouched values remain distinct",
+      "related_sources": [
+        "apple-hig",
+        "fluent",
+        "raycast",
+        "figma"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P158",
+      "category": "desktop-workspaces",
+      "platforms": [
+        "desktop"
+      ],
+      "title": "Zoomable canvas",
+      "job": "Navigate spatial work",
+      "composition": "Separate zoom, selection and pan with understandable controls and reset",
+      "avoid": "Wheel behavior that traps users or steals normal scrolling",
+      "review": "Recover orientation after large zoom and pan changes",
+      "related_sources": [
+        "apple-hig",
+        "fluent",
+        "raycast",
+        "figma"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P159",
+      "category": "desktop-workspaces",
+      "platforms": [
+        "desktop"
+      ],
+      "title": "Context menu parity",
+      "job": "Expose local actions",
+      "composition": "Offer relevant commands with the same naming and availability as other access paths",
+      "avoid": "Hiding essential commands exclusively in right-click",
+      "review": "Complete the operation without a context menu",
+      "related_sources": [
+        "apple-hig",
+        "fluent",
+        "raycast",
+        "figma"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P160",
+      "category": "desktop-workspaces",
+      "platforms": [
+        "desktop"
+      ],
+      "title": "Background job center",
+      "job": "Manage longer operations",
+      "composition": "Keep work accessible with status, cancellation and results after navigation",
+      "avoid": "Blocking the entire workspace for a nonblocking job",
+      "review": "Navigate away and return to the actual job state",
+      "related_sources": [
+        "apple-hig",
+        "fluent",
+        "raycast",
+        "figma"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P161",
+      "category": "states-recovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "First-use empty state",
+      "job": "Start an empty workspace",
+      "composition": "Explain the value of the first item and provide a focused creation action",
+      "avoid": "A large illustration that hides how to begin",
+      "review": "Can a new user create the first useful item?",
+      "related_sources": [
+        "govuk",
+        "carbon",
+        "aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P162",
+      "category": "states-recovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Filtered-empty state",
+      "job": "Recover hidden results",
+      "composition": "Show active filters and a clear reset while preserving query context",
+      "avoid": "Suggesting data creation when data already exists",
+      "review": "Reset filters and verify results return",
+      "related_sources": [
+        "govuk",
+        "carbon",
+        "aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P163",
+      "category": "states-recovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Loading skeleton",
+      "job": "Communicate structure during loading",
+      "composition": "Reserve expected geometry and avoid implying data that has not arrived",
+      "avoid": "Endless shimmering with no error or timeout state",
+      "review": "Fail the request and inspect the transition",
+      "related_sources": [
+        "govuk",
+        "carbon",
+        "aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P164",
+      "category": "states-recovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Partial-data failure",
+      "job": "Keep usable information available",
+      "composition": "Identify the failed region with retry while retaining valid content",
+      "avoid": "Replacing the whole page for one failed widget",
+      "review": "Retry the failed region without losing current work",
+      "related_sources": [
+        "govuk",
+        "carbon",
+        "aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P165",
+      "category": "states-recovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Offline indicator",
+      "job": "Explain connectivity loss",
+      "composition": "Show offline status near affected actions and identify queued work",
+      "avoid": "A toast that disappears while the problem persists",
+      "review": "Attempt a write and inspect the pending/error state",
+      "related_sources": [
+        "govuk",
+        "carbon",
+        "aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P166",
+      "category": "states-recovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Destructive confirmation",
+      "job": "Prevent costly mistakes",
+      "composition": "Name the target, consequences and exact destructive action",
+      "avoid": "Generic Are you sure dialogs for every minor operation",
+      "review": "Can users identify what will be removed?",
+      "related_sources": [
+        "govuk",
+        "carbon",
+        "aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P167",
+      "category": "states-recovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Undoable action",
+      "job": "Recover from a reversible mistake",
+      "composition": "Confirm the action and provide a reliable undo path within its real limits",
+      "avoid": "Offering Undo when the backend cannot restore state",
+      "review": "Perform and undo with navigation or delayed response",
+      "related_sources": [
+        "govuk",
+        "carbon",
+        "aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P168",
+      "category": "states-recovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Session expiry",
+      "job": "Restore access without losing work",
+      "composition": "Preserve safe drafts and return to the task after authentication",
+      "avoid": "Silently dropping all input on redirect",
+      "review": "Expire a session mid-edit and inspect recovery",
+      "related_sources": [
+        "govuk",
+        "carbon",
+        "aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P169",
+      "category": "states-recovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Permission-limited state",
+      "job": "Explain unavailable actions",
+      "composition": "Show allowed work and a useful request-access path when appropriate",
+      "avoid": "A blank page or misleading empty collection",
+      "review": "Can users distinguish no data from no access?",
+      "related_sources": [
+        "govuk",
+        "carbon",
+        "aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P170",
+      "category": "states-recovery",
+      "platforms": [
+        "all"
+      ],
+      "title": "Success with next step",
+      "job": "Confirm completion clearly",
+      "composition": "State the completed outcome and the natural next action without noise",
+      "avoid": "Celebration that obscures the result",
+      "review": "Can users find the completed item afterward?",
+      "related_sources": [
+        "govuk",
+        "carbon",
+        "aria"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P171",
+      "category": "accessibility-localization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Visible focus system",
+      "job": "Support keyboard orientation",
+      "composition": "Make focus visible against every actual surface without changing layout",
+      "avoid": "Removing outlines for visual cleanliness",
+      "review": "Traverse primary controls in every supported theme",
+      "related_sources": [
+        "aria",
+        "govuk",
+        "react-aria",
+        "apple-hig"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P172",
+      "category": "accessibility-localization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Dialog focus lifecycle",
+      "job": "Keep modal interaction coherent",
+      "composition": "Move focus into the dialog, contain it appropriately and restore it on close",
+      "avoid": "Leaving keyboard users interacting behind the modal",
+      "review": "Open, complete and cancel using keyboard only",
+      "related_sources": [
+        "aria",
+        "govuk",
+        "react-aria",
+        "apple-hig"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P173",
+      "category": "accessibility-localization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Semantic action labels",
+      "job": "Explain controls to assistive technology",
+      "composition": "Use names that describe the action and distinguish repeated targets",
+      "avoid": "Unlabeled icon-only controls",
+      "review": "Read the control list with a screen reader",
+      "related_sources": [
+        "aria",
+        "govuk",
+        "react-aria",
+        "apple-hig"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P174",
+      "category": "accessibility-localization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Noncolor status cues",
+      "job": "Communicate state broadly",
+      "composition": "Pair meaningful color with text, shape or icon cues appropriate to the information",
+      "avoid": "Red/green as the only distinction",
+      "review": "Review the state in grayscale and through semantics",
+      "related_sources": [
+        "aria",
+        "govuk",
+        "react-aria",
+        "apple-hig"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P175",
+      "category": "accessibility-localization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Touch target spacing",
+      "job": "Reduce accidental actions",
+      "composition": "Provide usable hit regions and separation even for visually compact icons",
+      "avoid": "Making hit regions overlap",
+      "review": "Try adjacent actions on an actual compact device",
+      "related_sources": [
+        "aria",
+        "govuk",
+        "react-aria",
+        "apple-hig"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P176",
+      "category": "accessibility-localization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Text reflow",
+      "job": "Support zoom and narrow space",
+      "composition": "Let text and controls reflow without losing content or function",
+      "avoid": "Fixed widths and hidden overflow masking failures",
+      "review": "Inspect zoom, long content and minimum supported width",
+      "related_sources": [
+        "aria",
+        "govuk",
+        "react-aria",
+        "apple-hig"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P177",
+      "category": "accessibility-localization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Right-to-left composition",
+      "job": "Support RTL content",
+      "composition": "Use logical alignment and directional navigation while preserving non-directional icons",
+      "avoid": "Mirroring every icon and data visualization",
+      "review": "Inspect a real RTL locale with mixed numbers and text",
+      "related_sources": [
+        "aria",
+        "govuk",
+        "react-aria",
+        "apple-hig"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P178",
+      "category": "accessibility-localization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Localized content expansion",
+      "job": "Handle translation lengths",
+      "composition": "Allow labels to wrap or grow according to role and preserve priorities",
+      "avoid": "Ellipsizing every translated action",
+      "review": "Use longer realistic labels and error messages",
+      "related_sources": [
+        "aria",
+        "govuk",
+        "react-aria",
+        "apple-hig"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P179",
+      "category": "accessibility-localization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Locale-aware data",
+      "job": "Present familiar numbers and time",
+      "composition": "Format dates, currencies and units with explicit context where ambiguity matters",
+      "avoid": "Hard-coded punctuation or assumed timezone",
+      "review": "Compare locales and dates near timezone boundaries",
+      "related_sources": [
+        "aria",
+        "govuk",
+        "react-aria",
+        "apple-hig"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P180",
+      "category": "accessibility-localization",
+      "platforms": [
+        "all"
+      ],
+      "title": "Accessible motion alternative",
+      "job": "Preserve meaning with less motion",
+      "composition": "Replace spatial movement with clear state change while keeping the same information",
+      "avoid": "Removing content alongside its animation",
+      "review": "Complete the task with reduced motion enabled",
+      "related_sources": [
+        "aria",
+        "govuk",
+        "react-aria",
+        "apple-hig"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P181",
+      "category": "motion-choreography",
+      "platforms": [
+        "all"
+      ],
+      "title": "Staged product reveal",
+      "job": "Explain an opening composition",
+      "composition": "Reveal context, product and supporting detail in a meaningful sequence with immediate usable actions",
+      "avoid": "Delaying all content behind a long intro",
+      "review": "Inspect first frame, settled frame and reduced-motion state",
+      "related_sources": [
+        "motion",
+        "apple-motion",
+        "bencho",
+        "aceternity"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P182",
+      "category": "motion-choreography",
+      "platforms": [
+        "all"
+      ],
+      "title": "Shared-element transition",
+      "job": "Maintain object continuity",
+      "composition": "Keep the selected object recognizable as it moves into detail",
+      "avoid": "Animating unrelated elements as if they share identity",
+      "review": "Interrupt navigation and verify correct final selection",
+      "related_sources": [
+        "motion",
+        "apple-motion",
+        "bencho",
+        "aceternity"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P183",
+      "category": "motion-choreography",
+      "platforms": [
+        "all"
+      ],
+      "title": "Disclosure transition",
+      "job": "Explain expansion",
+      "composition": "Animate the relevant region without disturbing surrounding reading position",
+      "avoid": "Long springs on frequently used controls",
+      "review": "Toggle quickly and inspect focus and end state",
+      "related_sources": [
+        "motion",
+        "apple-motion",
+        "bencho",
+        "aceternity"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P184",
+      "category": "motion-choreography",
+      "platforms": [
+        "all"
+      ],
+      "title": "List insertion feedback",
+      "job": "Show a new item's location",
+      "composition": "Use restrained movement or highlight tied to the actual inserted item",
+      "avoid": "Animating the entire list for one addition",
+      "review": "Insert while scrolled and confirm orientation is retained",
+      "related_sources": [
+        "motion",
+        "apple-motion",
+        "bencho",
+        "aceternity"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P185",
+      "category": "motion-choreography",
+      "platforms": [
+        "all"
+      ],
+      "title": "Drag feedback",
+      "job": "Make direct manipulation tangible",
+      "composition": "Distinguish lifted item, eligible target and committed position",
+      "avoid": "Motion that implies a drop succeeded before persistence",
+      "review": "Fail the drop and inspect recovery plus keyboard alternative",
+      "related_sources": [
+        "motion",
+        "apple-motion",
+        "bencho",
+        "aceternity"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P186",
+      "category": "motion-choreography",
+      "platforms": [
+        "all"
+      ],
+      "title": "Scroll-linked narrative",
+      "job": "Connect progress to a story",
+      "composition": "Tie a short visual sequence to meaningful sections with a normal reading fallback",
+      "avoid": "Scroll hijacking and long trapped sections",
+      "review": "Use touch, keyboard, reduced motion and direct anchors",
+      "related_sources": [
+        "motion",
+        "apple-motion",
+        "bencho",
+        "aceternity"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P187",
+      "category": "motion-choreography",
+      "platforms": [
+        "all"
+      ],
+      "title": "Tab continuity",
+      "job": "Make peer-state changes clear",
+      "composition": "Keep shared geometry stable and transition only the content that changes",
+      "avoid": "A large slide suggesting a different navigation hierarchy",
+      "review": "Switch rapidly and verify selected state and content match",
+      "related_sources": [
+        "motion",
+        "apple-motion",
+        "bencho",
+        "aceternity"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P188",
+      "category": "motion-choreography",
+      "platforms": [
+        "all"
+      ],
+      "title": "Pending-to-result transition",
+      "job": "Show completion without confusion",
+      "composition": "Resolve waiting status into the actual result without moving the user's target",
+      "avoid": "Celebration before the operation is confirmed",
+      "review": "Handle success, failure and cancellation distinctly",
+      "related_sources": [
+        "motion",
+        "apple-motion",
+        "bencho",
+        "aceternity"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P189",
+      "category": "motion-choreography",
+      "platforms": [
+        "all"
+      ],
+      "title": "Ambient visual motion",
+      "job": "Add restrained atmosphere",
+      "composition": "Keep optional movement away from essential reading and pause when irrelevant",
+      "avoid": "Constant peripheral activity competing with the task",
+      "review": "Check distraction, resource use and static fallback",
+      "related_sources": [
+        "motion",
+        "apple-motion",
+        "bencho",
+        "aceternity"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P190",
+      "category": "motion-choreography",
+      "platforms": [
+        "all"
+      ],
+      "title": "Reversible micro-interaction",
+      "job": "Clarify a small state change",
+      "composition": "Tie feedback tightly to press, toggle or selection with an interruption-safe end state",
+      "avoid": "Decorative motion unrelated to actual state",
+      "review": "Repeat input quickly and verify state never desynchronizes",
+      "related_sources": [
+        "motion",
+        "apple-motion",
+        "bencho",
+        "aceternity"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P191",
+      "category": "settings-security",
+      "platforms": [
+        "all"
+      ],
+      "title": "Settings information architecture",
+      "job": "Find an infrequent configuration",
+      "composition": "Group settings by user purpose with clear labels and relevant search",
+      "avoid": "Internal subsystem names as categories",
+      "review": "Can users predict where an unfamiliar setting belongs?",
+      "related_sources": [
+        "1password",
+        "apple-hig",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P192",
+      "category": "settings-security",
+      "platforms": [
+        "all"
+      ],
+      "title": "Theme preference",
+      "job": "Control appearance",
+      "composition": "Distinguish explicit light/dark choices from following system preference",
+      "avoid": "A toggle whose meaning changes with current system mode",
+      "review": "Change the OS preference and verify intended behavior",
+      "related_sources": [
+        "1password",
+        "apple-hig",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P193",
+      "category": "settings-security",
+      "platforms": [
+        "all"
+      ],
+      "title": "Notification schedule",
+      "job": "Control timing",
+      "composition": "Show timezone, active days and exceptions with a clear preview",
+      "avoid": "A schedule that silently uses server time",
+      "review": "Inspect overnight intervals and timezone changes",
+      "related_sources": [
+        "1password",
+        "apple-hig",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P194",
+      "category": "settings-security",
+      "platforms": [
+        "all"
+      ],
+      "title": "Connected account management",
+      "job": "Understand integrations",
+      "composition": "Show provider identity, granted scope, status and disconnect effects",
+      "avoid": "A logo with no account identity",
+      "review": "Connect two accounts and distinguish their permissions",
+      "related_sources": [
+        "1password",
+        "apple-hig",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P195",
+      "category": "settings-security",
+      "platforms": [
+        "all"
+      ],
+      "title": "Session management",
+      "job": "Review account access",
+      "composition": "Show recognizable device context, recent activity and revoke action",
+      "avoid": "Claiming exact location from uncertain data",
+      "review": "Revoke a session and explain current-session effects",
+      "related_sources": [
+        "1password",
+        "apple-hig",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P196",
+      "category": "settings-security",
+      "platforms": [
+        "all"
+      ],
+      "title": "Role assignment",
+      "job": "Grant the right authority",
+      "composition": "Explain roles through meaningful capabilities and preview affected users",
+      "avoid": "Cryptic role names or defaulting to excessive access",
+      "review": "Can the user identify who gains permission?",
+      "related_sources": [
+        "1password",
+        "apple-hig",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P197",
+      "category": "settings-security",
+      "platforms": [
+        "all"
+      ],
+      "title": "Data export",
+      "job": "Retrieve personal or workspace data",
+      "composition": "Explain scope, format, availability and status of the export",
+      "avoid": "An instant download claim for an asynchronous job",
+      "review": "Track failure and completion without repeated requests",
+      "related_sources": [
+        "1password",
+        "apple-hig",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P198",
+      "category": "settings-security",
+      "platforms": [
+        "all"
+      ],
+      "title": "Account deletion",
+      "job": "Explain irreversible consequences",
+      "composition": "Distinguish account deletion from subscription cancellation and list affected scope",
+      "avoid": "Ambiguous labels or hidden consequences",
+      "review": "Can users review the exact account and data scope?",
+      "related_sources": [
+        "1password",
+        "apple-hig",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P199",
+      "category": "settings-security",
+      "platforms": [
+        "all"
+      ],
+      "title": "Privacy controls",
+      "job": "Make data choices understandable",
+      "composition": "Describe each choice in terms of data, purpose and effect using honest defaults",
+      "avoid": "Vague toggles labeled Improve experience",
+      "review": "Can the user explain what changes after opting out?",
+      "related_sources": [
+        "1password",
+        "apple-hig",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    },
+    {
+      "id": "P200",
+      "category": "settings-security",
+      "platforms": [
+        "all"
+      ],
+      "title": "Preference save model",
+      "job": "Avoid lost configuration",
+      "composition": "Choose explicit save or reliable autosave and make pending/error state visible",
+      "avoid": "Mixing save models within one unexplained panel",
+      "review": "Change values, fail persistence and leave the page",
+      "related_sources": [
+        "1password",
+        "apple-hig",
+        "govuk"
+      ],
+      "provenance": "original_synthesis",
+      "visual_evidence": "none",
+      "source_relationship": "Further study, not a claim this product implements this card."
+    }
+  ]
+}

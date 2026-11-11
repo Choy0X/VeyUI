@@ -1,0 +1,10 @@
+interface:
+  display_name: veyUI
+  short_description: Reference-led UI/UX design. Three hosted concepts, then build and verify.
+  default_prompt: Use $veyui to understand this project, develop useful content and
+    design directions, then build three complete inspected and hosted concepts for
+    my selection before integration.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

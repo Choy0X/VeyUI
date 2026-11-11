@@ -1,0 +1,10 @@
+{
+  "name": "veyui",
+  "version": "1.0.0",
+  "description": "Design-led UI/UX skill. Researches references, builds three hosted concepts, then implements and verifies the one you pick.",
+  "author": { "name": "Choy0X" },
+  "homepage": "https://choy0x.github.io/VeyUI/",
+  "repository": "https://github.com/Choy0X/VeyUI",
+  "license": "MIT",
+  "keywords": ["ui-design", "ux", "frontend", "design-system", "agent-skills"]
+}

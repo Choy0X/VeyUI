@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>veyUI: a design skill for developers using AI coding agents</title>
+<meta name="description" content="veyUI is a free, open-source skill that gives AI coding agents a real design process: three prototypes to choose from, then a verified build. MIT licensed.">
+<link rel="canonical" href="https://choy0x.github.io/VeyUI/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Choy0X">
+<meta name="theme-color" content="#16130F">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="veyUI">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="veyUI: a design skill for developers using AI coding agents">
+<meta property="og:description" content="Stop shipping AI-looking interfaces. veyUI gives AI coding agents a design process: research, three prototypes to choose from, then a verified build.">
+<meta property="og:url" content="https://choy0x.github.io/VeyUI/">
+<meta property="og:image" content="https://choy0x.github.io/VeyUI/assets/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="veyUI: the line Stop shipping AI-looking interfaces next to a before and after of the fictional Slackwater tide planner page.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="veyUI: a design skill for developers using AI coding agents">
+<meta name="twitter:description" content="Stop shipping AI-looking interfaces. Three prototypes to choose from, then a verified build. Free and open source.">
+<meta name="twitter:image" content="https://choy0x.github.io/VeyUI/assets/og-image.png">
+<meta name="twitter:image:alt" content="veyUI: the line Stop shipping AI-looking interfaces next to a before and after of the fictional Slackwater tide planner page.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/anybody-latin-wdth.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/familjen-grotesk-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/spline-sans-mono-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/ba.css">
+<script>
+(function(){var d=document.documentElement;d.classList.add('js');
+var rm=false;try{rm=matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){}
+if(rm){d.classList.add('rm')}else{d.classList.add('anim')}})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["SoftwareApplication", "SoftwareSourceCode"],
+  "name": "veyUI",
+  "alternateName": "VeyUI",
+  "url": "https://choy0x.github.io/VeyUI/",
+  "description": "veyUI is a design-led UI/UX skill for AI coding agents. It reads the project, recommends reference directions, builds three prototypes to choose from, implements the chosen one and verifies the result in a real browser.",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "softwareRequirements": "Python 3.10+, Node 22+, Chrome, Edge or Chromium for web checks",
+  "image": "https://choy0x.github.io/VeyUI/assets/og-image.png",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "license": "https://github.com/Choy0X/VeyUI/blob/main/LICENSE",
+  "codeRepository": "https://github.com/Choy0X/VeyUI",
+  "programmingLanguage": ["Python", "JavaScript"],
+  "author": { "@type": "Person", "name": "Choy0X", "url": "https://github.com/Choy0X" },
+  "isBasedOn": {
+    "@type": "SoftwareSourceCode",
+    "name": "Taste Skill",
+    "url": "https://github.com/Leonxlnx/taste-skill",
+    "license": "https://opensource.org/license/mit",
+    "author": { "@type": "Person", "name": "Leonxlnx", "url": "https://github.com/Leonxlnx" }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is the veyUI skill?", "acceptedAnswer": { "@type": "Answer", "text": "A skill (a folder of instructions, data and scripts) that teaches an AI coding agent a real UI design process: discover, recommend, prototype three concepts, let you choose, implement and verify." } },
+    { "@type": "Question", "name": "Does the skill generate images?", "acceptedAnswer": { "@type": "Answer", "text": "Not without your permission. Image generation always needs explicit approval. It prefers your real assets, product UI and approved media." } },
+    { "@type": "Question", "name": "Does it need an account, API key or paid service?", "acceptedAnswer": { "@type": "Answer", "text": "No. The reference library is offline and local. Your agent's own model is the only paid piece." } },
+    { "@type": "Question", "name": "How is it different from Taste Skill?", "acceptedAnswer": { "@type": "Answer", "text": "veyUI is built on Taste Skill's web engine, which it bundles unmodified, with credit to Leonxlnx. veyUI adds an offline reference library, product discovery and recommendation, the three-concept hosted review, evidence checks, native and app guidance, and packaging for many agents." } },
+    { "@type": "Question", "name": "Will it guarantee great design?", "acceptedAnswer": { "@type": "Answer", "text": "No. It enforces an evidence-based workflow. Final quality still depends on the model, your inputs and your choice, and a passing check is not visual approval." } }
+  ]
+}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M3.5 12.5l5.5 5.5L20.5 6.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="square" stroke-linejoin="miter"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><path d="M8 8V3h13v13h-5M3 8h13v13H3z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="miter"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 4v16M17 4v16" fill="none" stroke="currentColor" stroke-width="4"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M6 3.5v17l14-8.5z" fill="currentColor"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M9 5H5v14h14v-4M13 4h7v7M20 4l-9 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav__bar">
+    <a class="nav__brand" href="#top" aria-label="veyUI, back to top"><img src="assets/logo.svg" width="30" height="30" alt=""><span>veyUI</span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <ul>
+        <li><a href="#run">The run</a></li>
+        <li><a href="#choice">The result</a></li>
+        <li><a href="#evidence">Evidence</a></li>
+        <li><a href="#modes">Modes</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <span class="nav__marker" aria-hidden="true"></span>
+    </nav>
+    <a class="btn btn--yellow btn--sm nav__cta" href="#install"><span class="btn__face">Install</span></a>
+    <button class="nav__menu" type="button" aria-expanded="false" aria-controls="drawer"><span class="nav__menu-t">Menu</span></button>
+  </div>
+  <div class="drawer" id="drawer" hidden>
+    <ul>
+      <li><a href="#run"><i>01</i>The run</a></li>
+      <li><a href="#choice"><i>02</i>The result</a></li>
+      <li><a href="#evidence"><i>03</i>Evidence</a></li>
+      <li><a href="#modes"><i>04</i>Modes</a></li>
+      <li><a href="#install"><i>05</i>Install</a></li>
+      <li><a href="#faq"><i>06</i>FAQ</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1. OPENING -->
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="hero__bg" aria-hidden="true"><i class="hero__light"></i><i class="hero__dots"></i><canvas class="hero__glow" aria-hidden="true" style="visibility:hidden"></canvas><i class="hero__grain"></i></div>
+
+  <div class="hero__in">
+    <div class="hero__copy">
+      <h1 id="h1" class="hero__h"><span class="hl hl--a" data-rise>Stop shipping</span> <span class="hl hl--b" data-rise><span class="nb"><span class="ai">AI</span>-looking</span> interfaces.</span></h1>
+      <p class="hero__sub" data-rise>veyUI gives your coding agent a real design process: study references, build three finished concepts, wait for your pick, then implement and verify.</p>
+      <div class="hero__cta" data-rise>
+        <a class="hbtn" href="#install"><span>Install veyUI</span><span class="hbtn__sq" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span></a>
+        <div class="cmd" data-copy-wrap>
+          <code>npx skills add Choy0X/VeyUI</code>
+          <button class="copy" type="button" data-copy="npx skills add Choy0X/VeyUI" aria-label="Copy install command"><svg class="i"><use href="#i-copy"/></svg><span>Copy</span></button>
+        </div>
+      </div>
+      <p class="hero__meta" data-rise><span>Free and open source. MIT.</span><span>Works with Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot and more</span></p>
+    </div>
+
+    <div class="proof" data-rise>
+      <figure class="proof__fig">
+        <div class="proof__panel">
+          <div class="proof__tags" aria-hidden="true"><span class="proof__tag proof__tag--a">Typical agent output</span><span class="proof__tag proof__tag--b">Designed with veyUI</span></div>
+          <div class="proof__view">
+            <picture><source media="(max-width:599px)" srcset="assets/hero-before-m.webp"><img class="proof__img" src="assets/hero-before.webp" width="1000" height="660" fetchpriority="high" decoding="async" alt="Typical agent output: a generic Slackwater surf planning page with a purple gradient, a centered headline, one button and three feature cards."></picture>
+            <div class="proof__after"><picture><source media="(max-width:599px)" srcset="assets/hero-after-m.webp"><img class="proof__img" src="assets/hero-after.webp" width="1000" height="660" fetchpriority="high" decoding="async" alt="Designed with veyUI: the same Slackwater page rebuilt as a dark tide planner with a tide curve, a marked two hour go window and swell and wind readings."></picture></div>
+            <span class="proof__line" aria-hidden="true"></span>
+            <span class="proof__handle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" stroke-linejoin="miter"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></span>
+          </div>
+          <div class="proof__bar">
+            <button class="proof__pp" type="button"><svg class="i"><use href="#i-pause"/></svg><span>Pause sweep</span></button>
+            <input class="proof__range" type="range" min="0" max="100" step="1" value="50" aria-label="Compare the designed page with the typical agent page. Moving right shows more of the typical page." aria-valuetext="Comparing">
+          </div>
+        </div>
+        <figcaption class="proof__cap"><span>Slackwater, a fictional product. Sample data.</span><a href="#choice">See the five fixes <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 2. STAKES -->
+<section class="field f-tomato stakes" id="stakes" aria-labelledby="stakes-h" data-prev="ink">
+  <div class="field__bg" aria-hidden="true"></div>
+  <div class="stakes__runway">
+    <div class="stakes__stage">
+      <div class="wrap">
+        <p class="eyebrow">Why it happens</p>
+        <h2 id="stakes-h" class="mega stretch"><span class="ln">Same prompt,</span> <span class="ln">same page.</span></h2>
+      </div>
+      <div class="tiles" aria-hidden="true"></div>
+      <div class="wrap stakes__foot">
+        <p class="lead">Ask an agent for a landing page and you get a centered headline, three cards and a gradient. Not because it cannot design, but because nothing makes it decide anything.</p>
+        <p class="note">Opinion, not a statistic. The tiles above are an illustration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. THE RUN -->
+<section class="field f-cobalt run" id="run" aria-labelledby="run-h" data-prev="tomato">
+  <div class="field__bg" aria-hidden="true"></div>
+  <div class="run__runway">
+    <div class="run__stage">
+      <div class="run__left">
+        <p class="eyebrow">The run</p>
+        <h2 id="run-h" class="big stretch run__h"><span class="ln">Six steps</span> <span class="ln">between your</span> <span class="ln">prompt and</span> <span class="ln">your code.</span></h2>
+        <ol class="steps">
+          <li class="step is-on"><button type="button" class="step__btn" data-step="0" aria-current="step"><i>01</i><b>Discover</b></button><div class="step__p"><p data-name="Discover">Reads your project to find what the product really does, then turns capabilities into honest copy.</p></div></li>
+          <li class="step"><button type="button" class="step__btn" data-step="1"><i>02</i><b>Recommend</b></button><div class="step__p"><p data-name="Recommend">Proposes three directions, each with a real public example you can open and a tradeoff.</p></div></li>
+          <li class="step"><button type="button" class="step__btn" data-step="2"><i>03</i><b>Prototype</b></button><div class="step__p"><p data-name="Prototype">Builds three distinct, complete concepts, hosts them locally and has them reviewed.</p></div></li>
+          <li class="step"><button type="button" class="step__btn" data-step="3"><i>04</i><b>Choose</b></button><div class="step__p"><p data-name="Choose">You pick one. Nothing is integrated before that.</p></div></li>
+          <li class="step"><button type="button" class="step__btn" data-step="4"><i>05</i><b>Implement</b></button><div class="step__p"><p data-name="Implement">Builds the chosen design in your real stack, web, mobile or desktop.</p></div></li>
+          <li class="step"><button type="button" class="step__btn" data-step="5"><i>06</i><b>Verify</b></button><div class="step__p"><p data-name="Verify">Inspects the rendered result and reports what was and was not checked.</p></div></li>
+        </ol>
+        <div class="run__rail" aria-hidden="true"><span></span></div>
+      </div>
+
+      <div class="run__right">
+        <div class="scenes">
+          <!-- scene 1 -->
+          <article class="scene s1 is-on" data-scene="0" aria-label="Step 1, Discover">
+            <p class="sc__cap">Illustration of the step, not a transcript</p>
+            <div class="s1__grid">
+              <div class="tree">
+                <b>your-project/</b>
+                <ul>
+                  <li>README.md</li>
+                  <li>package.json</li>
+                  <li class="hit">src/export.tsx</li>
+                  <li class="hit">src/offline.ts</li>
+                  <li>docs/</li>
+                  <li>public/</li>
+                </ul>
+              </div>
+              <div class="inv">
+                <div class="inv__row"><small class="inv__tag">Capability found</small><p class="inv__cap">Exports a CSV</p><p class="inv__out"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg><span><small>Honest copy</small><strong>Export your data as CSV.</strong></span></p></div>
+                <div class="inv__row"><small class="inv__tag">Capability found</small><p class="inv__cap">Works without a network</p><p class="inv__out"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg><span><small>Honest copy</small><strong>Keeps working offline.</strong></span></p></div>
+                <div class="inv__row inv__row--no"><small class="inv__tag">Not found</small><p class="inv__cap">Customer counts</p><p class="inv__out"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg><span><small>Copy</small><strong class="strike">Omitted, no evidence.</strong></span></p></div>
+              </div>
+            </div>
+          </article>
+          <!-- scene 2 -->
+          <article class="scene s2" data-scene="1" aria-label="Step 2, Recommend">
+            <p class="sc__cap">Illustration of the step, not a transcript</p>
+            <div class="dirs">
+              <div class="dir d1"><b>A</b><h3>Dark Instrument</h3><div class="dir__v dv1" aria-hidden="true"></div><span class="tagl">Example linked</span><p>Tradeoff: the heaviest to build, and a crowded territory.</p></div>
+              <div class="dir d2"><b>B</b><h3>Spec Sheet</h3><div class="dir__v dv2" aria-hidden="true"></div><span class="tagl">Example linked</span><p>Tradeoff: least next-gen, can feel print-like.</p></div>
+              <div class="dir d3"><b>C</b><h3>Concept Shuffle</h3><div class="dir__v dv3" aria-hidden="true"></div><span class="tagl">Example linked</span><p>Tradeoff: most distinctive, least conventionally professional.</p></div>
+            </div>
+          </article>
+          <!-- scene 3 -->
+          <article class="scene s3" data-scene="2" aria-label="Step 3, Prototype">
+            <p class="sc__cap">Illustration of the step, not a transcript</p>
+            <div class="hosts">
+              <div class="host"><span class="host__url">localhost:4201</span><div class="host__mini m1"></div><span class="host__st">Concept A hosted</span></div>
+              <div class="host"><span class="host__url">localhost:4202</span><div class="host__mini m2"></div><span class="host__st">Concept B hosted</span></div>
+              <div class="host"><span class="host__url">localhost:4203</span><div class="host__mini m3"></div><span class="host__st">Concept C hosted</span></div>
+            </div>
+            <p class="review"><svg class="i"><use href="#i-check"/></svg>Independent review of each page, findings fixed before you see it.</p>
+          </article>
+          <!-- scene 4 -->
+          <article class="scene s4" data-scene="3" aria-label="Step 4, Choose">
+            <p class="sc__cap">Try it: pick a block</p>
+            <div class="picks" role="radiogroup" aria-label="Pick a concept">
+              <button type="button" class="pick pk-a" role="radio" aria-checked="false" data-pick="A"><i class="pk__v m1" aria-hidden="true"></i><b>A</b><span>Poster</span></button>
+              <button type="button" class="pick pk-b" role="radio" aria-checked="false" data-pick="B"><i class="pk__v m2" aria-hidden="true"></i><b>B</b><span>Editorial</span></button>
+              <button type="button" class="pick pk-c" role="radio" aria-checked="false" data-pick="C"><i class="pk__v m3" aria-hidden="true"></i><b>C</b><span>Product</span></button>
+            </div>
+            <p class="pick__out" aria-live="polite"><span>Waiting for you. Nothing is integrated yet.</span></p>
+          </article>
+          <!-- scene 5 -->
+          <article class="scene s5" data-scene="4" aria-label="Step 5, Implement">
+            <p class="sc__cap">Illustration of the step, not a transcript</p>
+            <div class="stack"><span class="on">Web</span><span>Mobile</span><span>Desktop</span></div>
+            <ul class="diff">
+              <li><i>+</i><code>design tokens from the chosen concept</code></li>
+              <li><i>+</i><code>components in your real framework</code></li>
+              <li><i>+</i><code>pages, content and states</code></li>
+              <li><i>+</i><code>motion with a reduced-motion path</code></li>
+              <li class="off"><i>-</i><code>the two concepts you did not pick</code></li>
+            </ul>
+          </article>
+          <!-- scene 6 -->
+          <article class="scene s6" data-scene="5" aria-label="Step 6, Verify">
+            <p class="sc__cap">Sample report shape, not a real run</p>
+            <ul class="report">
+              <li class="ok"><svg class="i"><use href="#i-check"/></svg><span><strong>Rendered at desktop and compact widths</strong><small>Screenshots reviewed, horizontal overflow measured</small></span><em>checked</em></li>
+              <li class="ok"><svg class="i"><use href="#i-check"/></svg><span><strong>Keyboard path and visible focus</strong><small>Tab order walked, focus ring seen on each control</small></span><em>checked</em></li>
+              <li class="ok"><svg class="i"><use href="#i-check"/></svg><span><strong>Reduced-motion layout</strong><small>Static page complete, nothing hidden</small></span><em>checked</em></li>
+              <li class="no"><span class="ring" aria-hidden="true"></span><span><strong>Browsers and devices not available here</strong><small>Listed as unverified, not assumed to pass</small></span><em>not checked, said so</em></li>
+            </ul>
+            <p class="s6__line">A passing check is not visual approval.</p>
+          </article>
+        </div>
+        <p class="run__count" aria-hidden="true"><span class="run__n">01</span> / 06</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. THE RESULT -->
+<section class="field f-yellow ba" id="choice" aria-labelledby="choice-h" data-prev="cobalt">
+  <div class="field__bg" aria-hidden="true"></div>
+  <div class="wrap ba__head">
+    <div>
+      <p class="eyebrow">The result</p>
+      <h2 id="choice-h" class="big stretch"><span class="ln">Same product.</span> <span class="ln">Better decisions.</span></h2>
+    </div>
+    <p class="lead">Left is what an agent ships when nothing makes it decide. Right is the same product after veyUI studied references, built three concepts and let you pick one.</p>
+  </div>
+  <div class="ba__runway">
+    <div class="ba__stage">
+      <div class="ba__main">
+        <div class="ba__static">
+          <figure class="ba__fig"><figcaption><b>Typical agent output</b></figcaption>
+            <div class="pg st-b" data-page="b" role="group" aria-label="Typical agent output: the Slackwater landing page as an agent ships it by default"><div data-el="bg"><i class="k-b bgi"></i></div><div data-el="focal"><i class="k-b orb"></i></div><div data-el="nav"><div class="k-b nv"><span class="lg"><i></i>Slackwater</span><span class="nl"><span>Features</span><span>Pricing</span><span>About</span></span><span class="si">Sign in</span></div></div><div data-el="badge"><p class="k-b bd"><i></i>New: AI-powered surf forecasts</p></div><div data-el="head"><p class="k-b hd"><span class="gt">Supercharge</span> your surf planning with <span class="gt">AI</span></p></div><div data-el="sub"><p class="k-b sb">Unlock the power of artificial intelligence to plan smarter, faster sessions and never miss a wave again.</p></div><div data-el="btn"><span class="k-b bt">Get started free</span></div><div data-el="p1"><div class="k-b cd"><i class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 5 14h6l-1 8 8-12h-6z" fill="currentColor"/></svg></i><b>Lightning fast</b><p>Blazing performance for your team.</p></div></div><div data-el="p2"><div class="k-b cd"><i class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z" fill="currentColor"/></svg></i><b>Secure by default</b><p>Enterprise-grade security.</p></div></div><div data-el="p3"><div class="k-b cd"><i class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5zM3 12.5l9 5 9-5M3 16.5l9 5 9-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></i><b>Built for scale</b><p>Scales as your needs grow.</p></div></div><div data-el="foot"><p class="k-b ft"><span>&copy; 2026 Slackwater, Inc. All rights reserved.</span><span>Privacy</span><span>Terms</span></p></div></div>
+          </figure>
+          <figure class="ba__fig"><figcaption><b>Designed with veyUI</b></figcaption>
+            <div class="pg st-a" data-page="a" role="group" aria-label="Designed with veyUI: the same Slackwater page rebuilt as a tide dashboard on a dusk horizon"><div data-el="bg"><div class="k-a bgi"><svg class="sky sky--w" viewBox="0 0 100 66" aria-hidden="true"><defs><linearGradient id="sgw0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A5686F"/><stop offset="1" stop-color="#33466D"/></linearGradient><linearGradient id="sgw1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7A6482"/><stop offset="1" stop-color="#223A62"/></linearGradient><linearGradient id="sgw2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#47587D"/><stop offset="1" stop-color="#152A4A"/></linearGradient><linearGradient id="sgw3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#27406A"/><stop offset="1" stop-color="#0C1B36"/></linearGradient><linearGradient id="sgw4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#162B50"/><stop offset="1" stop-color="#060F20"/></linearGradient><radialGradient id="snw"><stop offset="0" stop-color="#FFE2C4"/><stop offset=".35" stop-color="#FFB27A" stop-opacity=".85"/><stop offset="1" stop-color="#FF9A62" stop-opacity="0"/></radialGradient><radialGradient id="blw"><stop offset="0" stop-color="#FF9A62" stop-opacity=".5"/><stop offset=".5" stop-color="#FF9A62" stop-opacity=".16"/><stop offset="1" stop-color="#FF9A62" stop-opacity="0"/></radialGradient><radialGradient id="hzw"><stop offset="0" stop-color="#4C97A8" stop-opacity=".26"/><stop offset="1" stop-color="#4C97A8" stop-opacity="0"/></radialGradient><linearGradient id="shw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC08A" stop-opacity=".55"/><stop offset=".4" stop-color="#FF9A62" stop-opacity=".4"/><stop offset="1" stop-color="#FF9A62" stop-opacity="0"/></linearGradient></defs><ellipse cx="70.85" cy="29.4" rx="46" ry="8.5" fill="url(#blw)"/><ellipse cx="22" cy="7.4" rx="46" ry="8.8" fill="url(#hzw)"/><circle cx="0" cy="21.1" r="0.13" fill="#EDF2F7" opacity="0.33"/><circle cx="92.2" cy="18.5" r="0.11" fill="#EDF2F7" opacity="0.48"/><circle cx="92.3" cy="15.8" r="0.18" fill="#EDF2F7" opacity="0.51"/><circle cx="91.2" cy="20.8" r="0.14" fill="#EDF2F7" opacity="0.39"/><circle cx="83.7" cy="7.6" r="0.12" fill="#EDF2F7" opacity="0.37"/><circle cx="93.7" cy="12.8" r="0.19" fill="#EDF2F7" opacity="0.66"/><circle cx="90.6" cy="10.5" r="0.20" fill="#EDF2F7" opacity="0.54"/><circle cx="94" cy="9.1" r="0.18" fill="#EDF2F7" opacity="0.35"/><circle cx="79.5" cy="20.1" r="0.11" fill="#EDF2F7" opacity="0.63"/><circle cx="7.8" cy="9.3" r="0.12" fill="#EDF2F7" opacity="0.26"/><circle cx="13.8" cy="21.1" r="0.21" fill="#EDF2F7" opacity="0.67"/><circle cx="88.5" cy="20.8" r="0.19" fill="#EDF2F7" opacity="0.36"/><circle cx="11.8" cy="11.2" r="0.10" fill="#EDF2F7" opacity="0.68"/><circle cx="2.1" cy="20.6" r="0.12" fill="#EDF2F7" opacity="0.70"/><circle cx="20.9" cy="12.9" r="0.11" fill="#EDF2F7" opacity="0.60"/><circle cx="11" cy="21.1" r="0.12" fill="#EDF2F7" opacity="0.56"/><circle cx="88.3" cy="19.8" r="0.22" fill="#EDF2F7" opacity="0.70"/><circle cx="88.2" cy="9.1" r="0.13" fill="#EDF2F7" opacity="0.42"/><circle cx="88.7" cy="12.8" r="0.14" fill="#EDF2F7" opacity="0.53"/><circle cx="98.5" cy="22.8" r="0.18" fill="#EDF2F7" opacity="0.66"/><circle cx="20.3" cy="16.6" r="0.13" fill="#EDF2F7" opacity="0.34"/><circle cx="7.5" cy="17.7" r="0.20" fill="#EDF2F7" opacity="0.68"/><circle cx="91" cy="15.6" r="0.22" fill="#EDF2F7" opacity="0.23"/><circle cx="20.2" cy="15.5" r="0.13" fill="#EDF2F7" opacity="0.45"/><circle cx="99.4" cy="9.7" r="0.18" fill="#EDF2F7" opacity="0.61"/><circle cx="21" cy="13.8" r="0.12" fill="#EDF2F7" opacity="0.26"/><circle cx="96.2" cy="18.4" r="0.18" fill="#EDF2F7" opacity="0.51"/><circle cx="95.7" cy="22.4" r="0.14" fill="#EDF2F7" opacity="0.26"/><circle cx="95.5" cy="18" r="0.12" fill="#EDF2F7" opacity="0.34"/><circle cx="91.6" cy="18.3" r="0.18" fill="#EDF2F7" opacity="0.58"/><circle cx="87.2" cy="12.9" r="0.20" fill="#EDF2F7" opacity="0.36"/><circle cx="89.9" cy="18.9" r="0.14" fill="#EDF2F7" opacity="0.56"/><circle cx="94.7" cy="16" r="0.12" fill="#EDF2F7" opacity="0.28"/><circle cx="81.2" cy="13.6" r="0.19" fill="#EDF2F7" opacity="0.28"/><circle cx="95.5" cy="12.6" r="0.17" fill="#EDF2F7" opacity="0.61"/><circle cx="4.5" cy="14.1" r="0.13" fill="#EDF2F7" opacity="0.51"/><circle cx="79.2" cy="15.1" r="0.20" fill="#EDF2F7" opacity="0.27"/><circle cx="91.9" cy="11.5" r="0.20" fill="#EDF2F7" opacity="0.43"/><circle cx="86.6" cy="18.1" r="0.19" fill="#EDF2F7" opacity="0.67"/><circle cx="12.5" cy="21.8" r="0.21" fill="#EDF2F7" opacity="0.25"/><circle cx="94.1" cy="19.9" r="0.21" fill="#EDF2F7" opacity="0.36"/><circle cx="14.2" cy="7.4" r="0.16" fill="#EDF2F7" opacity="0.33"/><circle cx="9.4" cy="14.4" r="0.16" fill="#EDF2F7" opacity="0.62"/><circle cx="6.5" cy="16.7" r="0.18" fill="#EDF2F7" opacity="0.44"/><circle cx="20" cy="14.7" r="0.12" fill="#EDF2F7" opacity="0.25"/><circle cx="0.2" cy="19.2" r="0.20" fill="#EDF2F7" opacity="0.24"/><ellipse cx="70.85" cy="29.4" rx="5.2" ry="3.4" fill="url(#snw)"/><path d="M0 66V30.2L2 30.3L4 30.5L6 30.5L8 30.5L10 30.4L12 30.2L14 30L16 29.8L18 29.7L20 29.6L22 29.7L24 29.8L26 29.9L28 30.1L30 30.3L32 30.4L34 30.5L36 30.5L38 30.4L40 30.3L42 30.1L44 29.9L46 29.8L48 29.7L50 29.8L52 29.9L54 30L56 30.2L58 30.4L60 30.5L62 30.5L64 30.5L66 30.4L68 30.2L70 30L72 29.8L74 29.7L76 29.6L78 29.7L80 29.8L82 29.9L84 30.1L86 30.3L88 30.4L90 30.5L92 30.5L94 30.4L96 30.2L98 30.1L100 29.9V66Z" fill="url(#sgw0)"/><path d="M0 66V32.1L2 32.3L4 32.4L6 32.3L8 32.1L10 31.9L12 31.5L14 31.2L16 31L18 30.9L20 31L22 31.1L24 31.4L26 31.7L28 32.1L30 32.3L32 32.4L34 32.4L36 32.2L38 32L40 31.7L42 31.4L44 31.2L46 31.1L48 31.1L50 31.3L52 31.6L54 31.9L56 32.1L58 32.3L60 32.4L62 32.3L64 32.1L66 31.8L68 31.5L70 31.2L72 31L74 30.9L76 31L78 31.2L80 31.4L82 31.8L84 32.1L86 32.3L88 32.4L90 32.4L92 32.2L94 31.9L96 31.6L98 31.4L100 31.2V66Z" fill="url(#sgw1)"/><path d="M0 66V35L2 35.1L4 35L6 34.7L8 34.2L10 33.7L12 33.3L14 33L16 32.8L18 32.9L20 33.2L22 33.6L24 34.1L26 34.5L28 34.9L30 35.1L32 35L34 34.8L36 34.4L38 33.9L40 33.5L42 33.2L44 33.1L46 33.1L48 33.4L50 33.8L52 34.3L54 34.7L56 35L58 35.1L60 35L62 34.7L64 34.2L66 33.7L68 33.3L70 32.9L72 32.8L74 32.9L76 33.2L78 33.6L80 34.1L82 34.6L84 34.9L86 35.1L88 35L90 34.8L92 34.4L94 33.9L96 33.5L98 33.2L100 33.1V66Z" fill="url(#sgw2)"/><path d="M0 66V39L2 38.8L4 38.4L6 37.7L8 37L10 36.3L12 35.9L14 35.7L16 35.8L18 36.2L20 36.8L22 37.5L24 38.2L26 38.7L28 38.9L30 38.9L32 38.5L34 38L36 37.3L38 36.7L40 36.2L42 36L44 36.1L46 36.5L48 37.1L50 37.8L52 38.4L54 38.8L56 39L58 38.8L60 38.4L62 37.7L64 37L66 36.3L68 35.8L70 35.7L72 35.8L74 36.2L76 36.8L78 37.6L80 38.2L82 38.7L84 39L86 38.9L88 38.5L90 37.9L92 37.3L94 36.6L96 36.2L98 36L100 36.2V66Z" fill="url(#sgw3)"/><path d="M0 66V45.3L2 44.7L4 43.9L6 42.9L8 42L10 41.3L12 41L14 41.2L16 41.7L18 42.6L20 43.6L22 44.5L24 45.2L26 45.5L28 45.4L30 44.9L32 44.1L34 43.2L36 42.4L38 41.8L40 41.5L42 41.7L44 42.2L46 43L48 43.9L50 44.8L52 45.3L54 45.5L56 45.3L58 44.7L60 43.8L62 42.8L64 41.9L66 41.3L68 41L70 41.2L72 41.8L74 42.6L76 43.6L78 44.6L80 45.2L82 45.5L84 45.4L86 44.9L88 44.1L90 43.2L92 42.4L94 41.8L96 41.5L98 41.7L100 42.3V66Z" fill="url(#sgw4)"/><path d="M70 29.4L71.7 29.4L75.2 66L66.5 66Z" fill="url(#shw)" opacity="0.22"/><path d="M70.2 29.4L71.5 29.4L74 66L67.7 66Z" fill="url(#shw)" opacity="0.3"/><path d="M70.4 29.4L71.3 29.4L73 66L68.7 66Z" fill="url(#shw)" opacity="0.42"/></svg><svg class="sky sky--c" viewBox="0 0 100 180" aria-hidden="true"><defs><linearGradient id="sgc0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A5686F"/><stop offset="1" stop-color="#33466D"/></linearGradient><linearGradient id="sgc1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7A6482"/><stop offset="1" stop-color="#223A62"/></linearGradient><linearGradient id="sgc2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#47587D"/><stop offset="1" stop-color="#152A4A"/></linearGradient><linearGradient id="sgc3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#27406A"/><stop offset="1" stop-color="#0C1B36"/></linearGradient><linearGradient id="sgc4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#162B50"/><stop offset="1" stop-color="#060F20"/></linearGradient><radialGradient id="snc"><stop offset="0" stop-color="#FFE2C4"/><stop offset=".35" stop-color="#FFB27A" stop-opacity=".85"/><stop offset="1" stop-color="#FF9A62" stop-opacity="0"/></radialGradient><radialGradient id="blc"><stop offset="0" stop-color="#FF9A62" stop-opacity=".5"/><stop offset=".5" stop-color="#FF9A62" stop-opacity=".16"/><stop offset="1" stop-color="#FF9A62" stop-opacity="0"/></radialGradient><radialGradient id="hzc"><stop offset="0" stop-color="#4C97A8" stop-opacity=".26"/><stop offset="1" stop-color="#4C97A8" stop-opacity="0"/></radialGradient><linearGradient id="shc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC08A" stop-opacity=".55"/><stop offset=".4" stop-color="#FF9A62" stop-opacity=".4"/><stop offset="1" stop-color="#FF9A62" stop-opacity="0"/></linearGradient></defs><ellipse cx="63.1" cy="61" rx="60" ry="22" fill="url(#blc)"/><ellipse cx="22" cy="15.3" rx="46" ry="18.3" fill="url(#hzc)"/><circle cx="33.3" cy="30.2" r="0.20" fill="#EDF2F7" opacity="0.54"/><circle cx="97.6" cy="14.6" r="0.19" fill="#EDF2F7" opacity="0.69"/><circle cx="98.1" cy="30.9" r="0.15" fill="#EDF2F7" opacity="0.53"/><circle cx="2.8" cy="40" r="0.11" fill="#EDF2F7" opacity="0.34"/><circle cx="1.4" cy="39.3" r="0.21" fill="#EDF2F7" opacity="0.60"/><circle cx="98.3" cy="22.7" r="0.13" fill="#EDF2F7" opacity="0.48"/><circle cx="99.6" cy="25.8" r="0.12" fill="#EDF2F7" opacity="0.46"/><circle cx="0.6" cy="14.1" r="0.19" fill="#EDF2F7" opacity="0.50"/><circle cx="0.7" cy="10.5" r="0.17" fill="#EDF2F7" opacity="0.55"/><circle cx="0.3" cy="16.3" r="0.22" fill="#EDF2F7" opacity="0.55"/><circle cx="1.4" cy="26.6" r="0.10" fill="#EDF2F7" opacity="0.48"/><circle cx="0.9" cy="10.3" r="0.10" fill="#EDF2F7" opacity="0.44"/><circle cx="91.2" cy="40.7" r="0.19" fill="#EDF2F7" opacity="0.39"/><circle cx="0" cy="34.9" r="0.15" fill="#EDF2F7" opacity="0.31"/><circle cx="2" cy="10.7" r="0.16" fill="#EDF2F7" opacity="0.71"/><circle cx="0" cy="24.8" r="0.11" fill="#EDF2F7" opacity="0.46"/><circle cx="99.1" cy="12" r="0.20" fill="#EDF2F7" opacity="0.30"/><circle cx="97.6" cy="19.6" r="0.16" fill="#EDF2F7" opacity="0.24"/><circle cx="97.7" cy="31.6" r="0.15" fill="#EDF2F7" opacity="0.47"/><circle cx="97.1" cy="20.6" r="0.15" fill="#EDF2F7" opacity="0.33"/><circle cx="57.1" cy="25.6" r="0.18" fill="#EDF2F7" opacity="0.27"/><circle cx="2.4" cy="40.9" r="0.16" fill="#EDF2F7" opacity="0.25"/><circle cx="0.5" cy="46" r="0.20" fill="#EDF2F7" opacity="0.57"/><circle cx="100" cy="47.3" r="0.12" fill="#EDF2F7" opacity="0.44"/><circle cx="2.9" cy="28.4" r="0.13" fill="#EDF2F7" opacity="0.35"/><circle cx="98" cy="40.2" r="0.20" fill="#EDF2F7" opacity="0.68"/><circle cx="97.4" cy="46.8" r="0.20" fill="#EDF2F7" opacity="0.31"/><circle cx="84.1" cy="32.5" r="0.18" fill="#EDF2F7" opacity="0.54"/><circle cx="98.2" cy="15.9" r="0.12" fill="#EDF2F7" opacity="0.46"/><circle cx="1.5" cy="36.6" r="0.11" fill="#EDF2F7" opacity="0.53"/><circle cx="97.8" cy="40.2" r="0.12" fill="#EDF2F7" opacity="0.70"/><circle cx="97.4" cy="15.1" r="0.18" fill="#EDF2F7" opacity="0.71"/><circle cx="0" cy="23.4" r="0.13" fill="#EDF2F7" opacity="0.58"/><circle cx="81.9" cy="32.4" r="0.15" fill="#EDF2F7" opacity="0.38"/><circle cx="97.9" cy="33.9" r="0.13" fill="#EDF2F7" opacity="0.70"/><circle cx="99.6" cy="34.2" r="0.13" fill="#EDF2F7" opacity="0.49"/><circle cx="98.9" cy="40.4" r="0.10" fill="#EDF2F7" opacity="0.52"/><circle cx="0.9" cy="42.1" r="0.12" fill="#EDF2F7" opacity="0.42"/><circle cx="98.5" cy="38.2" r="0.11" fill="#EDF2F7" opacity="0.54"/><circle cx="2.3" cy="37.3" r="0.19" fill="#EDF2F7" opacity="0.45"/><circle cx="0" cy="28.9" r="0.18" fill="#EDF2F7" opacity="0.69"/><circle cx="97.5" cy="42.2" r="0.15" fill="#EDF2F7" opacity="0.53"/><circle cx="1.2" cy="29.6" r="0.17" fill="#EDF2F7" opacity="0.54"/><circle cx="98.8" cy="43.9" r="0.16" fill="#EDF2F7" opacity="0.63"/><circle cx="57.8" cy="46.5" r="0.16" fill="#EDF2F7" opacity="0.69"/><circle cx="98.6" cy="31.6" r="0.17" fill="#EDF2F7" opacity="0.60"/><circle cx="1.5" cy="16.5" r="0.12" fill="#EDF2F7" opacity="0.29"/><circle cx="97.7" cy="22.8" r="0.13" fill="#EDF2F7" opacity="0.26"/><circle cx="2" cy="27.6" r="0.16" fill="#EDF2F7" opacity="0.34"/><circle cx="2.1" cy="15.6" r="0.17" fill="#EDF2F7" opacity="0.64"/><circle cx="2" cy="19.7" r="0.18" fill="#EDF2F7" opacity="0.48"/><circle cx="2.3" cy="34.7" r="0.22" fill="#EDF2F7" opacity="0.31"/><circle cx="1.9" cy="26.6" r="0.18" fill="#EDF2F7" opacity="0.35"/><circle cx="97.5" cy="18.4" r="0.17" fill="#EDF2F7" opacity="0.61"/><circle cx="97.3" cy="22" r="0.13" fill="#EDF2F7" opacity="0.65"/><circle cx="0.9" cy="37.2" r="0.11" fill="#EDF2F7" opacity="0.41"/><circle cx="96.4" cy="18.3" r="0.18" fill="#EDF2F7" opacity="0.56"/><circle cx="0.6" cy="43.4" r="0.13" fill="#EDF2F7" opacity="0.64"/><circle cx="99.2" cy="36.7" r="0.17" fill="#EDF2F7" opacity="0.23"/><circle cx="0.2" cy="13.8" r="0.15" fill="#EDF2F7" opacity="0.29"/><ellipse cx="63.1" cy="61" rx="9" ry="7" fill="url(#snc)"/><path d="M0 180V61.1L2 61.1L4 61.3L6 61.4L8 61.6L10 61.8L12 61.9L14 62L16 62.1L18 62.1L20 62L22 61.9L24 61.8L26 61.6L28 61.4L30 61.3L32 61.2L34 61.2L36 61.2L38 61.3L40 61.4L42 61.5L44 61.7L46 61.9L48 62L50 62.1L52 62.1L54 62.1L56 62L58 61.8L60 61.6L62 61.5L64 61.3L66 61.2L68 61.1L70 61L72 61.1L74 61.2L76 61.3L78 61.5L80 61.7L82 61.8L84 62L86 62.1L88 62.1L90 62.1L92 62L94 61.9L96 61.7L98 61.5L100 61.4V180Z" fill="url(#sgc0)"/><path d="M0 180V63.2L2 63.4L4 63.8L6 64.1L8 64.4L10 64.7L12 64.8L14 64.9L16 64.9L18 64.7L20 64.5L22 64.2L24 63.9L26 63.6L28 63.4L30 63.2L32 63.2L34 63.3L36 63.4L38 63.7L40 64L42 64.3L44 64.6L46 64.8L48 64.9L50 64.9L52 64.8L54 64.6L56 64.3L58 64L60 63.7L62 63.4L64 63.1L66 63L68 63L70 63.1L72 63.3L74 63.6L76 63.9L78 64.2L80 64.5L82 64.7L84 64.9L86 64.9L88 64.8L90 64.6L92 64.4L94 64.1L96 63.8L98 63.5L100 63.3V180Z" fill="url(#sgc1)"/><path d="M0 180V66.1L2 66.6L4 67.1L6 67.5L8 67.8L10 68.1L12 68.1L14 68L16 67.8L18 67.4L20 67L22 66.5L24 66.1L26 65.8L28 65.7L30 65.7L32 65.8L34 66.1L36 66.5L38 66.9L40 67.3L42 67.7L44 68L46 68.1L48 68.1L50 67.9L52 67.6L54 67.1L56 66.6L58 66.2L60 65.8L62 65.5L64 65.3L66 65.4L68 65.5L70 65.9L72 66.3L74 66.8L76 67.2L78 67.6L80 67.9L82 68.1L84 68.1L86 67.9L88 67.6L90 67.2L92 66.8L94 66.4L96 66L98 65.8L100 65.7V180Z" fill="url(#sgc2)"/><path d="M0 180V70.1L2 70.7L4 71.3L6 71.7L8 72L10 72L12 71.8L14 71.4L16 70.8L18 70.2L20 69.7L22 69.1L24 68.8L26 68.6L28 68.7L30 68.9L32 69.4L34 69.9L36 70.5L38 71.1L40 71.6L42 71.9L44 72L46 71.9L48 71.6L50 71.1L52 70.5L54 69.8L56 69.2L58 68.7L60 68.3L62 68.2L64 68.3L66 68.6L68 69.1L70 69.7L72 70.4L74 71L76 71.5L78 71.9L80 72L82 71.9L84 71.6L86 71.2L88 70.6L90 70L92 69.4L94 69L96 68.7L98 68.6L100 68.7V180Z" fill="url(#sgc3)"/><path d="M0 180V77L2 77.7L4 78.2L6 78.5L8 78.4L10 78L12 77.4L14 76.7L16 75.8L18 75L20 74.4L22 74L24 73.8L26 74L28 74.4L30 75.1L32 75.8L34 76.7L36 77.4L38 78L40 78.4L42 78.5L44 78.2L46 77.7L48 77L50 76.1L52 75.2L54 74.4L56 73.7L58 73.3L60 73.2L62 73.5L64 74L66 74.7L68 75.6L70 76.5L72 77.3L74 77.9L76 78.3L78 78.5L80 78.3L82 77.8L84 77.1L86 76.3L88 75.5L90 74.8L92 74.2L94 73.9L96 73.9L98 74.1L100 74.6V180Z" fill="url(#sgc4)"/><path d="M62.3 61L64 61L68.8 180L57.4 180Z" fill="url(#shc)" opacity="0.22"/><path d="M62.5 61L63.7 61L67.3 180L58.9 180Z" fill="url(#shc)" opacity="0.3"/><path d="M62.7 61L63.5 61L65.9 180L60.3 180Z" fill="url(#shc)" opacity="0.42"/></svg></div></div><div data-el="focal"><div class="k-a pn"><p class="ph"><span>Tide height<span class="pl">, Marrow Bay (fictional)</span></span><span class="lgd"><i class="lw"></i>Go window<i class="ld"></i>Now</span></p><svg class="tide tide--w" viewBox="0 0 586 240" data-x0="40" data-x1="580" data-yb="190" data-s="69" data-yt="30" data-fs="12.5" role="img" aria-label="Sample tide curve for Sunday 15 November at Marrow Bay, a fictional place. High 05:30 1.8 metres, low 11:35 0.3 metres, high 17:55 2.0 metres. The go window is 14:30 to 16:30 on the rising tide."><defs><linearGradient id="ag-w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EDF2F7" stop-opacity=".2"/><stop offset="1" stop-color="#EDF2F7" stop-opacity="0"/></linearGradient><linearGradient id="wg-w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF9A62" stop-opacity=".34"/><stop offset="1" stop-color="#FF9A62" stop-opacity=".06"/></linearGradient></defs><g class="gr"><path d="M40 190H580"/><text class="yl" x="34" y="194" text-anchor="end">0</text><path d="M40 121H580"/><text class="yl" x="34" y="125" text-anchor="end">1 m</text><path d="M40 52H580"/><text class="yl" x="34" y="56" text-anchor="end">2 m</text><path class="tk" d="M40 190v4"/><text x="40" y="234" text-anchor="middle">00</text><path class="tk" d="M107.5 190v4"/><text x="107.5" y="234" text-anchor="middle">03</text><path class="tk" d="M175 190v4"/><text x="175" y="234" text-anchor="middle">06</text><path class="tk" d="M242.5 190v4"/><text x="242.5" y="234" text-anchor="middle">09</text><path class="tk" d="M310 190v4"/><text x="310" y="234" text-anchor="middle">12</text><path class="tk" d="M377.5 190v4"/><text x="377.5" y="234" text-anchor="middle">15</text><path class="tk" d="M445 190v4"/><text x="445" y="234" text-anchor="middle">18</text><path class="tk" d="M512.5 190v4"/><text x="512.5" y="234" text-anchor="middle">21</text><path class="tk" d="M580 190v4"/><text x="580" y="234" text-anchor="middle">24</text></g><g class="wn"><rect class="win" x="366.3" y="30" width="45" height="160" fill="url(#wg-w)"/><path class="wl" d="M366.3 30V190M411.3 30V190"/></g><g class="cv"><path class="ar" d="M40 168.1C41.9 167.1 47.5 164.7 51.3 162.2C55 159.7 58.8 156.6 62.5 153.3C66.3 149.9 70 146 73.8 142C77.5 138 81.3 133.6 85 129.2C88.8 124.8 92.5 120.1 96.3 115.6C100 111 103.8 106.4 107.5 102.1C111.3 97.8 115 93.5 118.8 89.7C122.5 85.8 126.3 82.2 130 79.1C133.8 76 137.5 73.2 141.3 71C145 68.8 148.8 67.1 152.5 66C156.3 64.9 160 64.4 163.8 64.4C167.5 64.5 171.3 65.1 175 66.3C178.8 67.5 182.5 69.3 186.3 71.6C190 73.8 193.8 76.7 197.5 79.8C201.3 83 205 86.7 208.8 90.6C212.5 94.5 216.3 98.8 220 103.1C223.8 107.5 227.5 112.1 231.3 116.7C235 121.2 238.8 125.8 242.5 130.2C246.3 134.6 250 139 253.8 143C257.5 147 261.3 150.8 265 154.1C268.8 157.4 272.5 160.4 276.3 162.8C280 165.2 283.8 167.1 287.5 168.5C291.3 169.8 295 170.6 298.8 170.8C302.5 170.9 306.3 170.5 310 169.4C313.8 168.4 317.5 166.8 321.3 164.6C325 162.4 328.8 159.6 332.5 156.5C336.3 153.3 340 149.5 343.8 145.5C347.5 141.5 351.3 137 355 132.4C358.8 127.9 362.5 122.9 366.3 118C370 113.1 373.8 108 377.5 103.1C381.3 98.2 385 93.3 388.8 88.7C392.5 84.1 396.3 79.6 400 75.6C403.8 71.6 407.5 67.8 411.3 64.7C415 61.5 418.8 58.7 422.5 56.6C426.3 54.4 430 52.8 433.8 51.8C437.5 50.8 441.3 50.4 445 50.7C448.8 50.9 452.5 51.8 456.3 53.3C460 54.7 463.8 56.8 467.5 59.4C471.3 62 475 65.2 478.8 68.7C482.5 72.3 486.3 76.3 490 80.6C493.8 84.9 497.5 89.6 501.3 94.3C505 99.1 508.8 104.1 512.5 109.1C516.3 114 520 119.1 523.8 123.9C527.5 128.7 531.3 133.5 535 137.9C538.8 142.3 542.5 146.5 546.3 150.2C550 153.9 553.8 157.3 557.5 160.1C561.3 162.9 565 165.2 568.8 166.9C572.5 168.7 578.1 169.8 580 170.4L580 190L40 190Z" fill="url(#ag-w)"/><path class="cl" d="M40 168.1C41.9 167.1 47.5 164.7 51.3 162.2C55 159.7 58.8 156.6 62.5 153.3C66.3 149.9 70 146 73.8 142C77.5 138 81.3 133.6 85 129.2C88.8 124.8 92.5 120.1 96.3 115.6C100 111 103.8 106.4 107.5 102.1C111.3 97.8 115 93.5 118.8 89.7C122.5 85.8 126.3 82.2 130 79.1C133.8 76 137.5 73.2 141.3 71C145 68.8 148.8 67.1 152.5 66C156.3 64.9 160 64.4 163.8 64.4C167.5 64.5 171.3 65.1 175 66.3C178.8 67.5 182.5 69.3 186.3 71.6C190 73.8 193.8 76.7 197.5 79.8C201.3 83 205 86.7 208.8 90.6C212.5 94.5 216.3 98.8 220 103.1C223.8 107.5 227.5 112.1 231.3 116.7C235 121.2 238.8 125.8 242.5 130.2C246.3 134.6 250 139 253.8 143C257.5 147 261.3 150.8 265 154.1C268.8 157.4 272.5 160.4 276.3 162.8C280 165.2 283.8 167.1 287.5 168.5C291.3 169.8 295 170.6 298.8 170.8C302.5 170.9 306.3 170.5 310 169.4C313.8 168.4 317.5 166.8 321.3 164.6C325 162.4 328.8 159.6 332.5 156.5C336.3 153.3 340 149.5 343.8 145.5C347.5 141.5 351.3 137 355 132.4C358.8 127.9 362.5 122.9 366.3 118C370 113.1 373.8 108 377.5 103.1C381.3 98.2 385 93.3 388.8 88.7C392.5 84.1 396.3 79.6 400 75.6C403.8 71.6 407.5 67.8 411.3 64.7C415 61.5 418.8 58.7 422.5 56.6C426.3 54.4 430 52.8 433.8 51.8C437.5 50.8 441.3 50.4 445 50.7C448.8 50.9 452.5 51.8 456.3 53.3C460 54.7 463.8 56.8 467.5 59.4C471.3 62 475 65.2 478.8 68.7C482.5 72.3 486.3 76.3 490 80.6C493.8 84.9 497.5 89.6 501.3 94.3C505 99.1 508.8 104.1 512.5 109.1C516.3 114 520 119.1 523.8 123.9C527.5 128.7 531.3 133.5 535 137.9C538.8 142.3 542.5 146.5 546.3 150.2C550 153.9 553.8 157.3 557.5 160.1C561.3 162.9 565 165.2 568.8 166.9C572.5 168.7 578.1 169.8 580 170.4"/><path class="gp" d="M366.3 118C370 113.1 373.8 108 377.5 103.1C381.3 98.2 385 93.3 388.8 88.7C392.5 84.1 396.3 79.6 400 75.6C403.8 71.6 407.5 67.8 411.3 64.7"/><g class="mk"><circle cx="163.3" cy="64.4" r="3"/><text x="189.3" y="55.4" text-anchor="middle">H 05:30 1.8 m</text><circle cx="300.3" cy="170.8" r="3"/><text x="300.3" y="205" text-anchor="middle">L 11:35 0.3 m</text><circle cx="442.7" cy="50.6" r="3"/><text x="468.7" y="41.6" text-anchor="middle">H 17:55 2.0 m</text></g></g><g class="nw" transform="translate(347.5 0)"><path class="nl" d="M0 30V190"/><circle cx="0" cy="141.4" r="4.5"/><g class="nc" transform="translate(0 0)"><rect x="-89.5" y="0" width="179" height="22" rx="11"/><text x="0" y="15.5" text-anchor="middle">Now 13:40, 0.7 m rising</text></g></g></svg><svg class="tide tide--c" viewBox="0 0 316 172" data-x0="32" data-x1="308" data-yb="120" data-s="34" data-yt="30" data-fs="12.5" role="img" aria-label="Sample tide curve for Sunday 15 November at Marrow Bay, a fictional place. High 05:30 1.8 metres, low 11:35 0.3 metres, high 17:55 2.0 metres. The go window is 14:30 to 16:30 on the rising tide."><defs><linearGradient id="ag-c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EDF2F7" stop-opacity=".2"/><stop offset="1" stop-color="#EDF2F7" stop-opacity="0"/></linearGradient><linearGradient id="wg-c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF9A62" stop-opacity=".34"/><stop offset="1" stop-color="#FF9A62" stop-opacity=".06"/></linearGradient></defs><g class="gr"><path d="M32 120H308"/><text class="yl" x="26" y="124" text-anchor="end">0</text><path d="M32 86H308"/><text class="yl" x="26" y="90" text-anchor="end">1 m</text><path d="M32 52H308"/><text class="yl" x="26" y="56" text-anchor="end">2 m</text><path class="tk" d="M32 120v4"/><text x="32" y="160" text-anchor="middle">00</text><path class="tk" d="M66.5 120v4"/><text x="66.5" y="160" text-anchor="middle">03</text><path class="tk" d="M101 120v4"/><text x="101" y="160" text-anchor="middle">06</text><path class="tk" d="M135.5 120v4"/><text x="135.5" y="160" text-anchor="middle">09</text><path class="tk" d="M170 120v4"/><text x="170" y="160" text-anchor="middle">12</text><path class="tk" d="M204.5 120v4"/><text x="204.5" y="160" text-anchor="middle">15</text><path class="tk" d="M239 120v4"/><text x="239" y="160" text-anchor="middle">18</text><path class="tk" d="M273.5 120v4"/><text x="273.5" y="160" text-anchor="middle">21</text><path class="tk" d="M308 120v4"/><text x="308" y="160" text-anchor="middle">24</text></g><g class="wn"><rect class="win" x="198.8" y="30" width="23" height="90" fill="url(#wg-c)"/><path class="wl" d="M198.8 30V120M221.8 30V120"/></g><g class="cv"><path class="ar" d="M32 109.2C33 108.7 35.8 107.5 37.8 106.3C39.7 105.1 41.6 103.6 43.5 101.9C45.4 100.3 47.3 98.3 49.3 96.4C51.2 94.4 53.1 92.2 55 90C56.9 87.8 58.8 85.5 60.8 83.3C62.7 81.1 64.6 78.8 66.5 76.7C68.4 74.6 70.3 72.4 72.3 70.6C74.2 68.7 76.1 66.9 78 65.3C79.9 63.8 81.8 62.4 83.8 61.4C85.7 60.3 87.6 59.5 89.5 58.9C91.4 58.4 93.3 58.1 95.3 58.1C97.2 58.1 99.1 58.5 101 59C102.9 59.6 104.8 60.5 106.8 61.6C108.7 62.7 110.6 64.2 112.5 65.7C114.4 67.3 116.3 69.1 118.3 71C120.2 72.9 122.1 75.1 124 77.2C125.9 79.3 127.8 81.6 129.8 83.9C131.7 86.1 133.6 88.4 135.5 90.5C137.4 92.7 139.3 94.9 141.3 96.8C143.2 98.8 145.1 100.7 147 102.3C148.9 103.9 150.8 105.4 152.8 106.6C154.7 107.8 156.6 108.7 158.5 109.4C160.4 110 162.3 110.4 164.3 110.5C166.2 110.6 168.1 110.4 170 109.9C171.9 109.4 173.8 108.5 175.8 107.5C177.7 106.4 179.6 105 181.5 103.5C183.4 101.9 185.3 100.1 187.3 98.1C189.2 96.1 191.1 93.9 193 91.6C194.9 89.4 196.8 86.9 198.8 84.5C200.7 82.1 202.6 79.6 204.5 77.2C206.4 74.8 208.3 72.3 210.3 70.1C212.2 67.8 214.1 65.6 216 63.6C217.9 61.6 219.8 59.8 221.8 58.2C223.7 56.7 225.6 55.3 227.5 54.2C229.4 53.2 231.3 52.4 233.3 51.9C235.2 51.4 237.1 51.2 239 51.4C240.9 51.5 242.8 51.9 244.8 52.6C246.7 53.4 248.6 54.4 250.5 55.7C252.4 56.9 254.3 58.5 256.3 60.2C258.2 62 260.1 64 262 66.1C263.9 68.2 265.8 70.5 267.8 72.9C269.7 75.2 271.6 77.7 273.5 80.1C275.4 82.5 277.3 85.1 279.3 87.4C281.2 89.8 283.1 92.2 285 94.3C286.9 96.5 288.8 98.6 290.8 100.4C292.7 102.2 294.6 103.9 296.5 105.3C298.4 106.6 300.3 107.8 302.3 108.6C304.2 109.5 307 110.1 308 110.3L308 120L32 120Z" fill="url(#ag-c)"/><path class="cl" d="M32 109.2C33 108.7 35.8 107.5 37.8 106.3C39.7 105.1 41.6 103.6 43.5 101.9C45.4 100.3 47.3 98.3 49.3 96.4C51.2 94.4 53.1 92.2 55 90C56.9 87.8 58.8 85.5 60.8 83.3C62.7 81.1 64.6 78.8 66.5 76.7C68.4 74.6 70.3 72.4 72.3 70.6C74.2 68.7 76.1 66.9 78 65.3C79.9 63.8 81.8 62.4 83.8 61.4C85.7 60.3 87.6 59.5 89.5 58.9C91.4 58.4 93.3 58.1 95.3 58.1C97.2 58.1 99.1 58.5 101 59C102.9 59.6 104.8 60.5 106.8 61.6C108.7 62.7 110.6 64.2 112.5 65.7C114.4 67.3 116.3 69.1 118.3 71C120.2 72.9 122.1 75.1 124 77.2C125.9 79.3 127.8 81.6 129.8 83.9C131.7 86.1 133.6 88.4 135.5 90.5C137.4 92.7 139.3 94.9 141.3 96.8C143.2 98.8 145.1 100.7 147 102.3C148.9 103.9 150.8 105.4 152.8 106.6C154.7 107.8 156.6 108.7 158.5 109.4C160.4 110 162.3 110.4 164.3 110.5C166.2 110.6 168.1 110.4 170 109.9C171.9 109.4 173.8 108.5 175.8 107.5C177.7 106.4 179.6 105 181.5 103.5C183.4 101.9 185.3 100.1 187.3 98.1C189.2 96.1 191.1 93.9 193 91.6C194.9 89.4 196.8 86.9 198.8 84.5C200.7 82.1 202.6 79.6 204.5 77.2C206.4 74.8 208.3 72.3 210.3 70.1C212.2 67.8 214.1 65.6 216 63.6C217.9 61.6 219.8 59.8 221.8 58.2C223.7 56.7 225.6 55.3 227.5 54.2C229.4 53.2 231.3 52.4 233.3 51.9C235.2 51.4 237.1 51.2 239 51.4C240.9 51.5 242.8 51.9 244.8 52.6C246.7 53.4 248.6 54.4 250.5 55.7C252.4 56.9 254.3 58.5 256.3 60.2C258.2 62 260.1 64 262 66.1C263.9 68.2 265.8 70.5 267.8 72.9C269.7 75.2 271.6 77.7 273.5 80.1C275.4 82.5 277.3 85.1 279.3 87.4C281.2 89.8 283.1 92.2 285 94.3C286.9 96.5 288.8 98.6 290.8 100.4C292.7 102.2 294.6 103.9 296.5 105.3C298.4 106.6 300.3 107.8 302.3 108.6C304.2 109.5 307 110.1 308 110.3"/><path class="gp" d="M198.8 84.5C200.7 82.1 202.6 79.6 204.5 77.2C206.4 74.8 208.3 72.3 210.3 70.1C212.2 67.8 214.1 65.6 216 63.6C217.9 61.6 219.8 59.8 221.8 58.2"/><g class="mk"><circle cx="95" cy="58.1" r="3"/><text x="117" y="49.1" text-anchor="middle">H 05:30 1.8</text><circle cx="165.1" cy="110.5" r="3"/><text x="165.1" y="135" text-anchor="middle">L 11:35 0.3</text><circle cx="237.8" cy="51.3" r="3"/><text x="259.8" y="42.3" text-anchor="middle">H 17:55 2.0</text></g></g><g class="nw" transform="translate(189.2 0)"><path class="nl" d="M0 30V120"/><circle cx="0" cy="96" r="4.5"/><g class="nc" transform="translate(0 0)"><rect x="-89.5" y="0" width="179" height="21" rx="10.5"/><text x="0" y="15" text-anchor="middle">Now 13:40, 0.7 m rising</text></g></g></svg></div></div><div data-el="nav"><div class="k-a nv"><span class="lg"><i><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 13.5c2.2-3 4.4-3 6.6 0s4.4 3 6.6 0 2.6-2.2 3.8-1.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></i>Slackwater</span><span class="nr"><span class="sm">Sample data</span><span class="mn"><span>Today</span><span>Week</span><span>Spots</span></span></span></div></div><div data-el="badge"><p class="k-a bd"><i></i>Tide and swell planner</p></div><div data-el="head"><p class="k-a hd"><span>Surf the 2 hours</span> <em>that matter.</em></p></div><div data-el="sub"><p class="k-a sb">One tide curve for your break, with the 2 hour go window marked and a countdown to it.</p></div><div data-el="btn"><span class="k-a bt">See today's window<i class="ar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></i></span></div><div data-el="p1"><div class="k-a kp kp--go"><p class="kl">Go window</p><p class="kv"><b>2</b><i>h</i> <b>00</b></p><p class="ks">14:30 to 16:30<span class="rs">, rising</span></p><svg class="kz" viewBox="0 0 64 64" aria-hidden="true"><path class="" d="M32 8.5L32 2.5"/><path class="" d="M38.1 9.3L39.6 3.5"/><path class="" d="M43.8 11.6L46.8 6.5"/><path class="" d="M48.6 15.4L52.9 11.1"/><path class="" d="M52.4 20.3L57.5 17.3"/><path class="" d="M54.7 25.9L60.5 24.4"/><path class="" d="M55.5 32L61.5 32"/><path class="" d="M54.7 38.1L60.5 39.6"/><path class="" d="M52.4 43.8L57.5 46.7"/><path class="" d="M48.6 48.6L52.9 52.9"/><path class="" d="M43.8 52.4L46.8 57.5"/><path class="" d="M38.1 54.7L39.6 60.5"/><path class="" d="M32 55.5L32 61.5"/><path class="" d="M25.9 54.7L24.4 60.5"/><path class="on" d="M22 49.3L17.2 57.5"/><path class="on" d="M17.9 46.1L11.1 52.9"/><path class="" d="M11.6 43.8L6.5 46.8"/><path class="" d="M9.3 38.1L3.5 39.6"/><path class="" d="M8.5 32L2.5 32"/><path class="" d="M9.3 25.9L3.5 24.4"/><path class="" d="M11.6 20.3L6.5 17.2"/><path class="" d="M15.4 15.4L11.1 11.1"/><path class="" d="M20.2 11.6L17.2 6.5"/><path class="" d="M25.9 9.3L24.4 3.5"/><path class="hand" d="M32 32L24.8 47.4"/><circle cx="32" cy="32" r="2.2"/></svg></div></div><div data-el="p2"><div class="k-a kp "><p class="kl">Swell</p><p class="kv"><b>1.1</b><i>m</i></p><p class="ks">11 s period</p><svg class="kz kz--bars" viewBox="0 0 96 40" aria-hidden="true"><rect class="" x="0.5" y="11" width="2.4" height="29" rx="1.2"/><rect class="" x="4.5" y="12" width="2.4" height="28" rx="1.2"/><rect class="" x="8.5" y="19" width="2.4" height="21" rx="1.2"/><rect class="" x="12.5" y="18" width="2.4" height="22" rx="1.2"/><rect class="" x="16.5" y="16" width="2.4" height="24" rx="1.2"/><rect class="" x="20.5" y="23" width="2.4" height="17" rx="1.2"/><rect class="" x="24.5" y="23" width="2.4" height="17" rx="1.2"/><rect class="" x="28.5" y="19" width="2.4" height="21" rx="1.2"/><rect class="" x="32.5" y="22" width="2.4" height="18" rx="1.2"/><rect class="" x="36.5" y="25" width="2.4" height="15" rx="1.2"/><rect class="" x="40.5" y="19" width="2.4" height="21" rx="1.2"/><rect class="" x="44.5" y="18" width="2.4" height="22" rx="1.2"/><rect class="" x="48.5" y="21" width="2.4" height="19" rx="1.2"/><rect class="" x="52.5" y="16" width="2.4" height="24" rx="1.2"/><rect class="on" x="56.5" y="12" width="2.4" height="28" rx="1.2"/><rect class="on" x="60.5" y="15" width="2.4" height="25" rx="1.2"/><rect class="" x="64.5" y="13" width="2.4" height="27" rx="1.2"/><rect class="" x="68.5" y="7" width="2.4" height="33" rx="1.2"/><rect class="" x="72.5" y="10" width="2.4" height="30" rx="1.2"/><rect class="" x="76.5" y="11" width="2.4" height="29" rx="1.2"/><rect class="" x="80.5" y="6" width="2.4" height="34" rx="1.2"/><rect class="" x="84.5" y="8" width="2.4" height="32" rx="1.2"/><rect class="" x="88.5" y="13" width="2.4" height="27" rx="1.2"/><rect class="" x="92.5" y="10" width="2.4" height="30" rx="1.2"/></svg></div></div><div data-el="p3"><div class="k-a kp "><p class="kl">Wind</p><p class="kv"><b>8</b><i>kn</i></p><p class="ks">Offshore</p><svg class="kz kz--seg" viewBox="0 0 96 14" aria-hidden="true"><rect class="on" x="0.5" y="0" width="6" height="14" rx="1.5"/><rect class="on" x="8.5" y="0" width="6" height="14" rx="1.5"/><rect class="on" x="16.5" y="0" width="6" height="14" rx="1.5"/><rect class="" x="24.5" y="0" width="6" height="14" rx="1.5"/><rect class="" x="32.5" y="0" width="6" height="14" rx="1.5"/><rect class="" x="40.5" y="0" width="6" height="14" rx="1.5"/><rect class="" x="48.5" y="0" width="6" height="14" rx="1.5"/><rect class="" x="56.5" y="0" width="6" height="14" rx="1.5"/><rect class="" x="64.5" y="0" width="6" height="14" rx="1.5"/><rect class="" x="72.5" y="0" width="6" height="14" rx="1.5"/><rect class="" x="80.5" y="0" width="6" height="14" rx="1.5"/><rect class="" x="88.5" y="0" width="6" height="14" rx="1.5"/></svg></div></div><div data-el="foot"><p class="k-a ft"><span>Fictional product, sample data. Sun 15 Nov.</span><span>Not for navigation or safety decisions.</span></p></div></div>
+          </figure>
+        </div>
+        <div class="ba__ui" hidden>
+          <div class="ba__seg" role="radiogroup" aria-label="Compare Slackwater before and after">
+            <button type="button" role="radio" aria-checked="true" data-to="0">Before</button>
+            <button type="button" role="radio" aria-checked="false" tabindex="-1" data-to="1">After</button>
+          </div>
+          <div class="ba__rng"><label for="ba-range">Scrub the five fixes</label><input id="ba-range" type="range" min="0" max="100" step="1" value="0" aria-valuetext="Before"></div>
+        </div>
+        <p class="ba__note">Slackwater is a fictional product, designed with veyUI as an example. The tide data is sample data.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap ba__list">
+    <ol class="ba__fixes" aria-label="The five fixes, in order">
+          <li class="ba__fix" data-fix="1" id="fix-1" data-was="System sans, one heavy weight." data-now="Light grotesk in two tones, tabular figures."><span class="ba__fn" aria-hidden="true">1</span><div><h3>Type</h3><p class="ba__was"><b>Was</b><span>System sans in one heavy weight, a gradient word in the headline, grey body copy.</span></p><p class="ba__now"><b>Now</b><span>One light grotesk with tabular figures, the headline in two tones, mono only for the smallest labels.</span></p></div></li>
+          <li class="ba__fix" data-fix="2" id="fix-2" data-was="A flat centered stack." data-now="Headline over a horizon, dashboard docked below."><span class="ba__fn" aria-hidden="true">2</span><div><h3>Layout</h3><p class="ba__was"><b>Was</b><span>A flat centered stack: text, a button, then a row of cards.</span></p><p class="ba__now"><b>Now</b><span>A scene: the headline over a horizon and a dashboard docked to the bottom. Tight spacing inside a group, wide spacing between groups.</span></p></div></li>
+          <li class="ba__fix" data-fix="3" id="fix-3" data-was="Indigo to violet gradient and a glowing orb." data-now="Navy dusk, one amber signal for the go window."><span class="ba__fn" aria-hidden="true">3</span><div><h3>Color</h3><p class="ba__was"><b>Was</b><span>An indigo to violet gradient, a glowing orb and pastel cards.</span></p><p class="ba__now"><b>Now</b><span>A navy dusk ground with one amber signal, kept for the go window and the horizon glow.</span></p></div></li>
+          <li class="ba__fix" data-fix="4" id="fix-4" data-was="Three icon cards of buzzwords." data-now="Three real readings and a tide curve."><span class="ba__fn" aria-hidden="true">4</span><div><h3>Proof</h3><p class="ba__was"><b>Was</b><span>Three identical icon cards with a buzzword each and nothing to check.</span></p><p class="ba__now"><b>Now</b><span>Three readings (a 24 hour dial, a swell rhythm, a wind gauge) and the real tide curve with the go window marked, all sample data.</span></p></div></li>
+          <li class="ba__fix" data-fix="5" id="fix-5" data-was="Supercharge your surf planning with AI." data-now="Surf the 2 hours that matter."><span class="ba__fn" aria-hidden="true">5</span><div><h3>Copy</h3><p class="ba__was"><b>Was</b><span>Supercharge your surf planning with AI.</span></p><p class="ba__now"><b>Now</b><span>Surf the 2 hours that matter. It names the audience, the benefit and the action, and every number on the page is sample data that says so.</span></p></div></li>
+    </ol>
+  </div>
+  <div class="wrap ba__foot">
+    <p class="ba__close">veyUI builds three of these. You choose one.</p>
+    <a class="btn btn--ink" href="#run"><span class="btn__face">See how the run works <svg class="i"><use href="#i-arrow"/></svg></span></a>
+  </div>
+</section>
+
+<!-- 5. EVIDENCE -->
+<section class="field f-mint evidence" id="evidence" aria-labelledby="ev-h" data-prev="yellow">
+  <div class="field__bg" aria-hidden="true"></div>
+  <div class="wrap ev">
+    <div class="ev__left">
+      <p class="eyebrow">The evidence</p>
+      <h2 id="ev-h" class="big stretch"><span class="ln">It studies</span> <span class="ln">before it</span> <span class="ln">draws.</span></h2>
+      <p class="lead">583 reviewed screen descriptions, 8 documented flows, 19 decision guides and 200 pattern cards, all local files your agent searches in milliseconds.</p>
+      <div class="num" aria-label="583 reviewed screens"><span class="num__n" data-count="583">583</span><span class="num__l">reviewed screen descriptions<br>across 130 products</span></div>
+      <div class="plat" role="img" aria-label="268 mobile, 195 desktop, 120 web screens">
+        <span class="plat__b pm" style="flex:268"><b>268</b> mobile</span>
+        <span class="plat__b pd" style="flex:195"><b>195</b> desktop</span>
+        <span class="plat__b pw" style="flex:120"><b>120</b> web</span>
+      </div>
+      <dl class="stats">
+        <div><dt>documented flows</dt><dd data-count="8">8</dd></div>
+        <div><dt>decision guides</dt><dd data-count="19">19</dd></div>
+        <div><dt>pattern cards</dt><dd data-count="200">200</dd></div>
+        <div><dt>reference catalog records, with evidence levels</dt><dd data-count="384">384</dd></div>
+      </dl>
+    </div>
+    <div class="ev__right">
+      <p class="nojs-note">The live search needs JavaScript. Six real sample records appear here when it runs.</p>
+      <form class="q" id="qform" role="search" autocomplete="off">
+        <label class="q__lab" for="q">Ask the library. Six of its real records are loaded on this page.</label>
+        <div class="q__cmd"><span class="q__pre" aria-hidden="true">$ brief</span><input id="q" name="q" type="search" placeholder="billing, empty state, settings..." spellcheck="false"><button class="btn btn--ink btn--sm" type="submit"><span class="btn__face">Search</span></button></div>
+        <div class="q__chips" aria-label="Try a query">
+          <button type="button" class="chip" data-q="pricing">pricing</button>
+          <button type="button" class="chip" data-q="empty state">empty state</button>
+          <button type="button" class="chip" data-q="settings">settings</button>
+          <button type="button" class="chip" data-q="search filters">search filters</button>
+          <button type="button" class="chip" data-q="verification error">verification error</button>
+          <button type="button" class="chip" data-q="onboarding">onboarding</button>
+        </div>
+      </form>
+      <p class="q__meta" id="qmeta" aria-live="polite"></p>
+      <ol class="results" id="results"></ol>
+      <p class="note">Descriptions of real screens, not live-tested flows. Records below are copied from data/ready-screens.json (6 of 583).</p>
+      <figure class="term">
+        <figcaption><span>Real output</span> <code>python scripts/design_library.py stats</code></figcaption>
+<pre>{
+  "ready_screens": 583,
+  "products": 130,
+  "platforms": { "mobile": 268, "desktop": 195, "web": 120 },
+  "source_types": { "publisher_ui_screen": 268, "official_documentation_screen": 315 },
+  "reference_image_reads_required": 0,
+  "reference_network_requests_required": 0,
+  "documented_flows": 8,
+  "decision_guides": 19,
+  "independently_operated_flows": 0
+}</pre>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 6. MODES -->
+<section class="field f-cream modes" id="modes" aria-labelledby="modes-h" data-prev="mint">
+  <div class="field__bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">Modes</p>
+    <h2 id="modes-h" class="mega stretch"><span class="ln">Ask in</span> <span class="ln">plain words.</span></h2>
+    <p class="lead modes__lead">Eight modes, natural-language routes, not shell commands. Press a card, drag one onto another to swap them, or shuffle the deck.</p>
+    <div class="cmdline" aria-hidden="true"><span class="cmdline__pre">&gt;</span><span class="cmdline__txt" id="mline">Use veyUI to design a pricing page for this app.</span><span class="cmdline__caret"></span></div>
+    <p class="sr" id="mode-sr" role="status"></p>
+    <div class="board" id="board" role="radiogroup" aria-label="Eight modes">
+      <button type="button" class="mchip" role="radio" aria-checked="true" data-s="Use veyUI to design a pricing page for this app."><span><b>design</b><small>Use veyUI to design a pricing page for this app.</small></span></button>
+      <button type="button" class="mchip" role="radio" aria-checked="false" data-s="Use veyUI to redesign this landing page."><span><b>redesign</b><small>Use veyUI to redesign this landing page.</small></span></button>
+      <button type="button" class="mchip" role="radio" aria-checked="false" data-s="Use veyUI to prototype three directions for the dashboard."><span><b>prototype</b><small>Use veyUI to prototype three directions for the dashboard.</small></span></button>
+      <button type="button" class="mchip" role="radio" aria-checked="false" data-s="Use veyUI to polish the spacing and type on checkout."><span><b>polish</b><small>Use veyUI to polish the spacing and type on checkout.</small></span></button>
+      <button type="button" class="mchip" role="radio" aria-checked="false" data-s="Use veyUI to audit the settings screen."><span><b>audit</b><small>Use veyUI to audit the settings screen.</small></span></button>
+      <button type="button" class="mchip" role="radio" aria-checked="false" data-s="Use veyUI to add motion to onboarding. Respect reduced motion."><span><b>motion</b><small>Use veyUI to add motion to onboarding. Respect reduced motion.</small></span></button>
+      <button type="button" class="mchip" role="radio" aria-checked="false" data-s="Use veyUI to build a design system for this app."><span><b>system</b><small>Use veyUI to build a design system for this app.</small></span></button>
+      <button type="button" class="mchip" role="radio" aria-checked="false" data-s="Use veyUI to find reference directions for a billing page."><span><b>references</b><small>Use veyUI to find reference directions for a billing page.</small></span></button>
+    </div>
+    <button type="button" class="btn btn--yellow btn--sm shuffle-btn" id="shuffle"><span class="btn__face"><svg class="i"><use href="#i-play"/></svg> Shuffle the cards</span></button>
+  </div>
+</section>
+
+<!-- 7. INSTALL -->
+<section class="field f-ink install" id="install" aria-labelledby="inst-h" data-prev="cream">
+  <div class="field__bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">Install</p>
+    <h2 id="inst-h" class="mega stretch"><span class="ln">One command.</span></h2>
+    <div class="tabs">
+      <div class="tabs__list" role="tablist" aria-label="Install routes">
+        <button role="tab" id="tab-skills" aria-selected="true" aria-controls="pan-skills" type="button">skills CLI</button>
+        <button role="tab" id="tab-claude" aria-selected="false" aria-controls="pan-claude" type="button" tabindex="-1">Claude Code</button>
+        <button role="tab" id="tab-gemini" aria-selected="false" aria-controls="pan-gemini" type="button" tabindex="-1">Gemini CLI</button>
+        <button role="tab" id="tab-offline" aria-selected="false" aria-controls="pan-offline" type="button" tabindex="-1">Offline</button>
+      </div>
+      <div class="tabs__panels">
+        <div role="tabpanel" id="pan-skills" aria-labelledby="tab-skills" class="pan">
+          <p class="pan__l">skills CLI</p>
+          <div class="cmd cmd--xl"><code>npx skills add Choy0X/VeyUI</code><button class="copy" type="button" data-copy="npx skills add Choy0X/VeyUI" aria-label="Copy skills CLI command"><svg class="i"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+        </div>
+        <div role="tabpanel" id="pan-claude" aria-labelledby="tab-claude" class="pan" hidden>
+          <p class="pan__l">Claude Code</p>
+          <div class="cmd cmd--xl"><code>/plugin marketplace add Choy0X/VeyUI</code><button class="copy" type="button" data-copy="/plugin marketplace add Choy0X/VeyUI" aria-label="Copy first Claude Code command"><svg class="i"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+          <p class="then">then</p>
+          <div class="cmd cmd--xl"><code>/plugin install veyui@veyui</code><button class="copy" type="button" data-copy="/plugin install veyui@veyui" aria-label="Copy second Claude Code command"><svg class="i"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+        </div>
+        <div role="tabpanel" id="pan-gemini" aria-labelledby="tab-gemini" class="pan" hidden>
+          <p class="pan__l">Gemini CLI</p>
+          <div class="cmd cmd--xl"><code>gemini extensions install https://github.com/Choy0X/VeyUI</code><button class="copy" type="button" data-copy="gemini extensions install https://github.com/Choy0X/VeyUI" aria-label="Copy Gemini CLI command"><svg class="i"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+        </div>
+        <div role="tabpanel" id="pan-offline" aria-labelledby="tab-offline" class="pan" hidden>
+          <p class="pan__l">Offline</p>
+          <div class="cmd cmd--xl"><code>git clone https://github.com/Choy0X/VeyUI &amp;&amp; cd VeyUI &amp;&amp; python install.py --all</code><button class="copy" type="button" data-copy="git clone https://github.com/Choy0X/VeyUI && cd VeyUI && python install.py --all" aria-label="Copy offline install command"><svg class="i"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+        </div>
+      </div>
+    </div>
+    <div class="invoke">
+      <h3>Then invoke it</h3>
+      <ul>
+        <li><span>Claude Code</span><code>/veyui</code></li>
+        <li><span>Codex</span><code>$veyui</code></li>
+        <li><span>Everywhere else</span><code>Use veyUI to redesign this landing page.</code></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 8. AGENTS -->
+<section class="field f-tomato agents" id="agents" aria-labelledby="ag-h" data-prev="ink">
+  <div class="field__bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">Agents</p>
+    <h2 id="ag-h" class="big stretch"><span class="ln">Made for the agents</span> <span class="ln">you already use.</span></h2>
+  </div>
+  <div class="marq" id="marq">
+    <ul class="marq__row marq__row--a">
+      <li>Claude Code</li><li>Codex</li><li>Cursor</li><li>Gemini CLI</li><li>GitHub Copilot</li><li>Windsurf</li><li>Cline</li><li>OpenCode</li><li>Amp</li><li>Kiro</li>
+    </ul>
+    <ul class="marq__row marq__row--b">
+      <li>Roo Code</li><li>Goose</li><li>Trae</li><li>Antigravity</li><li>Continue</li><li>Junie</li><li>Qwen Code</li><li>OpenHands</li><li>Augment</li><li>and more</li>
+    </ul>
+  </div>
+  <div class="wrap agents__foot">
+    <p class="note">Tested on Windows 11 with Python 3.13 and Node 25. Other systems and agents are not each exercised end to end. Agent names are plain text; their owners are not affiliated with veyUI.</p>
+    <button class="btn btn--ink btn--sm marq__pause" type="button" aria-pressed="false"><span class="btn__face"><svg class="i"><use href="#i-pause"/></svg><span>Pause names</span></span></button>
+  </div>
+</section>
+
+<!-- 9. LIMITS -->
+<section class="field f-cream limits" id="limits" aria-labelledby="lim-h" data-prev="tomato">
+  <div class="field__bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">Limits</p>
+    <h2 id="lim-h" class="big stretch"><span class="ln">What it will</span> <span class="ln">not promise.</span></h2>
+    <div class="ledger">
+      <div class="ledger__col">
+        <h3>It will not</h3>
+        <ul>
+          <li><span class="x" aria-hidden="true"></span>It cannot guarantee great design.</li>
+          <li><span class="x" aria-hidden="true"></span>Final output still needs real rendered inspection and your choice.</li>
+          <li><span class="x" aria-hidden="true"></span>31 of its concept studies are text only because image rights are unverified.</li>
+          <li><span class="x" aria-hidden="true"></span>Image generation always needs your permission.</li>
+        </ul>
+      </div>
+      <div class="ledger__col ledger__col--req">
+        <h3>It needs</h3>
+        <ul>
+          <li><span class="sq" aria-hidden="true"></span>Python 3.10+</li>
+          <li><span class="sq" aria-hidden="true"></span>Node 22+</li>
+          <li><span class="sq" aria-hidden="true"></span>Chrome, Edge or Chromium for web checks</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. CREDITS -->
+<section class="field f-cobalt credits" id="credits" aria-labelledby="cr-h" data-prev="cream">
+  <div class="field__bg" aria-hidden="true"></div>
+  <div class="wrap credits__grid">
+    <div>
+      <p class="eyebrow">Credits</p>
+      <h2 id="cr-h" class="big stretch"><span class="ln">Built on</span> <span class="ln">Taste Skill</span> <span class="ln">by Leonxlnx.</span></h2>
+    </div>
+    <div class="label">
+      <p class="label__lead">veyUI's web engine is a pinned, unmodified copy of Taste Skill by Leonxlnx (MIT). veyUI is independent and not endorsed by that author.</p>
+      <dl>
+        <div><dt>Upstream</dt><dd><a href="https://github.com/Leonxlnx/taste-skill" rel="noopener">github.com/Leonxlnx/taste-skill</a></dd></div>
+        <div><dt>Author</dt><dd><a href="https://github.com/Leonxlnx" rel="noopener">github.com/Leonxlnx</a></dd></div>
+        <div><dt>License</dt><dd>MIT</dd></div>
+        <div><dt>Pinned commit</dt><dd class="mono">f6b76575f949707b4e3c37cd86cb44b0b98643e8</dd></div>
+        <div><dt>Location</dt><dd class="mono">skills/veyui/foundation/</dd></div>
+        <div><dt>Changes inside it</dt><dd>None. Every file is hashed and checked.</dd></div>
+        <div><dt>Notices</dt><dd><a href="https://github.com/Choy0X/VeyUI/blob/main/THIRD-PARTY-NOTICES.md" rel="noopener">THIRD-PARTY-NOTICES.md</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- 11. FAQ -->
+<section class="field f-cream faq" id="faq" aria-labelledby="faq-h" data-prev="cobalt">
+  <div class="field__bg" aria-hidden="true"></div>
+  <div class="wrap faq__grid">
+    <div class="faq__head">
+      <p class="eyebrow">Questions</p>
+      <h2 id="faq-h" class="big stretch"><span class="ln">Questions,</span> <span class="ln">answered</span> <span class="ln">straight.</span></h2>
+    </div>
+    <div class="acc">
+      <div class="acc__item"><h3><button type="button" class="acc__btn" id="q1" aria-expanded="false" aria-controls="a1"><span>What is the veyUI skill?</span><svg class="i"><use href="#i-plus"/></svg></button></h3><div class="acc__p" id="a1" role="region" aria-labelledby="q1"><div><p>A skill (a folder of instructions, data and scripts) that teaches an AI coding agent a real UI design process: discover, recommend, prototype three concepts, let you choose, implement and verify.</p></div></div></div>
+      <div class="acc__item"><h3><button type="button" class="acc__btn" id="q2" aria-expanded="false" aria-controls="a2"><span>Does the skill generate images?</span><svg class="i"><use href="#i-plus"/></svg></button></h3><div class="acc__p" id="a2" role="region" aria-labelledby="q2"><div><p>Not without your permission. Image generation always needs explicit approval. It prefers your real assets, product UI and approved media.</p></div></div></div>
+      <div class="acc__item"><h3><button type="button" class="acc__btn" id="q3" aria-expanded="false" aria-controls="a3"><span>Does it need an account, API key or paid service?</span><svg class="i"><use href="#i-plus"/></svg></button></h3><div class="acc__p" id="a3" role="region" aria-labelledby="q3"><div><p>No. The reference library is offline and local. Your agent's own model is the only paid piece.</p></div></div></div>
+      <div class="acc__item"><h3><button type="button" class="acc__btn" id="q4" aria-expanded="false" aria-controls="a4"><span>How is it different from Taste Skill?</span><svg class="i"><use href="#i-plus"/></svg></button></h3><div class="acc__p" id="a4" role="region" aria-labelledby="q4"><div><p>veyUI is built on Taste Skill's web engine, which it bundles unmodified, with credit to Leonxlnx. veyUI adds an offline reference library, product discovery and recommendation, the three-concept hosted review, evidence checks, native and app guidance, and packaging for many agents.</p></div></div></div>
+      <div class="acc__item"><h3><button type="button" class="acc__btn" id="q5" aria-expanded="false" aria-controls="a5"><span>Will it guarantee great design?</span><svg class="i"><use href="#i-plus"/></svg></button></h3><div class="acc__p" id="a5" role="region" aria-labelledby="q5"><div><p>No. It enforces an evidence-based workflow. Final quality still depends on the model, your inputs and your choice, and a passing check is not visual approval.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. CLOSE -->
+<section class="field f-tomato close" id="close" aria-labelledby="close-h" data-prev="cream">
+  <div class="field__bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2 id="close-h" class="mega stretch"><span class="ln">Give your</span> <span class="ln">agent a design</span> <span class="ln">process.</span></h2>
+    <div class="close__row">
+      <p class="lead">Free, open source, MIT.</p>
+      <div class="cmd cmd--lg"><code>npx skills add Choy0X/VeyUI</code><button class="copy" type="button" data-copy="npx skills add Choy0X/VeyUI" aria-label="Copy install command"><svg class="i"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+      <a class="btn btn--ink" href="https://github.com/Choy0X/VeyUI" rel="noopener"><span class="btn__face">View the repo <svg class="i"><use href="#i-arrow"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div class="foot__brand">
+      <a class="nav__brand" href="#top" aria-label="veyUI, back to top"><img src="assets/logo.svg" width="34" height="34" alt=""><span>veyUI</span></a>
+      <p>A free, open-source design skill for AI coding agents.</p>
+    </div>
+    <nav class="foot__links" aria-label="Project links">
+      <ul>
+        <li><a href="https://github.com/Choy0X/VeyUI" rel="noopener">Repository</a></li>
+        <li><a href="https://github.com/Choy0X/VeyUI/blob/main/LICENSE" rel="noopener">License</a></li>
+        <li><a href="https://github.com/Choy0X/VeyUI/blob/main/docs/installation.md" rel="noopener">Installation</a></li>
+        <li><a href="https://github.com/Choy0X/VeyUI/blob/main/docs/usage.md" rel="noopener">Usage</a></li>
+        <li><a href="https://github.com/Choy0X/VeyUI/blob/main/docs/how-it-works.md" rel="noopener">How it works</a></li>
+        <li><a href="https://github.com/Choy0X/VeyUI/blob/main/docs/faq.md" rel="noopener">FAQ</a></li>
+        <li><a href="https://github.com/Choy0X/VeyUI/blob/main/docs/platforms.md" rel="noopener">Platforms</a></li>
+        <li><a href="https://github.com/Choy0X/VeyUI/blob/main/THIRD-PARTY-NOTICES.md" rel="noopener">Third-party notices</a></li>
+      </ul>
+    </nav>
+    <div class="foot__legal">
+      <p class="foot__credit">veyUI's web engine is a pinned, unmodified copy of Taste Skill by Leonxlnx (MIT), commit f6b76575. veyUI is independent and not endorsed by that author.</p>
+      <p class="foot__fine">Slackwater is a fictional product used as an example. &copy; Choy0X, MIT licensed.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/Flip.min.js"></script>
+<script type="module" src="assets/js/main.js"></script>
+<script type="module" src="assets/js/ba.js"></script>
+</body>
+</html>

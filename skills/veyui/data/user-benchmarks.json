@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "benchmarks": [
+    {
+      "id": "user-01",
+      "name": "Liquid Brokers",
+      "kind": "user_supplied_concept",
+      "source": "Original images supplied in this conversation",
+      "observation": "Dark product stage, large centered headline, luminous organic form, restrained floating information.",
+      "transfer": "Use one meaningful dimensional anchor and deliberate contrast.",
+      "avoid": "Do not copy trading claims, low contrast or irrelevant metallic decoration.",
+      "provenance": "visual_observation_of_user_attachment",
+      "asset_included": false,
+      "metric_status": "qualitative; no exact tokens measured",
+      "rights": "Use principles. Source image rights and redistribution not established."
+    },
+    {
+      "id": "user-02",
+      "name": "ProFinance",
+      "kind": "user_supplied_concept",
+      "source": "Original images supplied in this conversation",
+      "observation": "Acid-yellow hero field, strong black typography, overlapping app screens, ample white sections and an alternating product narrative.",
+      "transfer": "Concentrate brand color and make product imagery part of the composition.",
+      "avoid": "Do not shrink text to mockup scale or copy unsupported finance features.",
+      "provenance": "visual_observation_of_user_attachment",
+      "asset_included": false,
+      "metric_status": "qualitative; no exact tokens measured",
+      "rights": "Use principles. Source image rights and redistribution not established."
+    },
+    {
+      "id": "user-03",
+      "name": "Juris AI",
+      "kind": "user_supplied_concept",
+      "source": "Original images supplied in this conversation",
+      "observation": "Quiet navigation sidebar, restrained toolbar, compact summaries and a focused central empty state.",
+      "transfer": "Use hierarchy and precise spacing for a professional operational surface.",
+      "avoid": "The gradient presentation background is outside the app, not a required app background.",
+      "provenance": "visual_observation_of_user_attachment",
+      "asset_included": false,
+      "metric_status": "qualitative; no exact tokens measured",
+      "rights": "Use principles. Source image rights and redistribution not established."
+    },
+    {
+      "id": "user-04",
+      "name": "AI assistant panel",
+      "kind": "user_supplied_concept",
+      "source": "Original images supplied in this conversation",
+      "observation": "Large friendly title, dimensional orb, soft prompt rows and a rounded input region.",
+      "transfer": "Separate a single expressive asset from calm task controls.",
+      "avoid": "Do not use an orb as a substitute for useful response and error states.",
+      "provenance": "visual_observation_of_user_attachment",
+      "asset_included": false,
+      "metric_status": "qualitative; no exact tokens measured",
+      "rights": "Use principles. Source image rights and redistribution not established."
+    },
+    {
+      "id": "user-05",
+      "name": "Quick Actions panel",
+      "kind": "user_supplied_concept",
+      "source": "Original images supplied in this conversation",
+      "observation": "Simple white panel, coherent icon blocks, aligned labels and chevrons, thin row separators.",
+      "transfer": "Craft the relationships between icon, text, action and row spacing.",
+      "avoid": "Preserve readable text and usable hit targets rather than screenshot proportions.",
+      "provenance": "visual_observation_of_user_attachment",
+      "asset_included": false,
+      "metric_status": "qualitative; no exact tokens measured",
+      "rights": "Use principles. Source image rights and redistribution not established."
+    },
+    {
+      "id": "user-06",
+      "name": "Twinkle.ai",
+      "kind": "user_supplied_concept",
+      "source": "Original images supplied in this conversation",
+      "observation": "Confident centered typography, restrained black CTA, landscape media and a floating task preview.",
+      "transfer": "Pair expressive imagery with restrained interface chrome and an unmistakable main message.",
+      "avoid": "Landscape and logos need relevance and rights; task preview must remain legible.",
+      "provenance": "visual_observation_of_user_attachment",
+      "asset_included": false,
+      "metric_status": "qualitative; no exact tokens measured",
+      "rights": "Use principles. Source image rights and redistribution not established."
+    },
+    {
+      "id": "user-07",
+      "name": "Galileo",
+      "kind": "user_supplied_concept",
+      "source": "Original images supplied in this conversation",
+      "observation": "Varied visual feature mosaic, amber accents, product diagrams and a dark contrast section.",
+      "transfer": "Vary section composition around evidence while maintaining one accent language.",
+      "avoid": "Do not reproduce fabricated metrics or use identical bento cells for every section.",
+      "provenance": "visual_observation_of_user_attachment",
+      "asset_included": false,
+      "metric_status": "qualitative; no exact tokens measured",
+      "rights": "Use principles. Source image rights and redistribution not established."
+    },
+    {
+      "id": "user-08",
+      "name": "Zentro",
+      "kind": "user_supplied_concept",
+      "source": "Original images supplied in this conversation",
+      "observation": "Landscape-led opening, large workflow product view, green material cues and changing section scale.",
+      "transfer": "Connect product evidence and an environmental art direction with consistent visual treatment.",
+      "avoid": "Large landscape assets require compact crops, performance planning and usable static fallbacks.",
+      "provenance": "visual_observation_of_user_attachment",
+      "asset_included": false,
+      "metric_status": "qualitative; no exact tokens measured",
+      "rights": "Use principles. Source image rights and redistribution not established."
+    }
+  ],
+  "motion_reference": {
+    "url": "https://cdn.dribbble.com/userupload/44389201/file/f2c30e20a81db05cdbea0547c267a80d.mp4",
+    "status": "not_temporally_reviewed",
+    "instruction": "Inspect playback or frames when accessible before claiming timing or choreography."
+  }
+}

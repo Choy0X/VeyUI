@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "records": {
+    "FL01": {
+      "source_url": "https://proton.me/support/manage-subscription",
+      "review": "official_text_inspected",
+      "inspected_on": "2026-11-07",
+      "runtime_tested": false,
+      "capture_date": null,
+      "scope": "Paraphrased publisher documentation; no independently recorded interaction or success metrics."
+    },
+    "FL02": {
+      "source_url": "https://proton.me/support/manage-subscription",
+      "review": "official_text_inspected",
+      "inspected_on": "2026-11-07",
+      "runtime_tested": false,
+      "capture_date": null,
+      "scope": "Paraphrased publisher documentation; no independently recorded interaction or success metrics."
+    },
+    "FL03": {
+      "source_url": "https://code.visualstudio.com/docs/configure/settings",
+      "review": "official_text_inspected",
+      "inspected_on": "2026-11-07",
+      "runtime_tested": false,
+      "capture_date": null,
+      "scope": "Paraphrased publisher documentation; no independently recorded interaction or success metrics."
+    },
+    "FL04": {
+      "source_url": "https://docs.github.com/en/pull-requests/how-tos/review-pull-requests/reviewing-proposed-changes-in-a-pull-request",
+      "review": "official_text_inspected",
+      "inspected_on": "2026-11-07",
+      "runtime_tested": false,
+      "capture_date": null,
+      "scope": "Paraphrased publisher documentation; no independently recorded interaction or success metrics."
+    },
+    "FL05": {
+      "source_url": "https://docs.nextcloud.com/server/stable/user_manual/en/files/sharing.html",
+      "review": "official_text_inspected",
+      "inspected_on": "2026-11-07",
+      "runtime_tested": false,
+      "capture_date": null,
+      "scope": "Paraphrased publisher documentation; no independently recorded interaction or success metrics."
+    },
+    "FL06": {
+      "source_url": "https://obsproject.com/kb/OBS-Studio-Overview",
+      "review": "official_text_inspected",
+      "inspected_on": "2026-11-07",
+      "runtime_tested": false,
+      "capture_date": null,
+      "scope": "Paraphrased publisher documentation; no independently recorded interaction or success metrics."
+    },
+    "FL07": {
+      "source_url": "https://www.metabase.com/docs/latest/dashboards/introduction",
+      "review": "official_text_inspected",
+      "inspected_on": "2026-11-07",
+      "runtime_tested": false,
+      "capture_date": null,
+      "scope": "Paraphrased publisher documentation; no independently recorded interaction or success metrics."
+    },
+    "FL08": {
+      "source_url": "https://manual.raycast.com/settings",
+      "review": "official_text_inspected",
+      "inspected_on": "2026-11-07",
+      "runtime_tested": false,
+      "capture_date": null,
+      "scope": "Paraphrased publisher documentation; no independently recorded interaction or success metrics."
+    }
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "guides": [
+    {
+      "id": "D01",
+      "title": "Plan comparison with an explicit commitment",
+      "tags": [
+        "pricing",
+        "payment",
+        "subscription",
+        "comparison"
+      ],
+      "decision": "Align plan name, audience, billing unit, included limits and selection action. Show the actual billing period and total commitment near the decision. Use real product positioning to emphasize one plan.",
+      "tradeoff": "Use a compact comparison table when people compare shared attributes; use separate summaries when plans serve different audiences. Preserve attribute labels when stacking on narrow screens.",
+      "avoid": "A highlighted plan without a reason; mixed monthly and annual units; hidden renewal terms; generic premium badges.",
+      "verify": "Switch cadence, resize, enlarge text, and compare the same feature across every plan. Confirm all numbers come from authoritative billing data.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D02",
+      "title": "Recover from payment failure without ambiguity",
+      "tags": [
+        "payment",
+        "error",
+        "failed",
+        "retry",
+        "billing"
+      ],
+      "decision": "Distinguish a rejected payment from a timeout with unknown outcome. Preserve the selected plan and safe entered data. Put the explanation beside the payment action, with a recovery action that matches the actual processor state.",
+      "tradeoff": "A field error needs a local correction; an uncertain transaction needs status reconciliation before another charge attempt. A general alert alone cannot explain both.",
+      "avoid": "Saying no charge occurred without backend evidence; retry loops that can duplicate charges; clearing all inputs.",
+      "verify": "Test declined, pending, timed-out and reconciled outcomes. Announce the result and verify focus/retry semantics with the real backend contract.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D03",
+      "title": "Field validation with progressive disclosure",
+      "tags": [
+        "form",
+        "validation",
+        "error",
+        "input"
+      ],
+      "decision": "Keep persistent labels. Validate at a useful moment such as blur or submit; after an error, update feedback as correction becomes meaningful. Explain the fix beside the field and keep unrelated valid inputs.",
+      "tradeoff": "Use a linked summary for long forms or multiple errors; avoid taking focus on every keystroke. Immediate feedback suits format constraints but may be distracting before sufficient input.",
+      "avoid": "Only changing a border; disappearing labels; errors shown before typing; one generic toast for several invalid fields.",
+      "verify": "Test keyboard submission, screen-reader announcement, paste, long localized messages, async validation races and error clearing.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D04",
+      "title": "Search with applied filters and recovery",
+      "tags": [
+        "search",
+        "filter",
+        "results",
+        "empty"
+      ],
+      "decision": "Keep the search query, applied filters, result count and clearing action visible together. Distinguish no matching results from a genuinely empty collection, and offer the shortest relevant recovery.",
+      "tradeoff": "Use instant updates for cheap predictable queries; explicit Apply is useful for expensive combinations. Preserve an understandable pending state while results change.",
+      "avoid": "A filter drawer that hides all active constraints; clearing the query when opening an item; an empty illustration without recovery.",
+      "verify": "Change multiple filters, clear one, return from detail, and test slow requests completing out of order.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D05",
+      "title": "Dense table with a reliable action model",
+      "tags": [
+        "table",
+        "selection",
+        "bulk",
+        "data",
+        "rows"
+      ],
+      "decision": "Align scan-critical columns, keep row identity stable and separate navigation from selection. Reveal bulk actions only in selection mode, while showing the selected count and its scope.",
+      "tradeoff": "Freeze key columns only when needed; on small screens preserve meaningful comparisons through a contained scroll region or a deliberate list alternative.",
+      "avoid": "Checkboxes that accidentally navigate; ambiguous select-all across pages; decorative cards replacing useful columns.",
+      "verify": "Test sort/filter with selection, pagination, long cells, keyboard operation and bulk-action failure on a subset.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D06",
+      "title": "Sharing roles and inherited access",
+      "tags": [
+        "sharing",
+        "permissions",
+        "access",
+        "invitation"
+      ],
+      "decision": "Show the resource identity, named recipients and role choices together. Separate direct grants, inherited access and public links so the owner can understand effective exposure.",
+      "tradeoff": "A concise role menu helps common tasks; advanced privileges should be progressively disclosed with consequences. Inherited access may require changing the parent rather than the current item.",
+      "avoid": "A generic permission toggle that obscures scope; implying hidden download controls prevent copying; silently broadening access.",
+      "verify": "Test role changes, expired invitations, denied updates, inherited access, revocation and keyboard traversal of menus.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D07",
+      "title": "Destructive action with a clear target",
+      "tags": [
+        "delete",
+        "destructive",
+        "confirmation",
+        "recovery"
+      ],
+      "decision": "Name the affected object and consequence in the confirmation. Keep cancel easy to find; make reversible removal recoverable when the product supports it.",
+      "tradeoff": "Confirmation is useful for costly irreversible operations. Routine recoverable removal may use undo instead; do not add ritual dialogs to every action.",
+      "avoid": "A vague Are you sure prompt; a destructive default selected by accident; an undo action that cannot actually restore data.",
+      "verify": "Test cancellation, concurrent deletion, failure, focus return and the real undo retention boundary.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D08",
+      "title": "Scoped settings and save semantics",
+      "tags": [
+        "settings",
+        "preferences",
+        "scope",
+        "save"
+      ],
+      "decision": "Keep personal, workspace and organization scopes explicit. Match feedback to whether changes apply immediately or require saving, and make modified/default/managed values distinguishable.",
+      "tradeoff": "Immediate application works for reversible preferences; grouped saves suit interdependent or costly settings. Mixing both requires local clarity.",
+      "avoid": "A global Save button for instant settings; changing scope without revealing it; hiding policy-controlled restrictions.",
+      "verify": "Change scope, reset, search, leave and return, lose connectivity and test unsaved-change behavior.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D09",
+      "title": "Desktop command search with inspection",
+      "tags": [
+        "desktop",
+        "command",
+        "launcher",
+        "search",
+        "keyboard"
+      ],
+      "decision": "Put the query first, group results by task, expose a meaningful selected result and keep action hints near the footer or selection. Show preview detail only when it helps choose safely.",
+      "tradeoff": "Keyboard-first efficiency should retain pointer access and clear focus. A preview pane is useful for rich results, excessive for simple commands.",
+      "avoid": "Unlabeled shortcut symbols; hidden destructive primary actions; selection that jumps unpredictably as results arrive.",
+      "verify": "Test arrows, Enter, Escape, action menus, empty results, long names and asynchronous reordering.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D10",
+      "title": "Adaptive master-detail workspace",
+      "tags": [
+        "desktop",
+        "web",
+        "split",
+        "detail",
+        "navigation",
+        "resize"
+      ],
+      "decision": "Use a persistent list/detail relationship where comparison and repeated inspection matter. Preserve selected object, scroll and edits when changing window width.",
+      "tradeoff": "At compact widths, use an explicit navigation stack with a reliable Back action. Do not merely squeeze both panes until neither is usable.",
+      "avoid": "A mobile page trapped inside a desktop frame; hidden context on return; arbitrary breakpoint changes that discard selection.",
+      "verify": "Resize while editing, use back/forward, open long details and verify unsaved-state preservation.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D11",
+      "title": "Chart interpretation and drill-down",
+      "tags": [
+        "chart",
+        "dashboard",
+        "analytics",
+        "filter"
+      ],
+      "decision": "Lead with the decision the chart supports. Keep units, period and applied filters legible; align related comparisons and give drill-down a predictable destination.",
+      "tradeoff": "A large primary chart can establish hierarchy; multiple equal cards are appropriate only when metrics are genuinely peers. Dense analysis may need tables as well as visual summaries.",
+      "avoid": "Unexplained decorative graphs; fabricated trends; hiding missing values as zero; ambiguous time ranges.",
+      "verify": "Test no data, partial data, loading, extreme ranges, keyboard-accessible alternatives and consistent filter scope.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D12",
+      "title": "Upload progression and partial failure",
+      "tags": [
+        "upload",
+        "progress",
+        "retry",
+        "files",
+        "error"
+      ],
+      "decision": "Keep each file identity, progress and result visible. Separate overall batch progress from per-file failure and allow retry of only recoverable failures.",
+      "tradeoff": "Compact rows work for many files; richer previews help visual assets. Cancellation and restart must match server capabilities.",
+      "avoid": "A success toast when some uploads failed; lost filenames; progress percentages unrelated to actual transfer state.",
+      "verify": "Test duplicates, unsupported types, large names, cancellation, interrupted connection and a partially successful batch.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D13",
+      "title": "Intentional loading without layout jumps",
+      "tags": [
+        "loading",
+        "skeleton",
+        "pending",
+        "async"
+      ],
+      "decision": "Reserve the primary content geometry and describe the pending task where helpful. Keep already available content stable while refreshing a subset.",
+      "tradeoff": "Skeletons help when structure is known; short indeterminate waits may need only a local indicator. Never animate an invented data shape as if it were real content.",
+      "avoid": "Full-screen spinners for a row refresh; endless shimmer; controls appearing enabled while submission is locked.",
+      "verify": "Test fast and slow loads, failure, stale content, repeated submission and reduced motion.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D14",
+      "title": "Onboarding through a useful first result",
+      "tags": [
+        "onboarding",
+        "signup",
+        "setup",
+        "activation"
+      ],
+      "decision": "Ask only for information needed to reach the first useful result. Separate account setup from optional personalization and contextual permission requests.",
+      "tradeoff": "Use progress when the remaining steps are known. A complex setup may need save-and-resume; a short path should not become a ceremonial wizard.",
+      "avoid": "Premature permission requests; unexplained data collection; mandatory decorative profile completion.",
+      "verify": "Test back, skip where permitted, validation, interrupted setup and recovery without repeated data entry.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D15",
+      "title": "Motion that explains a state change",
+      "tags": [
+        "motion",
+        "animation",
+        "transitions",
+        "interruption"
+      ],
+      "decision": "Name the trigger, persistent object and anchor. Grow a menu from its collision-adjusted trigger, keep toast stacking coherent, and let gesture-driven sheets follow input before settling. Define enter, exit, reverse and reduced-motion behavior.",
+      "tradeoff": "A surface can enter deliberately and exit faster to clear the task. Choose actual timing and easing by relationship and repetition. Expressive marketing can take more time for a meaningful message.",
+      "avoid": "Animating every item on each render; delaying primary actions; scroll hijacking; relying on motion for essential information.",
+      "verify": "Observe start, intermediate, settled and interrupted playback at actual placement size. Exercise rapid input, anchor flipping, scroll, resize, stacking and reduced motion. Separate implemented motion from motion actually observed.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D16",
+      "title": "Product demonstration as truthful proof",
+      "tags": [
+        "marketing",
+        "landing",
+        "demo",
+        "product",
+        "proof"
+      ],
+      "decision": "Choose a supported product benefit and outcome. Connect specific audience copy and the actual next action to legible proof. Source prices, limits and entitlements from project data. Use coherent, disclosed fictional fixtures when prototypes need data.",
+      "tradeoff": "A focused crop can clarify better than a miniature whole dashboard. Use an interactive demo only when real control improves comprehension.",
+      "avoid": "Unsupported customer quotes, popularity numbers or logos; tiny product fragments; ornate mockups without a useful task; inconsistent names, dates, totals or status across scenes.",
+      "verify": "Read every string and scene at actual wide and compact size. Check claims against project evidence and reconcile data. Distinguish staged playback, simulation and tested product controls.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D17",
+      "title": "Typography and spatial hierarchy",
+      "tags": [
+        "typography",
+        "spacing",
+        "hierarchy",
+        "layout",
+        "focal",
+        "grouping"
+      ],
+      "decision": "Name the immediate task and dominant focal area. Assign primary and secondary actions, a small set of text roles and shared alignment edges. Use weight, tone and position with size. Map tight within-group and wider between-group gaps to a token scale.",
+      "tradeoff": "Adapt density to the task. Large marketing display text and compact desktop rows can share coherent roles. Allow intentional optical corrections and platform logical units.",
+      "avoid": "A new font or radius for every section; equally loud headlines; uniform gaps that erase grouping.",
+      "verify": "Inspect what draws attention first, actual grouping gaps, readable text and line breaks. Check long labels, open controls, loaded and fallback fonts, larger text and compact widths.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D18",
+      "title": "Palette-independent reference adaptation",
+      "tags": [
+        "brand",
+        "palette",
+        "color",
+        "inspiration",
+        "concept"
+      ],
+      "decision": "Extract source hierarchy, focal balance, density, geometry and asset roles. Develop canvas, surfaces, text, border, focus, emphasis and status colors from the target brand and contrast needs.",
+      "tradeoff": "Task-heavy surfaces often benefit from neutral foundations and a clear dominant accent. Preserve meaningful status colors, categorical data and an approved expressive identity.",
+      "avoid": "Recoloring a copied layout and calling it a concept; banning useful motifs without context; inventing exact source measurements.",
+      "verify": "Explain what each concept adapts and rejects. Inspect actual color pairs, hierarchy and hover/focus/selected/disabled/error states in supported themes and over changing imagery.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    },
+    {
+      "id": "D19",
+      "title": "Component geometry and material at actual size",
+      "tags": [
+        "details",
+        "radius",
+        "borders",
+        "shadows",
+        "icons",
+        "component",
+        "materials",
+        "geometry"
+      ],
+      "decision": "Define related radius and inset roles, border/elevation levels and a consistent icon family, optical size and stroke. Inspect nested corners, icon/text alignment, full values, focus clearance and open overlays in context.",
+      "tradeoff": "Concentric inner radii can start from outer radius minus the actual inset. Adjust for borders and native masks. Stronger materials or hard edges can suit the approved direction.",
+      "avoid": "Every nested surface sharing the same arbitrary radius; heavy shadows masking grouping faults; mismatched icon strokes; clipped normal placeholders; a local polish pass that ignores the surrounding composition.",
+      "verify": "Inspect the weakest component in closed, focus and open states at actual size. Check compact and long-content cases, border intersections, shadow clipping, icon baselines and hit-target clearance, then re-render the corrected version.",
+      "evidence": "Original design guidance; not an observed source behavior."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Keep the vendored foundation byte-exact on every platform (its files are SHA-256 verified).
+skills/veyui/foundation/** -text
+
+# Everything else: LF in the repository and in working trees.
+* text=auto eol=lf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.webp binary
+*.ico binary
+*.woff2 binary

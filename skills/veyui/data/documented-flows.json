@@ -1,0 +1,351 @@
+{
+  "schema_version": 1,
+  "flows": [
+    {
+      "id": "FL01",
+      "product": "Proton Account",
+      "platform": "web",
+      "name": "Choose and purchase a subscription",
+      "tags": [
+        "pricing",
+        "payment",
+        "subscription",
+        "checkout"
+      ],
+      "entry": "Signed in to a Proton service.",
+      "steps": [
+        {
+          "action": "Open the upgrade entry point.",
+          "result": "A plan-selection view is shown.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Compare plans, audience categories, currency and billing period.",
+          "result": "Select a plan to continue.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Review the subscription and provide payment details.",
+          "result": "A payment or confirmation action completes the documented purchase path.",
+          "evidence": "documented"
+        }
+      ],
+      "boundary": "Checkout failure and validation timing are not established here. Prices and eligibility must come from the target product.",
+      "lesson": "Keep comparison and commitment as distinct decisions; preserve the selected plan in checkout.",
+      "evidence_ref": "FL01",
+      "related_screens": [
+        "E001",
+        "E003",
+        "E004",
+        "E008",
+        "E009"
+      ]
+    },
+    {
+      "id": "FL02",
+      "product": "Proton Account",
+      "platform": "web",
+      "name": "Cancel a subscription with confirmation",
+      "tags": [
+        "subscription",
+        "cancel",
+        "confirmation",
+        "payment"
+      ],
+      "entry": "Signed in with a paid subscription.",
+      "steps": [
+        {
+          "action": "Open subscription settings and locate cancellation.",
+          "result": "Continue to a confirmation step.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Confirm cancellation.",
+          "result": "The documented current policy retains the paid plan until the billing period ends, with rollout differences noted by the publisher.",
+          "evidence": "documented"
+        }
+      ],
+      "boundary": "Billing policy is source-specific and can change. Do not copy it into another product.",
+      "lesson": "Explain the actual timing and consequence beside the final cancellation action.",
+      "evidence_ref": "FL02",
+      "related_screens": [
+        "E001",
+        "E003",
+        "E004",
+        "E008",
+        "E009"
+      ]
+    },
+    {
+      "id": "FL03",
+      "product": "Visual Studio Code",
+      "platform": "desktop",
+      "name": "Find, change and reset a scoped setting",
+      "tags": [
+        "settings",
+        "search",
+        "preferences",
+        "scope",
+        "reset"
+      ],
+      "entry": "Settings editor is available.",
+      "steps": [
+        {
+          "action": "Select personal or workspace scope.",
+          "result": "The chosen scope determines where the value applies.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Search for a setting.",
+          "result": "The editor filters matching settings.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Change a value.",
+          "result": "The documentation says the change applies directly and modified settings are marked.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Use the setting action menu to reset it.",
+          "result": "The value returns to its default; modified settings can also be filtered.",
+          "evidence": "documented"
+        }
+      ],
+      "boundary": "Not every setting supports workspace scope. Source behavior is documented, not independently exercised.",
+      "lesson": "Scope, save semantics and reset affordance form one understandable model; preserve all three.",
+      "evidence_ref": "FL03",
+      "related_screens": [
+        "E080",
+        "E081",
+        "E082",
+        "E083",
+        "E084",
+        "E085",
+        "E087",
+        "E088",
+        "E090",
+        "E092",
+        "E093",
+        "E095",
+        "E096",
+        "E098",
+        "E099"
+      ]
+    },
+    {
+      "id": "FL04",
+      "product": "GitHub",
+      "platform": "web",
+      "name": "Review changes with tracked progress",
+      "tags": [
+        "review",
+        "comments",
+        "diff",
+        "approval",
+        "progress"
+      ],
+      "entry": "A pull request is available for review.",
+      "steps": [
+        {
+          "action": "Open the changed files.",
+          "result": "Inspect individual file differences and attach contextual comments.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Mark a reviewed file as viewed.",
+          "result": "It collapses and contributes to the displayed review progress.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Submit the review with a summary.",
+          "result": "Choose the applicable review outcome, such as approval or a request for changes.",
+          "evidence": "documented"
+        }
+      ],
+      "boundary": "Available outcomes depend on repository permissions. Do not equate a review submission with merging.",
+      "lesson": "Keep local observations separate from the final aggregate decision, with visible progress between them.",
+      "evidence_ref": "FL04",
+      "related_screens": [
+        "E028",
+        "E029",
+        "E030",
+        "E031"
+      ]
+    },
+    {
+      "id": "FL05",
+      "product": "Nextcloud Files",
+      "platform": "web",
+      "name": "Inspect and control shared access",
+      "tags": [
+        "sharing",
+        "permissions",
+        "access",
+        "public",
+        "link",
+        "inherited"
+      ],
+      "entry": "A file or folder can be shared under the server policy.",
+      "steps": [
+        {
+          "action": "Configure a public link or direct recipient share.",
+          "result": "Available controls can include editing, password protection and expiration.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Inspect access inherited from a parent folder.",
+          "result": "The sharing panel can reveal recipients and the origin of their access.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Revoke access at the appropriate origin.",
+          "result": "Removing an inherited share is limited to authorized users.",
+          "evidence": "documented"
+        }
+      ],
+      "boundary": "Administrative policy affects available controls. Hiding a download button does not guarantee that content cannot be copied.",
+      "lesson": "Make effective access understandable by separating public, direct and inherited grants.",
+      "evidence_ref": "FL05",
+      "related_screens": [
+        "E053",
+        "E055",
+        "E056",
+        "E059",
+        "E062"
+      ]
+    },
+    {
+      "id": "FL06",
+      "product": "OBS Studio",
+      "platform": "desktop",
+      "name": "Prepare a scene before making it live",
+      "tags": [
+        "studio",
+        "preview",
+        "live",
+        "transition",
+        "canvas"
+      ],
+      "entry": "Studio Mode is enabled.",
+      "steps": [
+        {
+          "action": "Edit the preparation scene in the left preview.",
+          "result": "The right view continues to show the current live scene.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Activate the transition control.",
+          "result": "The prepared scene becomes live; the prior scene returns to the preparation view.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Continue preparing another change or leave Studio Mode.",
+          "result": "Editing and live output remain distinct responsibilities.",
+          "evidence": "documented"
+        }
+      ],
+      "boundary": "This is the published workflow, not a measured latency or streaming-performance claim.",
+      "lesson": "Use an explicit preview/commit boundary when edits must not affect the audience immediately.",
+      "evidence_ref": "FL06",
+      "related_screens": [
+        "E154",
+        "E155",
+        "E156",
+        "E158",
+        "E159",
+        "E160",
+        "E167",
+        "E169",
+        "E170"
+      ]
+    },
+    {
+      "id": "FL07",
+      "product": "Metabase",
+      "platform": "web",
+      "name": "Create and organize an analytical dashboard",
+      "tags": [
+        "dashboard",
+        "analytics",
+        "chart",
+        "editing",
+        "layout"
+      ],
+      "entry": "The user can create dashboards in an allowed collection.",
+      "steps": [
+        {
+          "action": "Create a dashboard with identity and destination.",
+          "result": "A dashboard is available for adding questions or charts.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Enter editing mode and add chart content.",
+          "result": "Saved questions or new queries can populate the dashboard.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Move or resize cards.",
+          "result": "The documented editor uses a grid and repositions nearby cards.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Duplicate the dashboard when exploring an alternative.",
+          "result": "The copy does not automatically inherit all sharing, subscription or action settings.",
+          "evidence": "documented"
+        }
+      ],
+      "boundary": "The last step is an optional branch, not a mandatory sequence. Permissions and embedded content policies can restrict actions.",
+      "lesson": "Provide safe exploration while making the difference between layout duplication and access-policy duplication explicit.",
+      "evidence_ref": "FL07",
+      "related_screens": [
+        "F002",
+        "F004",
+        "F006",
+        "F007",
+        "F009",
+        "F015",
+        "F016",
+        "F017"
+      ]
+    },
+    {
+      "id": "FL08",
+      "product": "Raycast",
+      "platform": "desktop",
+      "name": "Navigate from a command to its configuration",
+      "tags": [
+        "command",
+        "settings",
+        "search",
+        "keyboard",
+        "configuration"
+      ],
+      "entry": "Raycast is open.",
+      "steps": [
+        {
+          "action": "Open settings directly or configure a selected command from its action panel.",
+          "result": "The relevant configuration surface is available.",
+          "evidence": "documented"
+        },
+        {
+          "action": "Search inside settings.",
+          "result": "Choosing a result jumps to the corresponding setting, command or extension.",
+          "evidence": "documented"
+        }
+      ],
+      "boundary": "Platform shortcuts vary; source documentation does not establish target-app keyboard behavior.",
+      "lesson": "Connect discovery to configuration without forcing the user to rediscover the same object in a separate settings hierarchy.",
+      "evidence_ref": "FL08",
+      "related_screens": [
+        "F032",
+        "F036",
+        "F037",
+        "F038",
+        "F039",
+        "F040",
+        "F041",
+        "F043"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Python tests
+        working-directory: skills/veyui
+        shell: bash
+        run: |
+          python -I tests/test_concept_references.py
+          python -I tests/test_design_library.py
+          python -I tests/test_reference_library.py
+      - name: Gallery logic regression
+        working-directory: skills/veyui
+        run: node tests/reference_gallery_dom_regression.cjs .
+      - name: Foundation integrity
+        working-directory: skills/veyui
+        run: python -I scripts/verify_foundation.py
+      - name: Catalog validation
+        working-directory: skills/veyui
+        run: python -I scripts/reference_library.py validate
+      - name: Installer dry run
+        run: python install.py --dry-run --all
+      - name: Landing page checks
+        run: python tools/check_site.py
+      - name: Manifests are valid JSON
+        shell: bash
+        run: |
+          for f in .claude-plugin/plugin.json .claude-plugin/marketplace.json .cursor-plugin/plugin.json gemini-extension.json; do
+            python -c "import json,sys; json.load(open('$f'))" && echo "ok $f"
+          done
+      - name: SKILL.md frontmatter
+        shell: bash
+        run: |
+          python - <<'PY'
+          import re
+          t = open('skills/veyui/SKILL.md', encoding='utf-8').read()
+          fm = t.split('---')[1]
+          name = re.search(r'^name:\s*(\S+)', fm, re.M).group(1)
+          desc = re.search(r'^description:\s*"(.*)"\s*$', fm, re.M).group(1)
+          assert name == 'veyui', name
+          assert 1 <= len(desc) <= 1024, len(desc)
+          assert t.count('\n') < 500, 'SKILL.md too long'
+          print('frontmatter ok', len(desc))
+          PY
