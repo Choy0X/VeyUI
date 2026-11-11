@@ -2,7 +2,7 @@
 
 ## skills.sh
 
-skills.sh has no submission form. A skill appears automatically when people install it with the `skills` CLI, and it ranks by install count. Once indexed it appears under skills.sh/Choy0X/VeyUI. Until it shows up there, do not link or badge it. To be discoverable:
+skills.sh has no submission form. A skill appears automatically when people install it with the `skills` CLI, and it ranks by install count. veyUI is listed at https://skills.sh/choy0x/veyui/veyui (first seen 2026-11-11). The skills.sh URLs are lowercase, and the owner/repo page can lag behind the skill page. `skills.sh.json` at the repo root only customizes the repo page; skills.sh reads it after an install with telemetry on. To stay discoverable:
 
 - Keep `skills/veyui/SKILL.md` valid: lowercase `name` equal to the folder, `description` of 1 to 1024 characters.
 - Keep the repository public.
@@ -18,7 +18,7 @@ After the first deploy, submit `https://choy0x.github.io/VeyUI/sitemap.xml` in G
 
 | Channel | What was done | Status |
 |---|---|---|
-| skills.sh | One real `npx skills add Choy0X/VeyUI` install on 2026-11-11 (telemetry on). There is no submission form. | Not listed yet. Check https://skills.sh/Choy0X/VeyUI again; add the link and badge to README, the site and `llms.txt` only after it exists. |
+| skills.sh | One real `npx skills add Choy0X/VeyUI` install on 2026-11-11 (telemetry on). There is no submission form. | Listed: https://skills.sh/choy0x/veyui/veyui (2 installs, first seen 2026-11-11; the page still says no SKILL.md snapshot yet). README, site footer and `llms.txt` link to it. |
 | Anthropic plugin directory | Developer portal at https://claude.ai/directory/manage ("Plugin bundle", repo `Choy0X/VeyUI`). Validation timed out on every attempt (about 30 s, "the directory service didn't answer in time"). The repo is within the documented limits (under 50 MiB, under 10,000 files, no file over 5 MiB) but the plugin folder has 1,773 files and many files over 256 KiB, which the checklist says are held for a reviewer. | Not submitted. Retry later; a leaner plugin folder (without the vendored foundation) may be needed. |
 | Cursor marketplace | Publisher application submitted on 2026-11-11 at https://cursor.com/marketplace/publish (organization veyUI, individual account). | Submitted. Cursor reviews manually and takes weeks; do not resubmit (it creates duplicates). Follow-ups come from marketplace-publishing@cursor.com. |
 | Gemini CLI extensions gallery | Public repo, `gemini-extension.json` and the `gemini-cli-extension` topic are in place. | Indexed automatically; check https://geminicli.com/extensions in a few days. |

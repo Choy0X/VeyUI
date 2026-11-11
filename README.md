@@ -11,6 +11,7 @@
 
 <p align="center">
   <a href="docs/installation.md"><img alt="Install with npx skills add" src="https://img.shields.io/badge/npx%20skills%20add-Choy0X%2FVeyUI-111"></a>
+  <a href="https://skills.sh/choy0x/veyui/veyui"><img alt="Listed on skills.sh" src="https://img.shields.io/badge/skills.sh-veyui-111"></a>
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-2ea44f"></a>
   <a href="https://agentskills.io"><img alt="Agent Skills format" src="https://img.shields.io/badge/format-Agent%20Skills-1f7a52"></a>
   <a href="https://choy0x.github.io/VeyUI/"><img alt="Landing page" src="https://img.shields.io/badge/site-choy0x.github.io%2FVeyUI-111"></a>

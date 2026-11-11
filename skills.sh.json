@@ -1,0 +1,9 @@
+{
+  "groupings": [
+    {
+      "title": "Design",
+      "description": "A design process for AI coding agents: three concepts, your pick, then a verified build.",
+      "skills": ["veyui"]
+    }
+  ]
+}

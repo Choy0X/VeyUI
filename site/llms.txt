@@ -16,6 +16,7 @@ Install: `npx skills add Choy0X/VeyUI`. Works with Claude Code, Codex, Cursor, G
 
 - [Repository](https://github.com/Choy0X/VeyUI): source, issues and releases.
 - [Landing page](https://choy0x.github.io/VeyUI/): what veyUI does, with a scroll-driven before and after example and the install commands.
+- [skills.sh listing](https://skills.sh/choy0x/veyui/veyui)
 - [MIT license](https://github.com/Choy0X/VeyUI/blob/main/LICENSE)
 
 ## Credits
